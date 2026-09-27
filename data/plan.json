@@ -1,0 +1,53 @@
+{
+ "positionen": [
+  {
+   "budget": 9450,
+   "id": "stm",
+   "nachhaltig": true,
+   "name": "STMicroelectronics",
+   "stopPct": 15,
+   "thema": "Chips / KI"
+  },
+  {
+   "budget": 9450,
+   "id": "nordex",
+   "nachhaltig": true,
+   "name": "Nordex",
+   "stopPct": 15,
+   "thema": "Windkraft"
+  },
+  {
+   "budget": 9450,
+   "id": "intel",
+   "nachhaltig": true,
+   "name": "Intel",
+   "stopPct": 15,
+   "thema": "Chips / KI"
+  },
+  {
+   "budget": 9450,
+   "id": "cbk",
+   "nachhaltig": false,
+   "name": "Commerzbank",
+   "stopPct": 15,
+   "thema": "Bank / Übernahme"
+  },
+  {
+   "budget": 9450,
+   "id": "tte",
+   "nachhaltig": false,
+   "name": "TotalEnergies",
+   "stopPct": 15,
+   "thema": "Öl & Gas"
+  }
+ ],
+ "warteliste": [
+  {
+   "id": "amzn",
+   "nachhaltig": false,
+   "name": "Amazon",
+   "stopBuy": 230,
+   "thema": "Handel / Cloud"
+  }
+ ]
+}

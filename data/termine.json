@@ -1,0 +1,197 @@
+{
+ "items": [
+  {
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "tte"
+   ],
+   "datum": "2026-10-01",
+   "erwartung": "Ihr kauft laut Plan.",
+   "frage": "Direkt nach den Käufen die Stop-Loss-Orders mit 14 Tagen Laufzeit setzen und hier alles eintragen.",
+   "gut": "Stückzahl neu rechnen: 9.450 € geteilt durch den aktuellen Kurs, abgerundet.",
+   "schlecht": "Mit Limit etwa 0,5 % über dem Kurs kaufen, nicht billigst.",
+   "titel": "Erster Handelstag"
+  },
+  {
+   "betrifft": [
+    "stm",
+    "intel"
+   ],
+   "datum": "2026-10-14",
+   "erwartung": "Erster großer Stimmungstest für die ganze Chip-Branche.",
+   "frage": "Ihr müsst nichts tun. Beobachten, wie STMicro und Intel reagieren.",
+   "gut": "Gute Zahlen ziehen oft andere Chip-Aktien mit hoch.",
+   "schlecht": "Enttäuschung kann auch STMicro und Intel nach unten ziehen.",
+   "titel": "ASML-Quartalszahlen (vor Börsenstart)"
+  },
+  {
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "tte"
+   ],
+   "datum": "2026-10-15",
+   "erwartung": "Orders vom 1.10. mit 14 Tagen Laufzeit enden.",
+   "frage": "Neu setzen. Ablaufen lassen kostet nichts, selbst löschen kostet 2,50 €.",
+   "titel": "Stop-Loss-Orders laufen ab (14 Tage)"
+  },
+  {
+   "betrifft": [
+    "intel"
+   ],
+   "datum": "2026-10-22",
+   "erwartung": "Nach +48 % im September sind die Erwartungen extrem hoch.",
+   "frage": "Vorher überlegen: Wollt ihr das volle Risiko tragen oder vorher einen Teil verkaufen?",
+   "gut": "Übertrifft Intel die Erwartungen deutlich, kann es weiter steigen.",
+   "schlecht": "Schon leicht enttäuschende Zahlen können 10 bis 20 % Minus bringen.",
+   "titel": "Intel-Quartalszahlen (abends)",
+   "unsicher": true
+  },
+  {
+   "betrifft": [
+    "stm"
+   ],
+   "datum": "2026-10-23",
+   "erwartung": "Fokus auf das Geschäft mit KI-Rechenzentren.",
+   "gut": "Bestätigt oder erhöht ST die KI-Ziele, hilft das dem Aufwärtstrend.",
+   "schlecht": "Schwaches Auto- oder Industriegeschäft kann die Aktie belasten.",
+   "titel": "STMicroelectronics-Quartalszahlen",
+   "unsicher": true
+  },
+  {
+   "betrifft": [
+    "nordex",
+    "intel",
+    "stm",
+    "cbk"
+   ],
+   "datum": "2026-10-28",
+   "erwartung": "Anleger sorgen sich, dass die Zinsen hoch bleiben.",
+   "frage": "Genau dafür habt ihr die Commerzbank als Gegengewicht.",
+   "gut": "Signale für sinkende Zinsen helfen Nordex und den Chip-Aktien.",
+   "schlecht": "Bleiben die Zinsen hoch oder steigen, leidet Nordex. Die Commerzbank profitiert dann eher.",
+   "titel": "Fed-Zinsentscheid (USA)"
+  },
+  {
+   "betrifft": [
+    "nordex",
+    "cbk"
+   ],
+   "datum": "2026-10-29",
+   "erwartung": "Wichtig für europäische Banken und Windkraft.",
+   "gut": "Sinkende Zinsen helfen Nordex.",
+   "schlecht": "Hohe Zinsen helfen der Commerzbank.",
+   "titel": "EZB-Zinsentscheid (14:15 Uhr)"
+  },
+  {
+   "betrifft": [
+    "amzn"
+   ],
+   "datum": "2026-10-29",
+   "erwartung": "Nur relevant, falls Amazon von der Warteliste gekauft wurde.",
+   "frage": "Steigt Amazon danach über 230 €, würde euer Stop-Buy auslösen.",
+   "titel": "Amazon-Quartalszahlen (abends)"
+  },
+  {
+   "betrifft": [
+    "nordex",
+    "tte",
+    "cbk"
+   ],
+   "datum": "2026-11-03",
+   "erwartung": "Entscheidet über Energiepolitik, Subventionen und Regulierung in den USA.",
+   "frage": "Aufgabe für den Politik-Experten: Welcher Ausgang hilft Wind, Öl und Banken?",
+   "gut": "Ein klares Ergebnis beruhigt die Märkte.",
+   "schlecht": "Ein knappes oder umstrittenes Ergebnis sorgt für Unruhe.",
+   "titel": "US-Zwischenwahlen (Midterms)"
+  },
+  {
+   "betrifft": [
+    "nordex"
+   ],
+   "datum": "2026-11-05",
+   "erwartung": "Auftragseingang und Gewinnmarge stehen im Fokus.",
+   "gut": "Starke Aufträge könnten die Aktie Richtung Jahreshoch bringen.",
+   "schlecht": "Schwache Margen treffen die Aktie hart, sie schwankt stark.",
+   "titel": "Nordex-Quartalszahlen",
+   "unsicher": true
+  },
+  {
+   "betrifft": [
+    "cbk"
+   ],
+   "datum": "2026-11-06",
+   "erwartung": "Dazu jederzeit mögliche Nachrichten zur UniCredit-Übernahme.",
+   "gut": "Ein Übernahmeangebot mit Aufpreis würde die Aktie springen lassen.",
+   "schlecht": "Blockiert die Bundesregierung, kann die Aktie deutlich fallen.",
+   "titel": "Commerzbank-Quartalszahlen",
+   "unsicher": true
+  },
+  {
+   "betrifft": [],
+   "datum": "2026-11-11",
+   "erwartung": "Momentaufnahme aller Depots, kein Einfluss auf die Kurse.",
+   "frage": "Liegt ihr hinten, geht ihr mehr Risiko ein. Liegt ihr vorne, sichert ihr eher ab.",
+   "titel": "Zwischenbewertung im Spiel"
+  },
+  {
+   "betrifft": [
+    "intel",
+    "stm"
+   ],
+   "datum": "2026-11-17",
+   "erwartung": "Fieberthermometer für den ganzen KI-Boom.",
+   "gut": "Starke Zahlen heben oft die ganze Chip-Branche.",
+   "schlecht": "Enttäuschung zieht Intel und STMicro mit nach unten.",
+   "titel": "Nvidia-Quartalszahlen (abends)"
+  },
+  {
+   "betrifft": [
+    "amzn"
+   ],
+   "datum": "2026-11-27",
+   "erwartung": "Erste Zahlen zum Weihnachtsgeschäft.",
+   "gut": "Rekordumsätze helfen Händlern wie Amazon.",
+   "titel": "Black Friday"
+  },
+  {
+   "betrifft": [
+    "nordex",
+    "intel",
+    "stm",
+    "cbk"
+   ],
+   "datum": "2026-12-09",
+   "erwartung": "Einer der wichtigsten Zinstermine des Jahres.",
+   "gut": "Aussicht auf Zinssenkungen 2027 hilft Nordex und Chips.",
+   "schlecht": "Keine Senkungen in Sicht: gut für die Commerzbank, schlecht für Nordex.",
+   "titel": "Fed-Zinsentscheid mit Prognosen für 2027"
+  },
+  {
+   "betrifft": [
+    "nordex",
+    "cbk"
+   ],
+   "datum": "2026-12-17",
+   "erwartung": "Letzter großer Zinstermin im Spiel.",
+   "titel": "EZB-Zinsentscheid mit Prognosen"
+  },
+  {
+   "betrifft": [],
+   "datum": "2027-01-22",
+   "erwartung": "Sonst wird das Depot disqualifiziert.",
+   "titel": "Frist: mindestens 3 abgerechnete Käufe"
+  },
+  {
+   "betrifft": [],
+   "datum": "2027-01-25",
+   "erwartung": "Bewertung zu den Schlusskursen. Ihr müsst nichts verkaufen.",
+   "titel": "Letzter Handelstag"
+  }
+ ]
+}

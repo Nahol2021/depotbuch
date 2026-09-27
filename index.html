@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Depotbuch Planspiel Börse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F5F4;
+  --paper:#FFFFFF;
+  --ink:#14212B;
+  --ink-2:#4A5963;
+  --ink-3:#7C8A92;
+  --line:#D9E0DE;
+  --line-2:#E8EDEB;
+  --accent:#0F5C6E;
+  --accent-soft:#E1EEF0;
+  --gain:#1B7F4B;
+  --gain-soft:#E3F2E9;
+  --loss:#B3261E;
+  --loss-soft:#F8E5E3;
+  --warn:#9A6208;
+  --warn-soft:#FBF0DA;
+  --eco:#2F7A3E;
+  --focus:#0F5C6E;
+  --display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1519;--paper:#152027;--ink:#E4ECEE;--ink-2:#A9B8BE;--ink-3:#7A8A91;
+    --line:#26343C;--line-2:#1D2A31;--accent:#5FB6C8;--accent-soft:#16333B;
+    --gain:#5CC98C;--gain-soft:#143324;--loss:#F08A80;--loss-soft:#3A1C1A;
+    --warn:#E8B45A;--warn-soft:#3A2C12;--eco:#7BC98A;--focus:#5FB6C8;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1519;--paper:#152027;--ink:#E4ECEE;--ink-2:#A9B8BE;--ink-3:#7A8A91;
+  --line:#26343C;--line-2:#1D2A31;--accent:#5FB6C8;--accent-soft:#16333B;
+  --gain:#5CC98C;--gain-soft:#143324;--loss:#F08A80;--loss-soft:#3A1C1A;
+  --warn:#E8B45A;--warn-soft:#3A2C12;--eco:#7BC98A;--focus:#5FB6C8;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:clamp(28px,4.5vw,40px);font-weight:700;line-height:1.05}
+h2{font-size:20px;font-weight:600}
+h3{font-size:16px;font-weight:600}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-2)}
+.faint{color:var(--ink-3)}
+.label{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.gain{color:var(--gain)}.loss{color:var(--loss)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Kopf */
+.masthead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:2px solid var(--ink);padding-bottom:14px}
+.masthead p{margin:6px 0 0;color:var(--ink-2)}
+.clock{text-align:right}
+.clock .big{font-family:var(--mono);font-size:22px;font-weight:500}
+
+/* Kennzahlen */
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--paper);border:1px solid var(--line)}
+.ledger>div{padding:14px 16px;border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2);display:grid;gap:4px}
+.ledger .v{font-family:var(--mono);font-size:21px;font-weight:500;font-variant-numeric:tabular-nums}
+.ledger .s{font-size:13px;color:var(--ink-2)}
+
+/* Abschnitte */
+section{display:grid;gap:12px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+.panel{background:var(--paper);border:1px solid var(--line)}
+.pad{padding:16px}
+.two{display:grid;grid-template-columns:1fr;gap:28px}
+@media (min-width:900px){.two{grid-template-columns:1.1fr .9fr}}
+
+/* Warnungen */
+.alerts{display:grid;gap:8px}
+.alert{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:10px 14px;border-left:4px solid var(--warn);background:var(--warn-soft)}
+.alert.crit{border-color:var(--loss);background:var(--loss-soft)}
+.alert.info{border-color:var(--accent);background:var(--accent-soft)}
+.alert b{font-weight:600}
+.alert .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}
+
+/* Tabelle */
+.tablebox{overflow-x:auto;background:var(--paper);border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:860px}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line-2);white-space:nowrap}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600;background:var(--paper);position:sticky;top:0}
+td:first-child,th:first-child{text-align:left}
+td.l,th.l{text-align:left}
+tbody tr:last-child td{border-bottom:0}
+.name{font-weight:600}
+.sub{font-size:12.5px;color:var(--ink-3)}
+.pill{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--bg)}
+.pill.eco{color:var(--eco);border-color:currentColor;background:transparent}
+.pill.plan{color:var(--accent);border-color:currentColor;background:transparent}
+.pill.wait{color:var(--warn);border-color:currentColor;background:transparent}
+.bar{display:inline-block;vertical-align:middle;width:64px;height:6px;background:var(--line-2);margin-left:8px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.bar i.over{background:var(--loss)}
+.bar::after{content:"";position:absolute;left:100%;top:-3px;bottom:-3px;width:1px;background:var(--ink-3)}
+.dist.near{color:var(--loss);font-weight:600}
+
+/* Termine */
+.dates{list-style:none;margin:0;padding:0;display:grid}
+.dates li{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line-2)}
+.dates li:last-child{border-bottom:0}
+.dates .d{font-family:var(--mono);font-size:13px;line-height:1.3}
+.dates .d b{display:block;font-size:18px;font-weight:500}
+.dates .soon .d b{color:var(--accent)}
+.dates .t{display:grid;gap:4px}
+.dates .t .who{display:flex;flex-wrap:wrap;gap:4px}
+.dates details{font-size:14px;color:var(--ink-2)}
+.dates summary{cursor:pointer;color:var(--accent);font-size:13.5px;font-weight:500}
+.scen{display:grid;gap:4px;margin-top:6px}
+.scen div{padding-left:10px;border-left:3px solid var(--line)}
+.scen .g{border-color:var(--gain)}.scen .b{border-color:var(--loss)}.scen .q{border-color:var(--accent)}
+
+/* Bericht */
+.report{display:grid;gap:0}
+.report .item{padding:12px 16px;border-bottom:1px solid var(--line-2);display:grid;gap:3px}
+.report .item:last-child{border-bottom:0}
+.report p{margin:0}
+
+/* Formulare */
+form{display:grid;gap:12px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+label.f{display:grid;gap:4px;font-size:13px;color:var(--ink-2);font-weight:500}
+input[type=text],input[type=number],input[type=date],select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);background:var(--bg);border-radius:4px}
+textarea{min-height:80px;resize:vertical}
+.check{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink-2)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg label{cursor:pointer;font-weight:500;font-size:14px;position:relative}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label span{display:block;padding:8px 14px}
+.seg input:checked+span{color:var(--paper);background:var(--ink)}
+.seg input:focus-visible+span{outline:2px solid var(--focus);outline-offset:-2px}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.btn{padding:9px 16px;border-radius:4px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.small{padding:4px 10px;font-size:13px}
+.btn.danger{background:var(--loss);border-color:var(--loss);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.preview{font-size:13.5px;color:var(--ink-2)}
+.msg{font-size:13.5px}
+.msg.err{color:var(--loss)}.msg.ok{color:var(--gain)}
+
+/* Screenshot */
+.shot{display:grid;gap:10px}
+.shot img{border:1px solid var(--line);max-height:320px;object-fit:contain;background:var(--bg);justify-self:start}
+
+/* Notizen */
+.notes{list-style:none;margin:0;padding:0}
+.notes li{padding:12px 16px;border-bottom:1px solid var(--line-2);display:grid;gap:4px}
+.notes li:last-child{border-bottom:0}
+.notes p{margin:0;white-space:pre-wrap}
+.empty{padding:16px;color:var(--ink-3)}
+footer{font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:12px}
+@media (prefers-reduced-motion:no-preference){.btn{transition:opacity .15s}}
+
+body{margin:0}
+a{color:var(--accent)}
+.keybox details summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px}
+.steps{margin:8px 0 0;padding-left:20px;display:grid;gap:6px;font-size:14px;color:var(--ink-2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <div class="label">Planspiel Börse 2026 · Sparkasse Paderborn-Detmold-Höxter</div>
+      <h1>Depotbuch</h1>
+      <p id="stand">Daten werden geladen …</p>
+    </div>
+    <div class="clock">
+      <div class="label">Bis Spielende (25.01.2027)</div>
+      <div class="big" id="countdown">–</div>
+    </div>
+  </header>
+
+  <div class="ledger" id="ledger" aria-live="polite">
+    <div><span class="label">Depotgesamtwert</span><span class="v" id="k-wert">–</span><span class="s" id="k-wert-s">Start: 50.000,00 €</span></div>
+    <div><span class="label">Gewinn / Verlust</span><span class="v" id="k-gv">–</span><span class="s" id="k-gv-s">seit Start</span></div>
+    <div><span class="label">Bargeld</span><span class="v" id="k-cash">–</span><span class="s" id="k-cash-s">frei verfügbar</span></div>
+    <div><span class="label">Nachhaltigkeitsertrag</span><span class="v" id="k-eco">–</span><span class="s">zweite Wertung, ca.</span></div>
+    <div><span class="label">Abgerechnete Käufe</span><span class="v" id="k-buys">–</span><span class="s">mind. 3 bis 22.01.2027</span></div>
+  </div>
+
+  <section aria-labelledby="h-warn" id="warn-sec" hidden>
+    <h2 id="h-warn">Achtung</h2>
+    <div class="alerts" id="alerts"></div>
+  </section>
+
+  <section aria-labelledby="h-pos">
+    <div class="sec-head">
+      <h2 id="h-pos">Positionen</h2>
+      <span class="muted" id="pos-hint"></span>
+    </div>
+    <div class="tablebox">
+      <table>
+        <thead><tr>
+          <th>Aktie</th><th class="l">Status</th><th>Stück</th><th>Einstand</th><th>Kurs</th><th>Wert</th><th>G / V</th><th>Anteil</th><th>Stop-Loss</th><th>Abstand</th>
+        </tr></thead>
+        <tbody id="pos-body"><tr><td colspan="10" class="empty">Lädt …</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="two">
+    <section aria-labelledby="h-dates">
+      <div class="sec-head"><h2 id="h-dates">Nächste Termine</h2><span class="faint">Szenarien, keine Vorhersagen</span></div>
+      <div class="panel"><ul class="dates" id="dates"><li class="empty">Lädt …</li></ul></div>
+      <div class="row"><button class="btn ghost small" id="more-dates" type="button" hidden>Alle Termine zeigen</button></div>
+    </section>
+
+    <section aria-labelledby="h-report">
+      <div class="sec-head"><h2 id="h-report">Tagesbericht</h2><span class="faint" id="report-date"></span></div>
+      <div class="panel report" id="report"><div class="empty">Lädt …</div></div>
+    </section>
+  </div>
+
+  <div class="two">
+    <section aria-labelledby="h-entry">
+      <h2 id="h-entry">Kauf oder Verkauf eintragen</h2>
+      <div class="panel pad">
+        <form id="trade-form" novalidate>
+          <div class="row">
+            <div class="seg" role="radiogroup" aria-label="Art">
+              <label><input type="radio" name="typ" value="kauf" id="typ-kauf" checked><span>Kauf</span></label>
+              <label><input type="radio" name="typ" value="verkauf" id="typ-verkauf"><span>Verkauf</span></label>
+            </div>
+          </div>
+          <div class="fields">
+            <label class="f" for="t-aktie">Aktie
+              <select id="t-aktie"></select>
+            </label>
+            <label class="f" for="t-name" id="t-name-wrap" hidden>Name der Aktie
+              <input type="text" id="t-name" autocomplete="off">
+            </label>
+            <label class="f" for="t-stueck">Stück
+              <input type="number" id="t-stueck" min="1" step="1" inputmode="numeric">
+            </label>
+            <label class="f" for="t-kurs">Kurs in €
+              <input type="number" id="t-kurs" min="0.01" step="0.01" inputmode="decimal">
+            </label>
+            <label class="f" for="t-datum">Datum
+              <input type="date" id="t-datum">
+            </label>
+            <label class="f" for="t-von">Eingetragen von
+              <input type="text" id="t-von" autocomplete="off" placeholder="Name">
+            </label>
+          </div>
+          <label class="check" id="t-eco-wrap" hidden><input type="checkbox" id="t-eco"> Im Spiel als nachhaltig markiert</label>
+          <div class="preview num" id="t-preview">Betrag und Gebühr erscheinen hier.</div>
+          <div class="row"><button class="btn" type="submit" id="t-submit">Eintragen</button><span class="msg" id="t-msg" role="status"></span></div>
+        </form>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-key">
+      <h2 id="h-key">Schreibzugang</h2>
+      <div class="panel pad keybox">
+        <div id="key-on" hidden>
+          <p style="margin:0">Eintragen ist auf diesem Gerät freigeschaltet<span id="key-user"></span>.</p>
+          <div class="row" style="margin-top:10px"><button class="btn ghost small" type="button" id="key-remove">Schlüssel von diesem Gerät entfernen</button></div>
+        </div>
+        <div id="key-off">
+          <p style="margin:0 0 10px">Anschauen geht ohne Anmeldung. Zum Eintragen braucht jedes Gerät einmal einen GitHub-Schlüssel (Token). Der Schlüssel bleibt nur in diesem Browser gespeichert.</p>
+          <details>
+            <summary>So bekommst du einen Schlüssel</summary>
+            <ol class="steps">
+              <li>Bei GitHub anmelden. Dein Konto muss als Mitarbeiter (Collaborator) im Repository <span class="num">Nahol2021/depotbuch</span> eingetragen sein.</li>
+              <li>Öffne <a href="https://github.com/settings/tokens/new?scopes=public_repo&amp;description=Depotbuch" target="_blank" rel="noopener">github.com/settings/tokens/new</a>.</li>
+              <li>Bei „Note“ steht schon „Depotbuch“. Bei „Expiration“ z. B. „Custom“ und den 31.01.2027 wählen.</li>
+              <li>Nur das Häkchen <b>public_repo</b> setzen (ist schon gesetzt), ganz unten „Generate token“.</li>
+              <li>Den Schlüssel (beginnt mit <span class="num">ghp_</span>) kopieren und hier einfügen.</li>
+            </ol>
+          </details>
+          <form id="key-form" class="row" style="margin-top:10px" novalidate>
+            <label class="f" for="key-input" style="flex:1 1 220px">Schlüssel
+              <input type="password" id="key-input" autocomplete="off" spellcheck="false" placeholder="ghp_…">
+            </label>
+            <button class="btn" type="submit" id="key-save" style="align-self:end">Speichern</button>
+          </form>
+        </div>
+        <span class="msg" id="key-msg" role="status"></span>
+      </div>
+    </section>
+  </div>
+
+  <section aria-labelledby="h-notes">
+    <div class="sec-head"><h2 id="h-notes">Team-Notizen</h2><span class="faint">Warum habt ihr gekauft? Was war der Plan?</span></div>
+    <div class="panel">
+      <form id="note-form" class="pad" novalidate>
+        <label class="f" for="n-text">Neue Notiz<textarea id="n-text" placeholder="z. B. Intel gekauft, weil die Zahlen am 22.10. kommen. Verkaufen, wenn …"></textarea></label>
+        <div class="row"><button class="btn" type="submit" id="n-submit">Notiz speichern</button><span class="msg" id="n-msg" role="status"></span></div>
+      </form>
+      <ul class="notes" id="notes"></ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-trades">
+    <h2 id="h-trades">Alle Einträge</h2>
+    <div class="tablebox">
+      <table>
+        <thead><tr><th>Datum</th><th class="l">Art</th><th class="l">Aktie</th><th>Stück</th><th>Kurs</th><th>Betrag</th><th>Gebühr</th><th class="l">Von</th><th></th></tr></thead>
+        <tbody id="trades-body"><tr><td colspan="9" class="empty">Noch nichts eingetragen.</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="row" style="justify-content:space-between">
+    <span>Gebühren wie im Spiel: 0,3 % vom Kurswert, mindestens 15 €. Kurse werden einmal täglich aktualisiert und können vom Spiel leicht abweichen. Spielgeld, keine Anlageberatung.</span>
+    <button class="btn ghost small" type="button" id="reload">Neu laden</button>
+  </footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var OWNER = "Nahol2021", REPO = "depotbuch", BRANCH = "main";
+var API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/";
+var START = 50000;
+var END = new Date("2027-01-25T17:30:00");
+var PASSIV_FRIST = new Date("2027-01-22T23:59:00");
+var FILES = {plan:"plan", kurse:"kurse", termine:"termine", bericht:"bericht", trades:"trades", notizen:"notizen"};
+var S = {plan:null, kurse:null, termine:null, bericht:null, trades:[], notizen:[], state:"loading"};
+var showAllDates = false;
+var token = load("depotbuch.token") || "";
+
+function $(id){return document.getElementById(id)}
+function h(tag, attrs){
+  var el = document.createElement(tag);
+  if (attrs) for (var k in attrs){
+    var v = attrs[k];
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else el.setAttribute(k, v === true ? "" : v);
+  }
+  for (var i = 2; i < arguments.length; i++){
+    var c = arguments[i];
+    if (c == null || c === false) continue;
+    (Array.isArray(c) ? c : [c]).forEach(function(x){ if (x != null && x !== false) el.appendChild(typeof x === "string" ? document.createTextNode(x) : x); });
+  }
+  return el;
+}
+var fmtE = new Intl.NumberFormat("de-DE",{style:"currency",currency:"EUR"});
+var fmtN = new Intl.NumberFormat("de-DE",{minimumFractionDigits:2,maximumFractionDigits:2});
+var fmtP = new Intl.NumberFormat("de-DE",{minimumFractionDigits:1,maximumFractionDigits:1});
+function eur(n){return fmtE.format(n)}
+function signEur(n){return (n > 0 ? "+" : n < 0 ? "−" : "") + fmtE.format(Math.abs(n))}
+function signPct(n){return (n > 0 ? "+" : n < 0 ? "−" : "") + fmtP.format(Math.abs(n)) + " %"}
+function cls(n){return n > 0.004 ? "gain" : n < -0.004 ? "loss" : ""}
+function fee(amount){return Math.max(15, Math.round(amount * 0.003 * 100) / 100)}
+function parseDate(s){ var d = new Date(s + "T12:00:00"); return isNaN(d) ? null : d; }
+function dmy(s, withYear){ var d = parseDate(s); if (!d) return s || ""; return d.toLocaleDateString("de-DE", withYear ? {day:"2-digit",month:"2-digit",year:"numeric"} : {day:"2-digit",month:"2-digit"}); }
+function today(){ var d = new Date(); d.setHours(12,0,0,0); return d; }
+function isoToday(){ var d = new Date(); return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0"); }
+function daysBetween(a,b){ return Math.round((b - a) / 86400000); }
+function store(k,v){ try{ if (v == null) localStorage.removeItem(k); else localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+function newId(){ return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+
+function planList(){ return (S.plan && Array.isArray(S.plan.positionen)) ? S.plan.positionen : []; }
+function waitList(){ return (S.plan && Array.isArray(S.plan.warteliste)) ? S.plan.warteliste : []; }
+function findPlan(id){ var all = planList().concat(waitList()); for (var i=0;i<all.length;i++) if (all[i].id === id) return all[i]; return null; }
+function kursOf(id){ var k = S.kurse && S.kurse.kurse && S.kurse.kurse[id]; return k && typeof k.kurs === "number" ? k : null; }
+
+/* ---------- Daten laden (öffentlich, ohne Anmeldung) ---------- */
+function fetchFile(name){
+  /* Mit Schlüssel direkt aus dem Repository lesen (sofort aktuell), sonst die veröffentlichte Kopie (kann ein paar Minuten hinterher sein). */
+  if (token) return gh(API + "data/" + name + ".json?ref=" + BRANCH).then(function(f){ return JSON.parse(b64dec(f.content)); }).catch(function(){ return fetchPublic(name); });
+  return fetchPublic(name);
+}
+function fetchPublic(name){
+  return fetch("data/" + name + ".json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); });
+}
+function loadAll(){
+  var names = Object.keys(FILES);
+  return Promise.all(names.map(function(n){ return fetchFile(FILES[n]).catch(function(){ return null; }); })).then(function(res){
+    var any = false;
+    names.forEach(function(n, i){
+      var v = res[i]; if (v) any = true;
+      if (n === "trades" || n === "notizen") S[n] = v && Array.isArray(v.items) ? v.items : [];
+      else S[n] = v;
+    });
+    S.state = any ? "ready" : "error";
+    render();
+  });
+}
+
+/* ---------- Schreiben über die GitHub-API ---------- */
+function b64enc(str){ var bytes = new TextEncoder().encode(str), bin = ""; for (var i=0;i<bytes.length;i++) bin += String.fromCharCode(bytes[i]); return btoa(bin); }
+function b64dec(b64){ var bin = atob(b64.replace(/\s/g,"")), bytes = new Uint8Array(bin.length); for (var i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i); return new TextDecoder().decode(bytes); }
+function gh(path, opts){
+  opts = opts || {};
+  var headers = {"Accept":"application/vnd.github+json","Authorization":"Bearer " + token,"X-GitHub-Api-Version":"2022-11-28"};
+  if (opts.body) headers["Content-Type"] = "application/json";
+  return fetch(path, {method: opts.method || "GET", headers: headers, body: opts.body, cache:"no-store"}).then(function(r){
+    return r.text().then(function(t){ var j = null; try{ j = t ? JSON.parse(t) : null; }catch(e){} if (!r.ok){ var err = new Error((j && j.message) || String(r.status)); err.status = r.status; throw err; } return j; });
+  });
+}
+/* Liest die aktuelle Datei, wendet die Änderung an und speichert. Bei gleichzeitiger Änderung einmal neu versuchen. */
+function saveList(name, mutate, message, attempt){
+  attempt = attempt || 0;
+  var url = API + "data/" + name + ".json";
+  return gh(url + "?ref=" + BRANCH).then(function(file){
+    var obj = JSON.parse(b64dec(file.content));
+    if (!Array.isArray(obj.items)) obj.items = [];
+    mutate(obj.items);
+    return gh(url, {method:"PUT", body: JSON.stringify({message: message, content: b64enc(JSON.stringify(obj, null, 1) + "\n"), sha: file.sha, branch: BRANCH})}).then(function(){ return obj.items; });
+  }).catch(function(e){
+    if ((e.status === 409 || e.status === 422) && attempt < 2) return saveList(name, mutate, message, attempt + 1);
+    throw e;
+  });
+}
+function errText(e){
+  if (!token) return "Zum Eintragen zuerst unten einen Schlüssel speichern.";
+  if (e && e.status === 401) return "Der Schlüssel ist ungültig oder abgelaufen. Bitte einen neuen speichern.";
+  if (e && (e.status === 403 || e.status === 404)) return "Der Schlüssel darf hier nicht schreiben. Ist dein Konto als Mitarbeiter eingetragen und public_repo angehakt?";
+  return "Speichern hat nicht geklappt. Bitte noch einmal versuchen.";
+}
+
+/* ---------- Berechnung ---------- */
+function compute(){
+  var trades = S.trades.slice().sort(function(a,b){ return (a.datum||"").localeCompare(b.datum||"") || (a.erstellt||0) - (b.erstellt||0); });
+  var pos = {}, cash = START, buys = 0, bad = [];
+  trades.forEach(function(t){
+    var key = t.aktie || ("x:" + (t.name||"?"));
+    var p = pos[key] || (pos[key] = {key:key, name:t.name, nachhaltig:!!t.nachhaltig, stueck:0, kosten:0, realisiert:0, letzterKurs:t.kurs});
+    var amount = t.stueck * t.kurs, f = fee(amount);
+    p.letzterKurs = t.kurs;
+    if (t.typ === "kauf"){ p.stueck += t.stueck; p.kosten += amount + f; cash -= amount + f; buys++; }
+    else {
+      if (t.stueck > p.stueck + 1e-9) bad.push(t);
+      var avg = p.stueck > 0 ? p.kosten / p.stueck : 0;
+      var n = Math.min(t.stueck, p.stueck);
+      p.kosten -= avg * n; p.stueck -= n; cash += amount - f; p.realisiert += amount - f - avg * n;
+    }
+  });
+  var list = Object.keys(pos).map(function(k){ return pos[k]; });
+  var wert = cash, eco = 0;
+  list.forEach(function(p){
+    var pl = findPlan(p.key);
+    if (pl){ p.name = pl.name; p.nachhaltig = !!pl.nachhaltig; p.thema = pl.thema; p.stopPct = pl.stopPct; }
+    var k = kursOf(p.key);
+    p.kurs = k ? k.kurs : p.letzterKurs;
+    p.kursQuelle = k ? "live" : "eintrag";
+    p.wert = p.stueck * p.kurs;
+    p.einstand = p.stueck > 0 ? p.kosten / p.stueck : 0;
+    p.gv = p.wert - p.kosten;
+    p.stop = p.einstand * (1 - (p.stopPct || 15) / 100);
+    wert += p.wert;
+    if (p.nachhaltig) eco += p.gv + p.realisiert;
+  });
+  list.forEach(function(p){ p.anteil = wert > 0 ? p.wert / wert : 0; });
+  return {pos:list, cash:cash, wert:wert, buys:buys, eco:eco, bad:bad};
+}
+
+/* ---------- Rendern ---------- */
+function render(){
+  var C = compute();
+  renderHeader(); renderLedger(C); renderPositions(C); renderDates(C); renderReport(); renderAlerts(C); renderTrades(); renderNotes(); renderSelect(); renderKey();
+}
+function renderHeader(){
+  var d = daysBetween(today(), END);
+  $("countdown").textContent = d > 1 ? d + " Tage" : d === 1 ? "1 Tag" : d === 0 ? "heute" : "beendet";
+  var st = $("stand");
+  if (S.state === "error"){ st.textContent = "Die Daten konnten nicht geladen werden. Bitte später neu laden."; return; }
+  if (S.state === "loading"){ st.textContent = "Daten werden geladen …"; return; }
+  var parts = [];
+  if (S.plan && S.plan.team) parts.push("Team " + S.plan.team);
+  if (S.kurse && S.kurse.stand) parts.push("Kurse vom " + dmy(S.kurse.stand, true) + (S.kurse.quelle ? " (" + S.kurse.quelle + ")" : ""));
+  st.textContent = parts.join(" · ") || "Noch keine Kurse eingetragen.";
+}
+function setV(id, text, c){ var el = $(id); el.textContent = text; el.className = "v" + (c ? " " + c : ""); }
+function renderLedger(C){
+  if (S.state !== "ready") return;
+  var gv = C.wert - START;
+  setV("k-wert", eur(C.wert));
+  setV("k-gv", signEur(gv), cls(gv));
+  $("k-gv-s").textContent = signPct(gv / START * 100) + " seit Start";
+  setV("k-cash", eur(C.cash), C.cash < 0 ? "loss" : "");
+  $("k-cash-s").textContent = C.pos.some(function(p){return p.stueck>0}) ? fmtP.format(C.cash / C.wert * 100) + " % vom Depot" : "noch nichts gekauft";
+  setV("k-eco", signEur(C.eco), cls(C.eco));
+  setV("k-buys", String(C.buys), C.buys >= 3 ? "gain" : "");
+}
+function statusPill(text, kind){ return h("span", {class:"pill " + (kind||"")}, text); }
+function dash(){ return h("td",{class:"num faint"}, "–"); }
+function renderPositions(C){
+  var body = $("pos-body"); body.textContent = "";
+  if (S.state !== "ready"){ body.appendChild(h("tr",null,h("td",{colspan:"10",class:"empty"}, S.state === "error" ? "Keine Daten verfügbar." : "Lädt …"))); return; }
+  var held = {}; C.pos.forEach(function(p){ if (p.stueck > 0) held[p.key] = p; });
+  var rows = 0;
+  C.pos.filter(function(p){ return p.stueck > 0; }).sort(function(a,b){ return b.wert - a.wert; }).forEach(function(p){
+    rows++;
+    var dist = p.kurs > 0 ? (p.kurs - p.stop) / p.kurs * 100 : 0;
+    var gvPct = p.kosten > 0 ? p.gv / p.kosten * 100 : 0;
+    var barW = Math.min(100, p.anteil / 0.2 * 100);
+    body.appendChild(h("tr", null,
+      h("td", null, h("div",{class:"name"}, p.name || p.key), h("div",{class:"sub"}, (p.thema || "") + (p.nachhaltig && p.thema ? " · " : ""), p.nachhaltig ? h("span",{class:"pill eco"},"nachhaltig") : null)),
+      h("td",{class:"l"}, statusPill("im Depot")),
+      h("td",{class:"num"}, String(p.stueck)),
+      h("td",{class:"num"}, fmtN.format(p.einstand)),
+      h("td",{class:"num", title: p.kursQuelle === "live" ? "Kurs aus dem Tagesupdate" : "Noch kein Tageskurs, letzter Eintrag"}, fmtN.format(p.kurs) + (p.kursQuelle === "live" ? "" : "*")),
+      h("td",{class:"num"}, eur(p.wert)),
+      h("td",{class:"num " + cls(p.gv)}, signEur(p.gv), h("div",{class:"sub " + cls(p.gv)}, signPct(gvPct))),
+      h("td",{class:"num"}, fmtP.format(p.anteil*100) + " %", h("span",{class:"bar", "aria-hidden":"true"}, h("i",{class: p.anteil > 0.2 ? "over" : "", style:"width:" + barW + "%"}))),
+      h("td",{class:"num"}, fmtN.format(p.stop)),
+      h("td",{class:"num dist" + (dist < 5 ? " near" : "")}, fmtP.format(dist) + " %")
+    ));
+  });
+  planList().forEach(function(pl){
+    if (held[pl.id]) return;
+    rows++;
+    var k = kursOf(pl.id), budget = pl.budget || 9450;
+    var st = k ? Math.floor(budget / k.kurs) : null;
+    body.appendChild(h("tr", null,
+      h("td", null, h("div",{class:"name"}, pl.name), h("div",{class:"sub"}, (pl.thema||"") + (pl.nachhaltig ? " · " : ""), pl.nachhaltig ? h("span",{class:"pill eco"},"nachhaltig") : null)),
+      h("td",{class:"l"}, statusPill("geplant","plan")),
+      h("td",{class:"num faint"}, st ? "~" + st : "–"),
+      dash(),
+      h("td",{class:"num"}, k ? fmtN.format(k.kurs) : "–"),
+      h("td",{class:"num faint"}, st ? "~" + eur(st * k.kurs) : "–"),
+      dash(), dash(),
+      h("td",{class:"num faint"}, k ? "~" + fmtN.format(k.kurs * (1 - (pl.stopPct||15)/100)) : "–"),
+      dash()
+    ));
+  });
+  waitList().forEach(function(w){
+    if (held[w.id]) return;
+    rows++;
+    var k = kursOf(w.id);
+    body.appendChild(h("tr", null,
+      h("td", null, h("div",{class:"name"}, w.name), h("div",{class:"sub"}, w.thema || "")),
+      h("td",{class:"l"}, statusPill(w.stopBuy ? "Warteliste · Stop-Buy " + fmtN.format(w.stopBuy) + " €" : "Warteliste","wait")),
+      dash(), dash(),
+      h("td",{class:"num"}, k ? fmtN.format(k.kurs) : "–"),
+      dash(), dash(), dash(), dash(),
+      h("td",{class:"num faint"}, k && w.stopBuy ? "Stop-Buy in " + fmtP.format((w.stopBuy - k.kurs)/k.kurs*100) + " %" : "–")
+    ));
+  });
+  if (!rows) body.appendChild(h("tr",null,h("td",{colspan:"10",class:"empty"},"Noch keine Positionen.")));
+  var anyHeld = C.pos.some(function(p){ return p.stueck > 0; });
+  $("pos-hint").textContent = anyHeld ? "Anteil-Balken: Strich = 20-%-Grenze beim Kauf" : "Plan: je ca. 9.450 € pro Aktie, Stop-Loss bei −15 %";
+}
+function renderDates(C){
+  var ul = $("dates"); ul.textContent = "";
+  var items = (S.termine && Array.isArray(S.termine.items)) ? S.termine.items : [];
+  if (S.state !== "ready"){ ul.appendChild(h("li",{class:"empty"}, S.state === "error" ? "Keine Daten verfügbar." : "Lädt …")); return; }
+  var t0 = today();
+  var held = {}; C.pos.forEach(function(p){ if (p.stueck > 0) held[p.key] = true; });
+  var upcoming = items.filter(function(it){ var d = parseDate(it.datum); return d && daysBetween(t0, d) >= 0; }).sort(function(a,b){ return a.datum.localeCompare(b.datum); });
+  var shown = showAllDates ? upcoming : upcoming.slice(0, 7);
+  $("more-dates").hidden = upcoming.length <= 7;
+  $("more-dates").textContent = showAllDates ? "Weniger zeigen" : "Alle " + upcoming.length + " Termine zeigen";
+  if (!shown.length){ ul.appendChild(h("li",{class:"empty"},"Keine anstehenden Termine eingetragen.")); return; }
+  shown.forEach(function(it){
+    var d = parseDate(it.datum), diff = daysBetween(t0, d);
+    var when = diff === 0 ? "heute" : diff === 1 ? "morgen" : "in " + diff + " Tagen";
+    var who = (it.betrifft || []).map(function(id){ var pl = findPlan(id); return h("span",{class:"pill" + (held[id] ? " plan" : "")}, pl ? pl.name : id); });
+    var scen = [];
+    if (it.erwartung) scen.push(h("div",null,h("b",null,"Erwartet: "), it.erwartung));
+    if (it.gut) scen.push(h("div",{class:"g"}, it.gut));
+    if (it.schlecht) scen.push(h("div",{class:"b"}, it.schlecht));
+    if (it.frage) scen.push(h("div",{class:"q"}, it.frage));
+    ul.appendChild(h("li",{class: diff <= 2 ? "soon" : ""},
+      h("div",{class:"d"}, h("b",null, dmy(it.datum)), when),
+      h("div",{class:"t"},
+        h("div",{class:"name"}, it.titel, it.unsicher ? h("span",{class:"faint"}," (Datum nicht bestätigt)") : null),
+        who.length ? h("div",{class:"who"}, who) : null,
+        scen.length ? h("details", diff <= 3 ? {open:true} : null, h("summary",null,"Was kann passieren?"), h("div",{class:"scen"}, scen)) : null
+      )
+    ));
+  });
+}
+function renderReport(){
+  var box = $("report"); box.textContent = "";
+  if (S.state !== "ready"){ box.appendChild(h("div",{class:"empty"}, S.state === "error" ? "Keine Daten verfügbar." : "Lädt …")); return; }
+  var b = S.bericht;
+  $("report-date").textContent = b && b.datum ? "vom " + dmy(b.datum, true) : "";
+  if (!b || !Array.isArray(b.eintraege) || !b.eintraege.length){ box.appendChild(h("div",{class:"empty"},"Noch kein Bericht.")); return; }
+  if (b.einleitung) box.appendChild(h("div",{class:"item"}, h("p",null,b.einleitung)));
+  b.eintraege.forEach(function(e){
+    var pl = findPlan(e.aktie);
+    box.appendChild(h("div",{class:"item"},
+      h("div",{class:"row", style:"gap:8px"}, h("span",{class:"name"}, pl ? pl.name : (e.titel || e.aktie || "")), e.veraenderung != null ? h("span",{class:"num " + cls(e.veraenderung)}, signPct(e.veraenderung)) : null),
+      h("p",{class:"muted"}, e.text || "")
+    ));
+  });
+}
+function renderAlerts(C){
+  var list = [];
+  if (S.state !== "ready"){ $("warn-sec").hidden = true; return; }
+  var t0 = today();
+  if (C.cash < -0.5) list.push({lvl:"crit", tag:"Prüfen", text:"Das Bargeld ist negativ. Wahrscheinlich fehlt ein Verkauf oder ein Eintrag ist doppelt."});
+  C.bad.forEach(function(t){ list.push({lvl:"crit", tag:"Prüfen", text:"Verkauf von " + t.stueck + " Stück " + (t.name||"") + " am " + dmy(t.datum) + " ist mehr, als eingetragen gekauft wurde."}); });
+  C.pos.forEach(function(p){
+    if (p.stueck <= 0) return;
+    var dist = p.kurs > 0 ? (p.kurs - p.stop) / p.kurs * 100 : 0;
+    if (dist < 0) list.push({lvl:"crit", tag:"Stop-Loss", text:(p.name||p.key) + " liegt unter dem Stop-Loss (" + fmtN.format(p.stop) + " €). Wurde die Aktie im Spiel schon verkauft? Dann hier eintragen."});
+    else if (dist < 5) list.push({lvl:"warn", tag:"Stop-Loss", text:(p.name||p.key) + " ist nur noch " + fmtP.format(dist) + " % vom Stop-Loss entfernt."});
+    if (p.anteil > 0.2) list.push({lvl:"info", tag:"20 %", text:(p.name||p.key) + " macht " + fmtP.format(p.anteil*100) + " % des Depots aus. Nachkaufen ist im Spiel gesperrt, halten ist erlaubt."});
+  });
+  var items = (S.termine && S.termine.items) || [];
+  items.forEach(function(it){
+    var d = parseDate(it.datum); if (!d) return;
+    var diff = daysBetween(t0, d);
+    if (diff < 0 || diff > 2) return;
+    var hit = (it.betrifft||[]).filter(function(id){ return C.pos.some(function(p){ return p.key === id && p.stueck > 0; }); });
+    if (hit.length) list.push({lvl:"info", tag: diff === 0 ? "Heute" : diff === 1 ? "Morgen" : "Übermorgen", text: it.titel + " betrifft " + hit.map(function(id){ var pl = findPlan(id); return pl ? pl.name : id; }).join(", ") + "."});
+  });
+  if (S.bericht && Array.isArray(S.bericht.warnungen)) S.bericht.warnungen.forEach(function(w){ list.push({lvl: w.stufe || "warn", tag: w.tag || "Hinweis", text: w.text}); });
+  if (C.buys < 3 && daysBetween(t0, PASSIV_FRIST) < 14 && daysBetween(t0, PASSIV_FRIST) >= 0) list.push({lvl:"crit", tag:"Frist", text:"Bis 22.01.2027 braucht ihr mindestens 3 abgerechnete Käufe, sonst wird das Depot disqualifiziert."});
+  var box = $("alerts"); box.textContent = "";
+  list.forEach(function(a){ box.appendChild(h("div",{class:"alert " + a.lvl}, h("span",{class:"tag"}, a.tag), h("span",null,a.text))); });
+  $("warn-sec").hidden = list.length === 0;
+}
+function renderTrades(){
+  var body = $("trades-body"); body.textContent = "";
+  var ts = S.trades.slice().sort(function(a,b){ return (b.datum||"").localeCompare(a.datum||"") || (b.erstellt||0) - (a.erstellt||0); });
+  if (!ts.length){ body.appendChild(h("tr",null,h("td",{colspan:"9",class:"empty"},"Noch nichts eingetragen."))); return; }
+  ts.forEach(function(t){
+    var amount = t.stueck * t.kurs;
+    var cell = h("td", null);
+    if (token){
+      var del = h("button",{class:"btn ghost small", type:"button"}, "Löschen");
+      cell.appendChild(del);
+      del.addEventListener("click", function(){
+        cell.textContent = "";
+        var yes = h("button",{class:"btn danger small", type:"button"}, "Wirklich löschen");
+        var no = h("button",{class:"btn ghost small", type:"button"}, "Abbrechen");
+        yes.addEventListener("click", function(){
+          yes.disabled = true; yes.textContent = "Löscht …";
+          saveList("trades", function(items){ for (var i = items.length - 1; i >= 0; i--) if (items[i].id === t.id) items.splice(i,1); }, "Eintrag gelöscht: " + (t.name||"") + " " + t.datum)
+            .then(function(items){ S.trades = items; render(); })
+            .catch(function(e){ yes.disabled = false; yes.textContent = "Fehlgeschlagen"; yes.title = errText(e); });
+        });
+        no.addEventListener("click", renderTrades);
+        cell.appendChild(h("div",{class:"row", style:"justify-content:flex-end;gap:6px"}, yes, no));
+      });
+    }
+    body.appendChild(h("tr", null,
+      h("td",{class:"num"}, dmy(t.datum, true)),
+      h("td",{class:"l"}, t.typ === "kauf" ? "Kauf" : "Verkauf"),
+      h("td",{class:"l"}, t.name || t.aktie || ""),
+      h("td",{class:"num"}, String(t.stueck)),
+      h("td",{class:"num"}, fmtN.format(t.kurs)),
+      h("td",{class:"num"}, eur(amount)),
+      h("td",{class:"num"}, eur(fee(amount))),
+      h("td",{class:"l"}, t.von || ""),
+      cell
+    ));
+  });
+}
+function renderNotes(){
+  var ul = $("notes"); ul.textContent = "";
+  var ns = S.notizen.slice().sort(function(a,b){ return (b.erstellt||0) - (a.erstellt||0); });
+  if (!ns.length){ ul.appendChild(h("li",{class:"empty"},"Noch keine Notizen.")); return; }
+  ns.forEach(function(n){
+    ul.appendChild(h("li", null, h("div",{class:"sub"}, (n.von ? n.von + " · " : "") + (n.datum ? dmy(n.datum, true) : "")), h("p",null, n.text || "")));
+  });
+}
+function renderKey(){
+  $("key-on").hidden = !token; $("key-off").hidden = !!token;
+  ["t-submit","n-submit"].forEach(function(id){ $(id).disabled = !token; $(id).title = token ? "" : "Zum Eintragen zuerst unter „Schreibzugang“ einen Schlüssel speichern."; });
+}
+var lastSelectKey = "";
+function renderSelect(){
+  var sel = $("t-aktie");
+  var opts = planList().concat(waitList());
+  var key = opts.map(function(o){return o.id}).join(",");
+  if (key === lastSelectKey && sel.options.length) return;
+  lastSelectKey = key;
+  var cur = sel.value;
+  sel.textContent = "";
+  opts.forEach(function(o){ sel.appendChild(h("option",{value:o.id}, o.name)); });
+  sel.appendChild(h("option",{value:"__andere"}, "Andere Aktie …"));
+  if (cur) sel.value = cur;
+  syncOther();
+}
+function syncOther(){
+  var other = $("t-aktie").value === "__andere";
+  $("t-name-wrap").hidden = !other; $("t-eco-wrap").hidden = !other;
+  updatePreview();
+}
+
+/* ---------- Formulare ---------- */
+function updatePreview(){
+  var st = parseInt($("t-stueck").value, 10), k = parseFloat($("t-kurs").value);
+  var pv = $("t-preview");
+  if (!(st > 0) || !(k > 0)){ pv.textContent = "Betrag und Gebühr erscheinen hier."; return; }
+  var a = st * k, f = fee(a), kauf = $("typ-kauf").checked;
+  var text = "Kurswert " + eur(a) + " · Gebühr " + eur(f) + " · " + (kauf ? "Abbuchung " + eur(a + f) : "Gutschrift " + eur(a - f));
+  if (kauf){
+    var C = compute(), key = $("t-aktie").value;
+    var have = C.pos.filter(function(p){ return p.key === key; })[0];
+    var share = ((have ? have.wert : 0) + a) / C.wert;
+    if (share > 0.2) text += " · Achtung: danach " + fmtP.format(share*100) + " % des Depots, das Spiel lehnt über 20 % ab.";
+    if (a < 5000) text += " · Unter 5.000 € ist die Mindestgebühr teuer.";
+  }
+  pv.textContent = text;
+}
+function msg(id, text, kind){ var m = $(id); m.textContent = text; m.className = "msg" + (kind ? " " + kind : ""); }
+
+function checkToken(){
+  if (!token) return;
+  gh("https://api.github.com/user").then(function(u){ $("key-user").textContent = u && u.login ? " (GitHub: " + u.login + ")" : ""; })
+    .catch(function(e){ if (e.status === 401){ msg("key-msg","Der gespeicherte Schlüssel funktioniert nicht mehr. Bitte einen neuen speichern.","err"); token = ""; store("depotbuch.token", null); renderKey(); renderTrades(); } });
+}
+
+function bindForms(){
+  $("t-datum").value = isoToday();
+  var von = load("depotbuch.von"); if (von){ $("t-von").value = von; }
+  ["t-stueck","t-kurs"].forEach(function(id){ $(id).addEventListener("input", updatePreview); });
+  $("typ-kauf").addEventListener("change", updatePreview); $("typ-verkauf").addEventListener("change", updatePreview);
+  $("t-aktie").addEventListener("change", function(){
+    syncOther();
+    var k = kursOf($("t-aktie").value);
+    if (k && !$("t-kurs").value){ $("t-kurs").value = k.kurs; updatePreview(); }
+  });
+  $("more-dates").addEventListener("click", function(){ showAllDates = !showAllDates; render(); });
+  $("reload").addEventListener("click", function(){ loadAll(); });
+
+  $("key-form").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    var v = $("key-input").value.trim();
+    if (!v){ msg("key-msg","Bitte den Schlüssel einfügen.","err"); return; }
+    var btn = $("key-save"); btn.disabled = true; msg("key-msg","Prüft …");
+    var old = token; token = v;
+    gh("https://api.github.com/repos/" + OWNER + "/" + REPO).then(function(r){
+      btn.disabled = false;
+      if (!r || !r.permissions || !r.permissions.push){ token = old; msg("key-msg","Der Schlüssel funktioniert, darf aber nicht in dieses Repository schreiben. Ist dein Konto als Mitarbeiter eingetragen?","err"); return; }
+      store("depotbuch.token", v); $("key-input").value = ""; msg("key-msg","Gespeichert. Du kannst jetzt eintragen.","ok"); render(); checkToken();
+    }).catch(function(e){ btn.disabled = false; token = old; msg("key-msg", e.status === 401 ? "Der Schlüssel ist ungültig. Bitte genau kopieren." : "Prüfen hat nicht geklappt. Bitte noch einmal versuchen.","err"); });
+  });
+  $("key-remove").addEventListener("click", function(){ token = ""; store("depotbuch.token", null); msg("key-msg","Schlüssel entfernt.","ok"); render(); });
+
+  $("trade-form").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    if (!token){ msg("t-msg", errText(), "err"); return; }
+    var sel = $("t-aktie").value, other = sel === "__andere";
+    var pl = other ? null : findPlan(sel);
+    var name = other ? $("t-name").value.trim() : (pl ? pl.name : sel);
+    var st = parseInt($("t-stueck").value, 10), k = parseFloat($("t-kurs").value), d = $("t-datum").value, v = $("t-von").value.trim();
+    if (!name){ msg("t-msg","Bitte den Namen der Aktie eintragen.","err"); return; }
+    if (!(st > 0)){ msg("t-msg","Bitte eine Stückzahl größer als 0 eintragen.","err"); return; }
+    if (!(k > 0)){ msg("t-msg","Bitte den Kurs in Euro eintragen, zum Beispiel 45,29.","err"); return; }
+    if (!d){ msg("t-msg","Bitte ein Datum wählen.","err"); return; }
+    if (v) store("depotbuch.von", v);
+    var doc = {id:newId(), typ: $("typ-kauf").checked ? "kauf" : "verkauf", aktie: other ? "x:" + name.toLowerCase().replace(/[^a-z0-9äöüß]+/g,"-") : sel, name:name, nachhaltig: other ? $("t-eco").checked : !!(pl && pl.nachhaltig), stueck:st, kurs:k, datum:d, von:v, erstellt: Date.now()};
+    var btn = $("t-submit"); btn.disabled = true; msg("t-msg","Speichert …");
+    saveList("trades", function(items){ items.push(doc); }, (doc.typ === "kauf" ? "Kauf: " : "Verkauf: ") + st + " " + name + " zu " + k)
+      .then(function(items){
+        S.trades = items; btn.disabled = false; msg("t-msg", (doc.typ === "kauf" ? "Kauf" : "Verkauf") + " eingetragen.", "ok");
+        $("t-stueck").value = ""; $("t-kurs").value = ""; render();
+      }).catch(function(e){ btn.disabled = false; msg("t-msg", errText(e), "err"); });
+  });
+
+  $("note-form").addEventListener("submit", function(ev){
+    ev.preventDefault();
+    if (!token){ msg("n-msg", errText(), "err"); return; }
+    var t = $("n-text").value.trim();
+    if (!t){ msg("n-msg","Die Notiz ist leer.","err"); return; }
+    var v = $("t-von").value.trim() || load("depotbuch.von") || "";
+    var btn = $("n-submit"); btn.disabled = true; msg("n-msg","Speichert …");
+    saveList("notizen", function(items){ items.push({id:newId(), text:t, von:v, datum:isoToday(), erstellt:Date.now()}); }, "Notiz" + (v ? " von " + v : ""))
+      .then(function(items){ S.notizen = items; btn.disabled = false; $("n-text").value = ""; msg("n-msg","Gespeichert.","ok"); render(); })
+      .catch(function(e){ btn.disabled = false; msg("n-msg", errText(e), "err"); });
+  });
+}
+
+bindForms();
+render();
+loadAll();
+checkToken();
+setInterval(function(){ if (!document.hidden) loadAll(); }, 5 * 60 * 1000);
+})();
+</script>
+
+</body>
+</html>

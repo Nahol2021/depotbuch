@@ -1,0 +1,24 @@
+{
+ "kurse": {
+  "amzn": {
+   "kurs": 219.45
+  },
+  "cbk": {
+   "kurs": 41.47
+  },
+  "intel": {
+   "kurs": 111.86
+  },
+  "nordex": {
+   "kurs": 38.66
+  },
+  "stm": {
+   "kurs": 45.29
+  },
+  "tte": {
+   "kurs": 80.31
+  }
+ },
+ "quelle": "von euch abgelesen",
+ "stand": "2026-09-27"
+}

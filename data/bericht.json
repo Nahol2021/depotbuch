@@ -1,0 +1,37 @@
+{
+ "datum": "2026-09-27",
+ "einleitung": "Stand vor dem Spielstart. Ab dem 1. Oktober steht hier jeden Morgen, was sich bei euren Aktien getan hat.",
+ "eintraege": [
+  {
+   "aktie": "stm",
+   "text": "Seit Anfang September von 42,55 auf 45,29 €. Nach dem Sommer-Rückgang dreht die Aktie nach oben. Treiber: das Umsatzziel mit KI-Rechenzentren wurde verdoppelt.",
+   "veraenderung": 6.4
+  },
+  {
+   "aktie": "nordex",
+   "text": "Seitwärts zwischen 38 und 41 €. Der Absturz vom Sommer scheint gestoppt. Hängt stark an den Zinsen.",
+   "veraenderung": 0.8
+  },
+  {
+   "aktie": "intel",
+   "text": "Von 75,29 auf 111,86 € in knapp vier Wochen, getrieben von KI-Nachfrage nach Server-Prozessoren. Nach so einem Anstieg sind Rücksetzer wahrscheinlich, deshalb Stop-Loss von Anfang an setzen.",
+   "veraenderung": 48.6
+  },
+  {
+   "aktie": "cbk",
+   "text": "Leicht steigend. UniCredit verhandelt über eine komplette Übernahme. Profitiert von hohen Zinsen und gleicht damit Nordex aus.",
+   "veraenderung": 4
+  },
+  {
+   "aktie": "tte",
+   "text": "Klarer Aufwärtstrend durch hohe Öl- und Gaspreise (Nahost). Absicherung, falls die Lage eskaliert. Fällt bei Friedensnachrichten.",
+   "veraenderung": 8.5
+  },
+  {
+   "aktie": "amzn",
+   "text": "Seitwärts nach dem Rückgang seit August. Warteliste: Stop-Buy bei etwa 230 €.",
+   "veraenderung": -0.3
+  }
+ ],
+ "warnungen": []
+}
