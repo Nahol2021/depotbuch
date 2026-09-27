@@ -168,6 +168,7 @@ footer{font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);padd
 @media (prefers-reduced-motion:no-preference){.btn{transition:opacity .15s}}
 
 body{margin:0}
+[hidden]{display:none!important}
 a{color:var(--accent)}
 .keybox details summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px}
 .steps{margin:8px 0 0;padding-left:20px;display:grid;gap:6px;font-size:14px;color:var(--ink-2)}
@@ -685,7 +686,7 @@ function renderSelect(){
   sel.textContent = "";
   opts.forEach(function(o){ sel.appendChild(h("option",{value:o.id}, o.name)); });
   sel.appendChild(h("option",{value:"__andere"}, "Andere Aktie …"));
-  if (cur) sel.value = cur;
+  if (cur && cur !== "__andere") sel.value = cur;
   syncOther();
 }
 function syncOther(){
