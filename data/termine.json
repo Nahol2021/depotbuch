@@ -125,12 +125,11 @@
    "betrifft": [
     "cbk"
    ],
-   "datum": "2026-11-06",
+   "datum": "2026-11-05",
    "erwartung": "Dazu jederzeit mögliche Nachrichten zur UniCredit-Übernahme.",
    "gut": "Ein Übernahmeangebot mit Aufpreis würde die Aktie springen lassen.",
    "schlecht": "Blockiert die Bundesregierung, kann die Aktie deutlich fallen.",
-   "titel": "Commerzbank-Quartalszahlen",
-   "unsicher": true
+   "titel": "Commerzbank-Quartalszahlen"
   },
   {
    "betrifft": [],
@@ -192,6 +191,24 @@
    "datum": "2027-01-25",
    "erwartung": "Bewertung zu den Schlusskursen. Ihr müsst nichts verkaufen.",
    "titel": "Letzter Handelstag"
+  },
+  {
+   "datum": "2026-12-14",
+   "titel": "STMicroelectronics: Ex-Dividenden-Tag",
+   "betrifft": [
+    "stm"
+   ],
+   "erwartung": "Kleine Quartalsdividende. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende, das ist normal.",
+   "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
+  },
+  {
+   "datum": "2026-12-31",
+   "titel": "TotalEnergies: Ex-Dividenden-Tag",
+   "betrifft": [
+    "tte"
+   ],
+   "erwartung": "Quartalsdividende. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende, das ist normal.",
+   "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
   }
  ]
 }
