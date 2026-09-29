@@ -6,7 +6,7 @@
     "nordex",
     "intel",
     "cbk",
-    "tte"
+    "aapl"
    ],
    "datum": "2026-10-01",
    "erwartung": "Ihr kauft laut Plan.",
@@ -33,7 +33,7 @@
     "nordex",
     "intel",
     "cbk",
-    "tte"
+    "aapl"
    ],
    "datum": "2026-10-15",
    "erwartung": "Orders vom 1.10. mit 14 Tagen Laufzeit enden.",
@@ -68,7 +68,8 @@
     "nordex",
     "intel",
     "stm",
-    "cbk"
+    "cbk",
+    "aapl"
    ],
    "datum": "2026-10-28",
    "erwartung": "Anleger sorgen sich, dass die Zinsen hoch bleiben.",
@@ -101,11 +102,12 @@
    "betrifft": [
     "nordex",
     "tte",
-    "cbk"
+    "cbk",
+    "aapl"
    ],
    "datum": "2026-11-03",
    "erwartung": "Entscheidet über Energiepolitik, Subventionen und Regulierung in den USA.",
-   "frage": "Aufgabe für den Politik-Experten: Welcher Ausgang hilft Wind, Öl und Banken?",
+   "frage": "Aufgabe für den Politik-Experten: Welcher Ausgang hilft Wind, Öl und Banken? Für Apple wichtig: Zölle auf Produkte aus China und Indien.",
    "gut": "Ein klares Ergebnis beruhigt die Märkte.",
    "schlecht": "Ein knappes oder umstrittenes Ergebnis sorgt für Unruhe.",
    "titel": "US-Zwischenwahlen (Midterms)"
@@ -151,6 +153,7 @@
   },
   {
    "betrifft": [
+    "aapl",
     "amzn"
    ],
    "datum": "2026-11-27",
@@ -163,7 +166,8 @@
     "nordex",
     "intel",
     "stm",
-    "cbk"
+    "cbk",
+    "aapl"
    ],
    "datum": "2026-12-09",
    "erwartung": "Einer der wichtigsten Zinstermine des Jahres.",
@@ -208,6 +212,48 @@
     "tte"
    ],
    "erwartung": "Quartalsdividende. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende, das ist normal.",
+   "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
+  },
+  {
+   "datum": "2026-10-16",
+   "titel": "Apple: Vorbestellung des faltbaren iPhone Duo",
+   "betrifft": [
+    "aapl"
+   ],
+   "erwartung": "Erste Hinweise, wie gefragt das Gerät für 1.999 Dollar ist.",
+   "gut": "Lange Lieferzeiten oder ausverkaufte Modelle sprechen für hohe Nachfrage.",
+   "schlecht": "Sofort lieferbar heißt oft: weniger Nachfrage als erhofft."
+  },
+  {
+   "datum": "2026-10-23",
+   "titel": "Apple: Verkaufsstart iPhone Duo",
+   "betrifft": [
+    "aapl"
+   ],
+   "erwartung": "Berichte über Schlangen vor den Läden und erste Verkaufsschätzungen.",
+   "gut": "Starker Start kann die Aktie vor den Quartalszahlen antreiben.",
+   "schlecht": "Enttäuschender Start drückt auf die Erwartungen für Weihnachten."
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Apple-Quartalszahlen (abends)",
+   "unsicher": true,
+   "betrifft": [
+    "aapl"
+   ],
+   "erwartung": "Wichtigster Apple-Termin im Spiel. Besonders zählt der Ausblick aufs Weihnachtsgeschäft.",
+   "gut": "Ein starker Ausblick für iPhone und Duo kann die Aktie deutlich steigen lassen.",
+   "schlecht": "Ein vorsichtiger Ausblick kann trotz guter Zahlen zu Kursverlusten führen.",
+   "frage": "Die Woche ist voll: Fed am 28.10., EZB und Apple am 29.10."
+  },
+  {
+   "datum": "2026-11-09",
+   "titel": "Apple: Ex-Dividenden-Tag (ungefähr)",
+   "unsicher": true,
+   "betrifft": [
+    "aapl"
+   ],
+   "erwartung": "Kleine Quartalsdividende, der Kurs sinkt minimal.",
    "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
   }
  ]

@@ -33,15 +33,20 @@
    "thema": "Bank / Übernahme"
   },
   {
-   "budget": 9450,
-   "id": "tte",
+   "id": "aapl",
+   "name": "Apple",
+   "thema": "iPhone / Weihnachten",
    "nachhaltig": false,
-   "name": "TotalEnergies",
-   "stopPct": 15,
-   "thema": "Öl & Gas"
+   "budget": 9450,
+   "stopPct": 15
   }
  ],
  "warteliste": [
+  {
+   "id": "tte",
+   "name": "TotalEnergies",
+   "thema": "Notfall bei Eskalation in Nahost"
+  },
   {
    "id": "amzn",
    "nachhaltig": false,

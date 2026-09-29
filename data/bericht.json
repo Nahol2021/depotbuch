@@ -23,14 +23,19 @@
    "veraenderung": 4
   },
   {
-   "aktie": "tte",
-   "text": "Klarer Aufwärtstrend durch hohe Öl- und Gaspreise (Nahost). Absicherung, falls die Lage eskaliert. Fällt bei Friedensnachrichten.",
-   "veraenderung": 8.5
+   "aktie": "aapl",
+   "veraenderung": 9.1,
+   "text": "Seit Anfang September von 272,85 auf 297,80 €. Treiber: das neue faltbare iPhone Duo und das iPhone 18. Vorbestellung am 16.10., Verkaufsstart am 23.10., Quartalszahlen voraussichtlich am 29.10."
   },
   {
    "aktie": "amzn",
    "text": "Seitwärts nach dem Rückgang seit August. Warteliste: Stop-Buy bei etwa 230 €.",
    "veraenderung": -0.3
+  },
+  {
+   "aktie": "tte",
+   "veraenderung": 8.5,
+   "text": "Nicht mehr im Plan, bleibt aber als Notfall-Option: Eskaliert es in Nahost deutlich, könnt ihr die schwächste Aktie gegen TotalEnergies tauschen."
   }
  ],
  "warnungen": []
