@@ -1,3 +1,64 @@
 {
- "items": []
+ "items": [
+  {
+   "id": "d1001-stm",
+   "typ": "kauf",
+   "aktie": "stm",
+   "name": "STMicroelectronics",
+   "nachhaltig": true,
+   "stueck": 200,
+   "kurs": 48.055,
+   "datum": "2026-10-01",
+   "von": "Johan (Trading-Diary)",
+   "erstellt": 1790872413360
+  },
+  {
+   "id": "d1001-cbk",
+   "typ": "kauf",
+   "aktie": "cbk",
+   "name": "Commerzbank",
+   "nachhaltig": false,
+   "stueck": 240,
+   "kurs": 39.97,
+   "datum": "2026-10-01",
+   "von": "Johan (Trading-Diary)",
+   "erstellt": 1790872413361
+  },
+  {
+   "id": "d1001-intel",
+   "typ": "kauf",
+   "aktie": "intel",
+   "name": "Intel",
+   "nachhaltig": true,
+   "stueck": 87,
+   "kurs": 109.38,
+   "datum": "2026-10-01",
+   "von": "Johan (Trading-Diary)",
+   "erstellt": 1790872413362
+  },
+  {
+   "id": "d1001-aapl",
+   "typ": "kauf",
+   "aktie": "aapl",
+   "name": "Apple",
+   "nachhaltig": false,
+   "stueck": 32,
+   "kurs": 295.55,
+   "datum": "2026-10-01",
+   "von": "Johan (Trading-Diary)",
+   "erstellt": 1790872413363
+  },
+  {
+   "id": "d1001-nordex",
+   "typ": "kauf",
+   "aktie": "nordex",
+   "name": "Nordex",
+   "nachhaltig": true,
+   "stueck": 240,
+   "kurs": 39.2,
+   "datum": "2026-10-01",
+   "von": "Johan (Trading-Diary)",
+   "erstellt": 1790872413364
+  }
+ ]
 }
