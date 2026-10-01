@@ -454,14 +454,15 @@ function compute(){
   var wert = cash, eco = 0;
   list.forEach(function(p){
     var pl = findPlan(p.key);
-    if (pl){ p.name = pl.name; p.nachhaltig = !!pl.nachhaltig; p.thema = pl.thema; p.stopPct = pl.stopPct; }
+    if (pl){ p.name = pl.name; p.nachhaltig = !!pl.nachhaltig; p.thema = pl.thema; p.stopPct = pl.stopPct; p.stopFest = pl.stop; }
     var k = kursOf(p.key);
     p.kurs = k ? k.kurs : p.letzterKurs;
     p.kursQuelle = k ? "live" : "eintrag";
     p.wert = p.stueck * p.kurs;
     p.einstand = p.stueck > 0 ? p.kosten / p.stueck : 0;
     p.gv = p.wert - p.kosten;
-    p.stop = p.einstand * (1 - (p.stopPct || 15) / 100);
+    /* Fester Stop-Kurs aus dem Spiel, sonst Prozent vom Einstand */
+    p.stop = p.stopFest > 0 ? p.stopFest : p.einstand * (1 - (p.stopPct || 15) / 100);
     wert += p.wert;
     if (p.nachhaltig) eco += p.gv + p.realisiert;
   });

@@ -91,17 +91,7 @@
   },
   {
    "betrifft": [
-    "amzn"
-   ],
-   "datum": "2026-10-29",
-   "erwartung": "Nur relevant, falls Amazon von der Warteliste gekauft wurde.",
-   "frage": "Steigt Amazon danach über 230 €, würde euer Stop-Buy auslösen.",
-   "titel": "Amazon-Quartalszahlen (abends)"
-  },
-  {
-   "betrifft": [
     "nordex",
-    "tte",
     "cbk",
     "aapl"
    ],
@@ -153,8 +143,7 @@
   },
   {
    "betrifft": [
-    "aapl",
-    "amzn"
+    "aapl"
    ],
    "datum": "2026-11-27",
    "erwartung": "Erste Zahlen zum Weihnachtsgeschäft.",
@@ -203,15 +192,6 @@
     "stm"
    ],
    "erwartung": "Kleine Quartalsdividende. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende, das ist normal.",
-   "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
-  },
-  {
-   "datum": "2026-12-31",
-   "titel": "TotalEnergies: Ex-Dividenden-Tag",
-   "betrifft": [
-    "tte"
-   ],
-   "erwartung": "Quartalsdividende. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende, das ist normal.",
    "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
   },
   {
