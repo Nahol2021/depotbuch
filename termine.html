@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Termine Planspiel Börse</title>
+<link rel="alternate" type="text/calendar" title="Planspiel Börse – Termine" href="kalender.ics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F5F4;
+  --paper:#FFFFFF;
+  --ink:#14212B;
+  --ink-2:#4A5963;
+  --ink-3:#7C8A92;
+  --line:#D9E0DE;
+  --line-2:#E8EDEB;
+  --accent:#0F5C6E;
+  --accent-soft:#E1EEF0;
+  --gain:#1B7F4B;
+  --gain-soft:#E3F2E9;
+  --loss:#B3261E;
+  --loss-soft:#F8E5E3;
+  --warn:#9A6208;
+  --warn-soft:#FBF0DA;
+  --eco:#2F7A3E;
+  --focus:#0F5C6E;
+  --display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1519;--paper:#152027;--ink:#E4ECEE;--ink-2:#A9B8BE;--ink-3:#7A8A91;
+    --line:#26343C;--line-2:#1D2A31;--accent:#5FB6C8;--accent-soft:#16333B;
+    --gain:#5CC98C;--gain-soft:#143324;--loss:#F08A80;--loss-soft:#3A1C1A;
+    --warn:#E8B45A;--warn-soft:#3A2C12;--eco:#7BC98A;--focus:#5FB6C8;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1519;--paper:#152027;--ink:#E4ECEE;--ink-2:#A9B8BE;--ink-3:#7A8A91;
+  --line:#26343C;--line-2:#1D2A31;--accent:#5FB6C8;--accent-soft:#16333B;
+  --gain:#5CC98C;--gain-soft:#143324;--loss:#F08A80;--loss-soft:#3A1C1A;
+  --warn:#E8B45A;--warn-soft:#3A2C12;--eco:#7BC98A;--focus:#5FB6C8;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:clamp(28px,4.5vw,40px);font-weight:700;line-height:1.05}
+h2{font-size:20px;font-weight:600}
+h3{font-size:16px;font-weight:600}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-2)}
+.faint{color:var(--ink-3)}
+.label{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:600}
+.gain{color:var(--gain)}.loss{color:var(--loss)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Kopf */
+.masthead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;border-bottom:2px solid var(--ink);padding-bottom:14px}
+.masthead p{margin:6px 0 0;color:var(--ink-2)}
+.clock{text-align:right}
+.clock .big{font-family:var(--mono);font-size:22px;font-weight:500}
+
+/* Kennzahlen */
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));background:var(--paper);border:1px solid var(--line)}
+.ledger>div{padding:14px 16px;border-right:1px solid var(--line-2);border-bottom:1px solid var(--line-2);display:grid;gap:4px}
+.ledger .v{font-family:var(--mono);font-size:21px;font-weight:500;font-variant-numeric:tabular-nums}
+.ledger .s{font-size:13px;color:var(--ink-2)}
+
+/* Abschnitte */
+section{display:grid;gap:12px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 16px}
+.panel{background:var(--paper);border:1px solid var(--line)}
+.pad{padding:16px}
+.two{display:grid;grid-template-columns:1fr;gap:28px}
+@media (min-width:900px){.two{grid-template-columns:1.1fr .9fr}}
+
+/* Warnungen */
+.alerts{display:grid;gap:8px}
+.alert{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:10px 14px;border-left:4px solid var(--warn);background:var(--warn-soft)}
+.alert.crit{border-color:var(--loss);background:var(--loss-soft)}
+.alert.info{border-color:var(--accent);background:var(--accent-soft)}
+.alert b{font-weight:600}
+.alert .tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}
+
+/* Tabelle */
+.tablebox{overflow-x:auto;background:var(--paper);border:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;min-width:860px}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line-2);white-space:nowrap}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-3);font-weight:600;background:var(--paper);position:sticky;top:0}
+td:first-child,th:first-child{text-align:left}
+td.l,th.l{text-align:left}
+tbody tr:last-child td{border-bottom:0}
+.name{font-weight:600}
+.sub{font-size:12.5px;color:var(--ink-3)}
+.pill{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);background:var(--bg)}
+.pill.eco{color:var(--eco);border-color:currentColor;background:transparent}
+.pill.plan{color:var(--accent);border-color:currentColor;background:transparent}
+.pill.wait{color:var(--warn);border-color:currentColor;background:transparent}
+.bar{display:inline-block;vertical-align:middle;width:64px;height:6px;background:var(--line-2);margin-left:8px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.bar i.over{background:var(--loss)}
+.bar::after{content:"";position:absolute;left:100%;top:-3px;bottom:-3px;width:1px;background:var(--ink-3)}
+.dist.near{color:var(--loss);font-weight:600}
+
+/* Termine */
+.dates{list-style:none;margin:0;padding:0;display:grid}
+.dates li{display:grid;grid-template-columns:78px 1fr;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line-2)}
+.dates li:last-child{border-bottom:0}
+.dates .d{font-family:var(--mono);font-size:13px;line-height:1.3}
+.dates .d b{display:block;font-size:18px;font-weight:500}
+.dates .soon .d b{color:var(--accent)}
+.dates .t{display:grid;gap:4px}
+.dates .t .who{display:flex;flex-wrap:wrap;gap:4px}
+.dates details{font-size:14px;color:var(--ink-2)}
+.dates summary{cursor:pointer;color:var(--accent);font-size:13.5px;font-weight:500}
+.scen{display:grid;gap:4px;margin-top:6px}
+.scen div{padding-left:10px;border-left:3px solid var(--line)}
+.scen .g{border-color:var(--gain)}.scen .b{border-color:var(--loss)}.scen .q{border-color:var(--accent)}
+
+/* Bericht */
+.report{display:grid;gap:0}
+.report .item{padding:12px 16px;border-bottom:1px solid var(--line-2);display:grid;gap:3px}
+.report .item:last-child{border-bottom:0}
+.report p{margin:0}
+
+/* Formulare */
+form{display:grid;gap:12px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+label.f{display:grid;gap:4px;font-size:13px;color:var(--ink-2);font-weight:500}
+input[type=text],input[type=number],input[type=date],select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);background:var(--bg);border-radius:4px}
+textarea{min-height:80px;resize:vertical}
+.check{display:flex;gap:8px;align-items:center;font-size:14px;color:var(--ink-2)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg label{cursor:pointer;font-weight:500;font-size:14px;position:relative}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label span{display:block;padding:8px 14px}
+.seg input:checked+span{color:var(--paper);background:var(--ink)}
+.seg input:focus-visible+span{outline:2px solid var(--focus);outline-offset:-2px}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.btn{padding:9px 16px;border-radius:4px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.small{padding:4px 10px;font-size:13px}
+.btn.danger{background:var(--loss);border-color:var(--loss);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.preview{font-size:13.5px;color:var(--ink-2)}
+.msg{font-size:13.5px}
+.msg.err{color:var(--loss)}.msg.ok{color:var(--gain)}
+
+/* Screenshot */
+.shot{display:grid;gap:10px}
+.shot img{border:1px solid var(--line);max-height:320px;object-fit:contain;background:var(--bg);justify-self:start}
+
+/* Notizen */
+.notes{list-style:none;margin:0;padding:0}
+.notes li{padding:12px 16px;border-bottom:1px solid var(--line-2);display:grid;gap:4px}
+.notes li:last-child{border-bottom:0}
+.notes p{margin:0;white-space:pre-wrap}
+.empty{padding:16px;color:var(--ink-3)}
+footer{font-size:12.5px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:12px}
+@media (prefers-reduced-motion:no-preference){.btn{transition:opacity .15s}}
+
+body{margin:0}
+[hidden]{display:none!important}
+a{color:var(--accent)}
+a.btn{display:inline-block;text-decoration:none}
+.keybox details summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px}
+.steps{margin:8px 0 0;padding-left:20px;display:grid;gap:6px;font-size:14px;color:var(--ink-2)}
+
+.sub{display:grid;gap:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tabs button{padding:7px 12px;border:1px solid var(--line);background:var(--bg);border-radius:999px;cursor:pointer;font-weight:500;font-size:14px;color:var(--ink-2)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tp{display:grid;gap:10px;justify-items:start}
+.linkrow{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.small{font-size:13px;margin:0}
+.months{display:grid;gap:18px}
+.month{display:grid;gap:8px}
+.month h3{font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+.dates li.past{opacity:.55}
+.masthead .row{margin-top:10px;gap:8px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <div class="label">Planspiel Börse 2026 · Unser Depot</div>
+      <h1>Termine</h1>
+      <p>Alles, was unsere Aktien bewegen kann, bis zum Spielende am 25.01.2027.</p>
+      <p class="row"><a class="btn ghost small" href="./">Zum Depotbuch</a><a class="btn ghost small" href="https://www.planspiel-boerse.de/" target="_blank" rel="noopener">Zum Planspiel Börse ↗</a></p>
+    </div>
+    <div class="clock">
+      <div class="label">Nächster Termin</div>
+      <div class="big" id="next">–</div>
+    </div>
+  </header>
+
+  <section aria-labelledby="h-sub" class="panel pad sub">
+    <div class="sec-head">
+      <h2 id="h-sub">Erinnerungen aufs Handy</h2>
+      <span class="faint">einmal einrichten, aktualisiert sich von selbst</span>
+    </div>
+    <p class="muted" style="margin:0">Abonniere den Kalender in deiner Kalender-App. Du bekommst dann am Vorabend um 18 Uhr und am Morgen um 7 Uhr eine Erinnerung. Neue oder geänderte Termine kommen automatisch dazu.</p>
+    <div class="tabs" role="tablist" aria-label="Gerät wählen">
+      <button type="button" role="tab" id="tab-ios" aria-controls="p-ios" data-p="ios">iPhone / iPad</button>
+      <button type="button" role="tab" id="tab-android" aria-controls="p-android" data-p="android">Android / Google</button>
+      <button type="button" role="tab" id="tab-outlook" aria-controls="p-outlook" data-p="outlook">Outlook / Windows</button>
+      <button type="button" role="tab" id="tab-mac" aria-controls="p-mac" data-p="mac">Mac</button>
+    </div>
+
+    <div class="tp" role="tabpanel" id="p-ios" aria-labelledby="tab-ios">
+      <a class="btn" id="btn-ios" href="#">Kalender abonnieren</a>
+      <ol class="steps">
+        <li>Auf „Kalender abonnieren“ tippen.</li>
+        <li>Im Fenster „Abonnieren“ und danach „Hinzufügen“ tippen.</li>
+        <li>Fertig. Der Kalender heißt „Planspiel Börse – Termine“.</li>
+      </ol>
+    </div>
+    <div class="tp" role="tabpanel" id="p-android" aria-labelledby="tab-android" hidden>
+      <a class="btn" id="btn-google" href="#" target="_blank" rel="noopener">In Google Kalender hinzufügen</a>
+      <ol class="steps">
+        <li>Auf den Knopf tippen. Es öffnet sich Google Kalender im Browser. Mit deinem Google-Konto anmelden und „Hinzufügen“ bestätigen.</li>
+        <li>In der Google-Kalender-App: Menü ☰ → Einstellungen → „Planspiel Börse – Termine“ → <b>Synchronisieren</b> einschalten.</li>
+        <li>Dort bei <b>Standardbenachrichtigungen für ganztägige Termine</b> z. B. „Am Vortag um 18:00“ wählen. Google übernimmt die Erinnerungen aus Kalender-Abos nicht von selbst.</li>
+      </ol>
+      <p class="faint small">Google lädt Abos nur alle paar Stunden neu, manchmal seltener. Ganz neue Termine können deshalb etwas später erscheinen.</p>
+    </div>
+    <div class="tp" role="tabpanel" id="p-outlook" aria-labelledby="tab-outlook" hidden>
+      <ol class="steps">
+        <li>Unten den Kalender-Link kopieren.</li>
+        <li>In Outlook: Kalender → „Kalender hinzufügen“ → <b>„Aus dem Internet abonnieren“</b> → Link einfügen → Importieren.</li>
+        <li>Erinnerungen: Rechtsklick auf den Kalender → Einstellungen, oder bei einzelnen Terminen eine Erinnerung setzen.</li>
+      </ol>
+    </div>
+    <div class="tp" role="tabpanel" id="p-mac" aria-labelledby="tab-mac" hidden>
+      <a class="btn" id="btn-mac" href="#">Kalender abonnieren</a>
+      <ol class="steps">
+        <li>Auf den Knopf klicken. Die Kalender-App öffnet sich, dort „Abonnieren“ klicken.</li>
+        <li>Bei „Automatisch aktualisieren“ <b>„Jede Stunde“</b> wählen.</li>
+        <li>Bei „Entfernen“ das Häkchen bei <b>„Hinweise“ wegnehmen</b>, sonst kommen keine Erinnerungen. Dann „OK“.</li>
+      </ol>
+    </div>
+
+    <div class="linkrow">
+      <label class="f" for="cal-url" style="flex:1 1 260px">Kalender-Link
+        <input type="text" id="cal-url" readonly>
+      </label>
+      <button class="btn ghost" type="button" id="copy">Kopieren</button>
+    </div>
+    <span class="msg" id="copy-msg" role="status"></span>
+  </section>
+
+  <section aria-labelledby="h-list">
+    <div class="sec-head">
+      <h2 id="h-list">Alle Termine</h2>
+      <label class="check"><input type="checkbox" id="show-past"> Vergangene zeigen</label>
+    </div>
+    <div id="months" class="months"><div class="panel empty">Lädt …</div></div>
+  </section>
+
+  <footer>Szenarien, keine Vorhersagen. Termine mit „Datum unsicher“ sind geschätzt und werden angepasst, sobald sie bestätigt sind. Spielgeld, keine Anlageberatung.</footer>
+</div>
+
+<script>
+(function(){
+"use strict";
+var BASE = location.origin + location.pathname.replace(/[^\/]*$/, "");
+var ICS = BASE + "kalender.ics";
+var WEBCAL = ICS.replace(/^https?:/, "webcal:");
+var names = {};
+var items = [];
+
+function $(id){ return document.getElementById(id); }
+function h(tag, attrs){
+  var el = document.createElement(tag);
+  if (attrs) for (var k in attrs){ var v = attrs[k]; if (v == null || v === false) continue; if (k === "class") el.className = v; else el.setAttribute(k, v === true ? "" : v); }
+  for (var i = 2; i < arguments.length; i++){ var c = arguments[i]; if (c == null || c === false) continue; (Array.isArray(c) ? c : [c]).forEach(function(x){ if (x != null && x !== false) el.appendChild(typeof x === "string" ? document.createTextNode(x) : x); }); }
+  return el;
+}
+function parseDate(s){ var d = new Date(s + "T12:00:00"); return isNaN(d) ? null : d; }
+function today(){ var d = new Date(); d.setHours(12,0,0,0); return d; }
+function days(a,b){ return Math.round((b - a) / 86400000); }
+function store(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+function load(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+
+/* Abo-Links */
+$("cal-url").value = ICS;
+$("btn-ios").href = WEBCAL;
+$("btn-mac").href = WEBCAL;
+$("btn-google").href = "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(WEBCAL);
+$("copy").addEventListener("click", function(){
+  var input = $("cal-url"), m = $("copy-msg");
+  function fallback(){ input.focus(); input.select(); m.textContent = "Link markiert, jetzt kopieren."; m.className = "msg"; }
+  try{
+    navigator.clipboard.writeText(ICS).then(function(){ m.textContent = "Kopiert."; m.className = "msg ok"; }, fallback);
+  }catch(e){ fallback(); }
+});
+
+/* Tabs, passend zum Gerät vorausgewählt */
+var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+function pick(p){
+  tabs.forEach(function(t){ var on = t.getAttribute("data-p") === p; t.setAttribute("aria-selected", on ? "true" : "false"); t.tabIndex = on ? 0 : -1; $("p-" + t.getAttribute("data-p")).hidden = !on; });
+}
+tabs.forEach(function(t, i){
+  t.addEventListener("click", function(){ pick(t.getAttribute("data-p")); store("termine.tab", t.getAttribute("data-p")); });
+  t.addEventListener("keydown", function(e){
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    var n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length]; n.focus(); n.click();
+  });
+});
+var ua = navigator.userAgent || "";
+var guess = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? "ios" : /Android/.test(ua) ? "android" : /Windows/.test(ua) ? "outlook" : /Macintosh/.test(ua) ? "mac" : "ios";
+pick(load("termine.tab") || guess);
+
+/* Liste */
+function render(){
+  var box = $("months"); box.textContent = "";
+  var t0 = today(), past = $("show-past").checked;
+  var list = items.filter(function(it){ var d = parseDate(it.datum); return d && (past || days(t0, d) >= 0); })
+                  .sort(function(a,b){ return a.datum.localeCompare(b.datum) || a.titel.localeCompare(b.titel); });
+  var next = items.filter(function(it){ var d = parseDate(it.datum); return d && days(t0, d) >= 0; }).sort(function(a,b){ return a.datum.localeCompare(b.datum); })[0];
+  if (next){ var dn = days(t0, parseDate(next.datum)); $("next").textContent = dn === 0 ? "heute" : dn === 1 ? "morgen" : "in " + dn + " Tagen"; }
+  if (!list.length){ box.appendChild(h("div",{class:"panel empty"},"Keine Termine.")); return; }
+  var groups = {};
+  list.forEach(function(it){ var k = it.datum.slice(0,7); (groups[k] = groups[k] || []).push(it); });
+  Object.keys(groups).forEach(function(k){
+    var label = parseDate(k + "-15").toLocaleDateString("de-DE",{month:"long", year:"numeric"});
+    var ul = h("ul",{class:"dates"});
+    groups[k].forEach(function(it){
+      var d = parseDate(it.datum), diff = days(t0, d);
+      var when = diff < 0 ? "vorbei" : diff === 0 ? "heute" : diff === 1 ? "morgen" : "in " + diff + " Tagen";
+      var who = (it.betrifft || []).map(function(id){ return h("span",{class:"pill plan"}, names[id] || id); });
+      var scen = [];
+      if (it.erwartung) scen.push(h("div",null,h("b",null,"Erwartet: "), it.erwartung));
+      if (it.gut) scen.push(h("div",{class:"g"}, it.gut));
+      if (it.schlecht) scen.push(h("div",{class:"b"}, it.schlecht));
+      if (it.frage) scen.push(h("div",{class:"q"}, it.frage));
+      ul.appendChild(h("li",{class: (diff >= 0 && diff <= 2 ? "soon" : "") + (diff < 0 ? " past" : "")},
+        h("div",{class:"d"}, h("b",null, d.toLocaleDateString("de-DE",{day:"2-digit",month:"2-digit"})), d.toLocaleDateString("de-DE",{weekday:"short"}) + " · " + when),
+        h("div",{class:"t"},
+          h("div",{class:"name"}, it.titel, it.unsicher ? h("span",{class:"faint"}," (Datum unsicher)") : null),
+          who.length ? h("div",{class:"who"}, who) : null,
+          scen.length ? h("details", diff >= 0 && diff <= 7 ? {open:true} : null, h("summary",null,"Was kann passieren?"), h("div",{class:"scen"}, scen)) : null
+        )
+      ));
+    });
+    box.appendChild(h("div",{class:"month"}, h("h3",null,label), h("div",{class:"panel"}, ul)));
+  });
+}
+$("show-past").addEventListener("change", render);
+
+function get(name){ return fetch("data/" + name + ".json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }); }
+Promise.all([get("termine"), get("plan").catch(function(){ return {}; })]).then(function(res){
+  items = (res[0] && res[0].items) || [];
+  ((res[1].positionen || []).concat(res[1].warteliste || [])).forEach(function(p){ names[p.id] = p.name; });
+  render();
+}).catch(function(){ $("months").textContent = ""; $("months").appendChild(h("div",{class:"panel empty"},"Die Termine konnten nicht geladen werden. Bitte später neu laden.")); });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,902 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Depotbuch//Planspiel Boerse//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Planspiel Börse – Termine
+X-WR-CALDESC:Wichtige Termine für unser Depot beim Planspiel Börse 2026
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:8bcc1b7a3960e4ce@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Erster Handelstag
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple\nErwartet: Ihr kauft laut Plan.\nWenn gut: Stückzahl neu rechnen: 9.
+ 450 € geteilt durch den aktuellen Kurs\, abgerundet.\nWenn schlecht: Mit
+  Limit etwa 0\,5 % über dem Kurs kaufen\, nicht billigst.\nFür euch: Dir
+ ekt nach den Käufen die Stop-Loss-Orders mit 14 Tagen Laufzeit setzen und
+  hier alles eintragen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Erster Handelstag
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Erster Handelstag
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e9e74e7c38de31d0@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:ASML-Quartalszahlen (vor Börsenstart)
+DESCRIPTION:Betrifft: STMicroelectronics\, Intel\nErwartet: Erster großer 
+ Stimmungstest für die ganze Chip-Branche.\nWenn gut: Gute Zahlen ziehen o
+ ft andere Chip-Aktien mit hoch.\nWenn schlecht: Enttäuschung kann auch ST
+ Micro und Intel nach unten ziehen.\nFür euch: Ihr müsst nichts tun. Beob
+ achten\, wie STMicro und Intel reagieren.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: ASML-Quartalszahlen (vor Börsenstart)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: ASML-Quartalszahlen (vor Börsenstart)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fced1b26e16d9c5e@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Stop-Loss-Orders laufen ab (14 Tage)
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple\nErwartet: Orders vom 1.10. mit 14 Tagen Laufzeit enden.\nFür euch: 
+ Neu setzen. Ablaufen lassen kostet nichts\, selbst löschen kostet 2\,50 
+ €.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders laufen ab (14 Tage)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders laufen ab (14 Tage)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b420b11ed99d2c51@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Apple: Vorbestellung des faltbaren iPhone Duo
+DESCRIPTION:Betrifft: Apple\nErwartet: Erste Hinweise\, wie gefragt das Ger
+ ät für 1.999 Dollar ist.\nWenn gut: Lange Lieferzeiten oder ausverkaufte
+  Modelle sprechen für hohe Nachfrage.\nWenn schlecht: Sofort lieferbar he
+ ißt oft: weniger Nachfrage als erhofft.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Apple: Vorbestellung des faltbaren iPhone Duo
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Apple: Vorbestellung des faltbaren iPhone Duo
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d86a1b43b58b24ff@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:Intel-Quartalszahlen (abends) (Datum unsicher)
+DESCRIPTION:Betrifft: Intel\nErwartet: Nach +48 % im September sind die Erw
+ artungen extrem hoch.\nWenn gut: Übertrifft Intel die Erwartungen deutlic
+ h\, kann es weiter steigen.\nWenn schlecht: Schon leicht enttäuschende Za
+ hlen können 10 bis 20 % Minus bringen.\nFür euch: Vorher überlegen: Wol
+ lt ihr das volle Risiko tragen oder vorher einen Teil verkaufen?
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Intel-Quartalszahlen (abends) (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Intel-Quartalszahlen (abends) (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:219520e1a7bf2ab7@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Apple: Verkaufsstart iPhone Duo
+DESCRIPTION:Betrifft: Apple\nErwartet: Berichte über Schlangen vor den Lä
+ den und erste Verkaufsschätzungen.\nWenn gut: Starker Start kann die Akti
+ e vor den Quartalszahlen antreiben.\nWenn schlecht: Enttäuschender Start 
+ drückt auf die Erwartungen für Weihnachten.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Apple: Verkaufsstart iPhone Duo
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Apple: Verkaufsstart iPhone Duo
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7fef9bdc88eb5341@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Fed-Zinsentscheid (USA)
+DESCRIPTION:Betrifft: Nordex\, Intel\, STMicroelectronics\, Commerzbank\, A
+ pple\nErwartet: Anleger sorgen sich\, dass die Zinsen hoch bleiben.\nWenn 
+ gut: Signale für sinkende Zinsen helfen Nordex und den Chip-Aktien.\nWenn
+  schlecht: Bleiben die Zinsen hoch oder steigen\, leidet Nordex. Die Comme
+ rzbank profitiert dann eher.\nFür euch: Genau dafür habt ihr die Commerz
+ bank als Gegengewicht.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Fed-Zinsentscheid (USA)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Fed-Zinsentscheid (USA)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4229b71c8d5e9c46@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:STMicroelectronics-Quartalszahlen
+DESCRIPTION:Betrifft: STMicroelectronics\nErwartet: Fokus auf das Geschäft
+  mit KI-Rechenzentren.\nWenn gut: Bestätigt oder erhöht ST die KI-Ziele\
+ , hilft das dem Aufwärtstrend.\nWenn schlecht: Schwaches Auto- oder Indus
+ triegeschäft kann die Aktie belasten.\nFür euch: Am selben Tag: EZB-Ents
+ cheid und Apple-Zahlen. Ein Tag mit viel Bewegung.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: STMicroelectronics-Quartalszahlen
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: STMicroelectronics-Quartalszahlen
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:25c467b4a2de91c5@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:EZB-Zinsentscheid (14:15 Uhr)
+DESCRIPTION:Betrifft: Nordex\, Commerzbank\nErwartet: Wichtig für europäi
+ sche Banken und Windkraft.\nWenn gut: Sinkende Zinsen helfen Nordex.\nWenn
+  schlecht: Hohe Zinsen helfen der Commerzbank.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: EZB-Zinsentscheid (14:15 Uhr)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: EZB-Zinsentscheid (14:15 Uhr)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eecc2ae0d747770f@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Apple-Quartalszahlen (abends) (Datum unsicher)
+DESCRIPTION:Betrifft: Apple\nErwartet: Wichtigster Apple-Termin im Spiel. B
+ esonders zählt der Ausblick aufs Weihnachtsgeschäft.\nWenn gut: Ein star
+ ker Ausblick für iPhone und Duo kann die Aktie deutlich steigen lassen.\n
+ Wenn schlecht: Ein vorsichtiger Ausblick kann trotz guter Zahlen zu Kursve
+ rlusten führen.\nFür euch: Die Woche ist voll: Fed am 28.10.\, EZB und A
+ pple am 29.10.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Apple-Quartalszahlen (abends) (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Apple-Quartalszahlen (abends) (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c2b24d72db925d88@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Stop-Loss-Orders erneuern (wenn am 15.10. neu gesetzt)
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple\nFür euch: Neue Orders mit 14 Tagen Laufzeit setzen. Gleich prüfen\
+ , ob ihr einen Stop nach oben nachziehen wollt.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern (wenn am 15.10. neu gesetzt)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern (wenn am 15.10. neu gesetzt)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:968697acc6942fc8@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:US-Zwischenwahlen (Midterms)
+DESCRIPTION:Betrifft: Nordex\, Commerzbank\, Apple\nErwartet: Entscheidet 
+ über Energiepolitik\, Subventionen und Regulierung in den USA.\nWenn gut:
+  Ein klares Ergebnis beruhigt die Märkte.\nWenn schlecht: Ein knappes ode
+ r umstrittenes Ergebnis sorgt für Unruhe.\nFür euch: Aufgabe für den Po
+ litik-Experten: Welcher Ausgang hilft Wind\, Öl und Banken? Für Apple wi
+ chtig: Zölle auf Produkte aus China und Indien.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Zwischenwahlen (Midterms)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Zwischenwahlen (Midterms)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:07e825c018456ced@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Nordex-Quartalszahlen (Datum unsicher)
+DESCRIPTION:Betrifft: Nordex\nErwartet: Auftragseingang und Gewinnmarge ste
+ hen im Fokus.\nWenn gut: Starke Aufträge könnten die Aktie Richtung Jahr
+ eshoch bringen.\nWenn schlecht: Schwache Margen treffen die Aktie hart\, s
+ ie schwankt stark.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Nordex-Quartalszahlen (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Nordex-Quartalszahlen (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4cc50de1f273471a@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Commerzbank-Quartalszahlen
+DESCRIPTION:Betrifft: Commerzbank\nErwartet: Dazu jederzeit mögliche Nachr
+ ichten zur UniCredit-Übernahme.\nWenn gut: Ein Übernahmeangebot mit Aufp
+ reis würde die Aktie springen lassen.\nWenn schlecht: Blockiert die Bunde
+ sregierung\, kann die Aktie deutlich fallen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Commerzbank-Quartalszahlen
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Commerzbank-Quartalszahlen
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e75612ccca33d98b@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:US-Arbeitsmarktbericht (Datum unsicher)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\, Apple\, Commerzbank\, No
+ rdex\nErwartet: Monatliche Zahlen zu neuen Jobs in den USA (14:30 Uhr deut
+ scher Zeit).\nWenn gut: Schwächere Zahlen machen Zinssenkungen wahrschein
+ licher\, gut für Tech und Nordex.\nWenn schlecht: Sehr starke Zahlen spre
+ chen für hohe Zinsen\, eher gut für die Commerzbank.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Arbeitsmarktbericht (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Arbeitsmarktbericht (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d5663bffa4fb5357@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Apple: Ex-Dividenden-Tag (ungefähr) (Datum unsicher)
+DESCRIPTION:Betrifft: Apple\nErwartet: Kleine Quartalsdividende\, der Kurs 
+ sinkt minimal.\nFür euch: Im Spiel werden an diesem Tag offene Limit- und
+  Stop-Loss-Orders gelöscht. Danach neu setzen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Apple: Ex-Dividenden-Tag (ungefähr) (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Apple: Ex-Dividenden-Tag (ungefähr) (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:34e8b09d2159792d@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:US-Inflationsdaten (Oktober)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\, Apple\, Nordex\, Commerz
+ bank\nErwartet: Wie stark steigen die Preise in den USA? Entscheidet mit 
+ über die Zinsen (14:30 Uhr).\nWenn gut: Niedrige Inflation: Zinssenkungen
+  werden wahrscheinlicher\, gut für Tech und Nordex.\nWenn schlecht: Hohe 
+ Inflation: Zinsen bleiben hoch\, Tech und Nordex leiden\, die Commerzbank 
+ profitiert eher.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Inflationsdaten (Oktober)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Inflationsdaten (Oktober)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:56a6e62d2511bded@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Zwischenbewertung im Spiel
+DESCRIPTION:Erwartet: Momentaufnahme aller Depots\, kein Einfluss auf die K
+ urse.\nFür euch: Liegt ihr hinten\, geht ihr mehr Risiko ein. Liegt ihr v
+ orne\, sichert ihr eher ab.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Zwischenbewertung im Spiel
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Zwischenbewertung im Spiel
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8a6cfaaa81f4cb5e@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Stop-Loss-Orders erneuern
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple\nFür euch: Alle 14 Tage neu setzen\, falls ihr den Rhythmus vom 15.1
+ 0. beibehalten habt.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:872691af364ffdfa@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Commerzbank: mögliche Entscheidung der EZB zur UniCredit-Beteiligu
+ ng (Datum unsicher)
+DESCRIPTION:Betrifft: Commerzbank\nErwartet: Die EZB prüft seit August\, o
+ b UniCredit mehr Anteile übernehmen darf (ca. 60 Arbeitstage).\nWenn gut:
+  Eine Freigabe macht ein Übernahmeangebot wahrscheinlicher.\nWenn schlech
+ t: Auflagen oder Ablehnung würden die Übernahme-Fantasie dämpfen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Commerzbank: mögliche Entscheidung der EZB zur UniCred
+ it-Beteiligung (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Commerzbank: mögliche Entscheidung der EZB zur UniCredi
+ t-Beteiligung (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:09a61c0eb7c850cd@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:Nvidia-Quartalszahlen (abends)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\nErwartet: Fieberthermomet
+ er für den ganzen KI-Boom.\nWenn gut: Starke Zahlen heben oft die ganze C
+ hip-Branche.\nWenn schlecht: Enttäuschung zieht Intel und STMicro mit nac
+ h unten.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Nvidia-Quartalszahlen (abends)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Nvidia-Quartalszahlen (abends)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6f75c9251f28bf73@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Stop-Loss-Orders erneuern
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:07a61db099d8b3e0@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Black Friday
+DESCRIPTION:Betrifft: Apple\nErwartet: Erste Zahlen zum Weihnachtsgeschäft
+ .\nWenn gut: Rekordumsätze helfen Händlern wie Amazon.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Black Friday
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Black Friday
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eeb6e4a1f60f3939@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:US-Arbeitsmarktbericht (Datum unsicher)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\, Apple\, Commerzbank\, No
+ rdex\nErwartet: Letzter Arbeitsmarktbericht vor dem Fed-Entscheid am 9.12.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Arbeitsmarktbericht (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Arbeitsmarktbericht (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:08da1238ebd6395d@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Fed-Zinsentscheid mit Prognosen für 2027
+DESCRIPTION:Betrifft: Nordex\, Intel\, STMicroelectronics\, Commerzbank\, A
+ pple\nErwartet: Einer der wichtigsten Zinstermine des Jahres.\nWenn gut: A
+ ussicht auf Zinssenkungen 2027 hilft Nordex und Chips.\nWenn schlecht: Kei
+ ne Senkungen in Sicht: gut für die Commerzbank\, schlecht für Nordex.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Fed-Zinsentscheid mit Prognosen für 2027
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Fed-Zinsentscheid mit Prognosen für 2027
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7d7b4f3893eb7276@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:US-Inflationsdaten (November)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\, Apple\, Nordex\, Commerz
+ bank\nErwartet: Einen Tag nach dem Fed-Entscheid. Kann die Reaktion darauf
+  verstärken oder umdrehen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Inflationsdaten (November)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Inflationsdaten (November)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0cdf0175115ddf97@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Stop-Loss-Orders erneuern
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b5cd706332daad83@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:STMicroelectronics: Ex-Dividenden-Tag
+DESCRIPTION:Betrifft: STMicroelectronics\nErwartet: Kleine Quartalsdividend
+ e. Der Kurs sinkt an diesem Tag ungefähr um den Betrag der Dividende\, da
+ s ist normal.\nFür euch: Im Spiel werden an diesem Tag offene Limit- und 
+ Stop-Loss-Orders gelöscht. Danach neu setzen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: STMicroelectronics: Ex-Dividenden-Tag
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: STMicroelectronics: Ex-Dividenden-Tag
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9a9fd334029f87e2@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:EZB-Zinsentscheid mit Prognosen
+DESCRIPTION:Betrifft: Nordex\, Commerzbank\nErwartet: Letzter großer Zinst
+ ermin im Spiel.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: EZB-Zinsentscheid mit Prognosen
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: EZB-Zinsentscheid mit Prognosen
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2e5c4690798b545f@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Stop-Loss-Orders erneuern (vor den Feiertagen)
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern (vor den Feiertagen)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern (vor den Feiertagen)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5c83652d3799bde5@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261225
+SUMMARY:Börsenfeiertage: kein Handel 24.–26.12. und 31.12.–1.1. (Datum
+  unsicher)
+DESCRIPTION:Erwartet: An diesen Tagen werden keine Orders ausgeführt.\nFü
+ r euch: Laufen Stop-Loss-Orders über die Feiertage ab? Vorher prüfen und
+  rechtzeitig verlängern.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Börsenfeiertage: kein Handel 24.–26.12. und 31.12.
+ –1.1. (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Börsenfeiertage: kein Handel 24.–26.12. und 31.12.–
+ 1.1. (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ff92760c7024fcd0@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:CES in Las Vegas (6.–9.1.)
+DESCRIPTION:Betrifft: Intel\nErwartet: Größte Technikmesse der Welt. Inte
+ l stellt dort traditionell neue Prozessoren vor.\nWenn gut: Überzeugende 
+ neue Chips können die Intel-Aktie antreiben.\nWenn schlecht: Enttäuschen
+ de Vorstellungen oder Verspätungen drücken die Stimmung.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: CES in Las Vegas (6.–9.1.)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: CES in Las Vegas (6.–9.1.)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:646ae12030acc00e@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270106
+DTEND;VALUE=DATE:20270107
+SUMMARY:Stop-Loss-Orders erneuern
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d334963f9ed63a4d@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270113
+DTEND;VALUE=DATE:20270114
+SUMMARY:US-Inflationsdaten (Dezember) (Datum unsicher)
+DESCRIPTION:Betrifft: Intel\, STMicroelectronics\, Apple\, Nordex\, Commerz
+ bank\nErwartet: Letzte Inflationszahlen im Spiel.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: US-Inflationsdaten (Dezember) (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: US-Inflationsdaten (Dezember) (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4da286c270a10f08@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+SUMMARY:Nordex: Auftragseingang 4. Quartal (Datum unsicher)
+DESCRIPTION:Betrifft: Nordex\nErwartet: Nordex meldet Mitte Januar meist vo
+ rab\, wie viele Windräder im Herbst bestellt wurden.\nWenn gut: Rekord-Au
+ fträge können die Aktie kurz vor Spielende nach oben bringen.\nWenn schl
+ echt: Schwache Bestellungen treffen die Aktie in der letzten Spielwoche.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Nordex: Auftragseingang 4. Quartal (Datum unsicher)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Nordex: Auftragseingang 4. Quartal (Datum unsicher)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fa652d4b1e533550@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270120
+DTEND;VALUE=DATE:20270121
+SUMMARY:Stop-Loss-Orders erneuern (letztes Mal)
+DESCRIPTION:Betrifft: STMicroelectronics\, Nordex\, Intel\, Commerzbank\, A
+ pple\nFür euch: Die Orders sollten bis zum Spielende am 25.01. laufen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Stop-Loss-Orders erneuern (letztes Mal)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Stop-Loss-Orders erneuern (letztes Mal)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:2984fcddefc7ff1e@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:Intel-Quartalszahlen (4. Quartal\, abends) (Datum unsicher)
+DESCRIPTION:Betrifft: Intel\nErwartet: Letztes großes Ereignis vor Spielen
+ de. Letztes Jahr kamen die Zahlen am 22. Januar.\nWenn gut: Gute Zahlen ku
+ rz vor Schluss können den Endstand deutlich verbessern.\nWenn schlecht: E
+ in Absturz kurz vor Schluss lässt keine Zeit mehr zum Aufholen.\nFür euc
+ h: Liegt ihr dann vorne\, überlegt\, ob ihr Intel vorher absichert oder v
+ erkauft. Liegt ihr hinten\, kann das die letzte Chance sein.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Intel-Quartalszahlen (4. Quartal\, abends) (Datum unsic
+ her)
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Intel-Quartalszahlen (4. Quartal\, abends) (Datum unsich
+ er)
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d77ad435884a376e@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Frist: mindestens 3 abgerechnete Käufe
+DESCRIPTION:Erwartet: Sonst wird das Depot disqualifiziert.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Frist: mindestens 3 abgerechnete Käufe
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Frist: mindestens 3 abgerechnete Käufe
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8dc3d777e144d134@depotbuch
+DTSTAMP:20261002T190202Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Letzter Handelstag
+DESCRIPTION:Erwartet: Bewertung zu den Schlusskursen. Ihr müsst nichts ver
+ kaufen.
+URL:https://nahol2021.github.io/depotbuch/termine.html
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Morgen: Letzter Handelstag
+TRIGGER:-PT6H
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Heute: Letzter Handelstag
+TRIGGER:PT7H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
