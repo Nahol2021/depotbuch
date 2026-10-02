@@ -56,12 +56,12 @@
    "betrifft": [
     "stm"
    ],
-   "datum": "2026-10-23",
+   "datum": "2026-10-29",
    "erwartung": "Fokus auf das Geschäft mit KI-Rechenzentren.",
    "gut": "Bestätigt oder erhöht ST die KI-Ziele, hilft das dem Aufwärtstrend.",
    "schlecht": "Schwaches Auto- oder Industriegeschäft kann die Aktie belasten.",
    "titel": "STMicroelectronics-Quartalszahlen",
-   "unsicher": true
+   "frage": "Am selben Tag: EZB-Entscheid und Apple-Zahlen. Ein Tag mit viel Bewegung."
   },
   {
    "betrifft": [
@@ -235,6 +235,205 @@
    ],
    "erwartung": "Kleine Quartalsdividende, der Kurs sinkt minimal.",
    "frage": "Im Spiel werden an diesem Tag offene Limit- und Stop-Loss-Orders gelöscht. Danach neu setzen."
+  },
+  {
+   "datum": "2026-10-29",
+   "titel": "Stop-Loss-Orders erneuern (wenn am 15.10. neu gesetzt)",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ],
+   "frage": "Neue Orders mit 14 Tagen Laufzeit setzen. Gleich prüfen, ob ihr einen Stop nach oben nachziehen wollt."
+  },
+  {
+   "datum": "2026-11-06",
+   "titel": "US-Arbeitsmarktbericht",
+   "unsicher": true,
+   "betrifft": [
+    "intel",
+    "stm",
+    "aapl",
+    "cbk",
+    "nordex"
+   ],
+   "erwartung": "Monatliche Zahlen zu neuen Jobs in den USA (14:30 Uhr deutscher Zeit).",
+   "gut": "Schwächere Zahlen machen Zinssenkungen wahrscheinlicher, gut für Tech und Nordex.",
+   "schlecht": "Sehr starke Zahlen sprechen für hohe Zinsen, eher gut für die Commerzbank."
+  },
+  {
+   "datum": "2026-11-10",
+   "titel": "US-Inflationsdaten (Oktober)",
+   "betrifft": [
+    "intel",
+    "stm",
+    "aapl",
+    "nordex",
+    "cbk"
+   ],
+   "erwartung": "Wie stark steigen die Preise in den USA? Entscheidet mit über die Zinsen (14:30 Uhr).",
+   "gut": "Niedrige Inflation: Zinssenkungen werden wahrscheinlicher, gut für Tech und Nordex.",
+   "schlecht": "Hohe Inflation: Zinsen bleiben hoch, Tech und Nordex leiden, die Commerzbank profitiert eher."
+  },
+  {
+   "datum": "2026-11-12",
+   "titel": "Stop-Loss-Orders erneuern",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ],
+   "frage": "Alle 14 Tage neu setzen, falls ihr den Rhythmus vom 15.10. beibehalten habt."
+  },
+  {
+   "datum": "2026-11-13",
+   "titel": "Commerzbank: mögliche Entscheidung der EZB zur UniCredit-Beteiligung",
+   "unsicher": true,
+   "betrifft": [
+    "cbk"
+   ],
+   "erwartung": "Die EZB prüft seit August, ob UniCredit mehr Anteile übernehmen darf (ca. 60 Arbeitstage).",
+   "gut": "Eine Freigabe macht ein Übernahmeangebot wahrscheinlicher.",
+   "schlecht": "Auflagen oder Ablehnung würden die Übernahme-Fantasie dämpfen."
+  },
+  {
+   "datum": "2026-11-26",
+   "titel": "Stop-Loss-Orders erneuern",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ]
+  },
+  {
+   "datum": "2026-12-04",
+   "titel": "US-Arbeitsmarktbericht",
+   "unsicher": true,
+   "betrifft": [
+    "intel",
+    "stm",
+    "aapl",
+    "cbk",
+    "nordex"
+   ],
+   "erwartung": "Letzter Arbeitsmarktbericht vor dem Fed-Entscheid am 9.12."
+  },
+  {
+   "datum": "2026-12-10",
+   "titel": "US-Inflationsdaten (November)",
+   "betrifft": [
+    "intel",
+    "stm",
+    "aapl",
+    "nordex",
+    "cbk"
+   ],
+   "erwartung": "Einen Tag nach dem Fed-Entscheid. Kann die Reaktion darauf verstärken oder umdrehen."
+  },
+  {
+   "datum": "2026-12-10",
+   "titel": "Stop-Loss-Orders erneuern",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ]
+  },
+  {
+   "datum": "2026-12-24",
+   "titel": "Börsenfeiertage: kein Handel 24.–26.12. und 31.12.–1.1.",
+   "unsicher": true,
+   "betrifft": [],
+   "erwartung": "An diesen Tagen werden keine Orders ausgeführt.",
+   "frage": "Laufen Stop-Loss-Orders über die Feiertage ab? Vorher prüfen und rechtzeitig verlängern."
+  },
+  {
+   "datum": "2026-12-23",
+   "titel": "Stop-Loss-Orders erneuern (vor den Feiertagen)",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ]
+  },
+  {
+   "datum": "2027-01-06",
+   "titel": "CES in Las Vegas (6.–9.1.)",
+   "betrifft": [
+    "intel"
+   ],
+   "erwartung": "Größte Technikmesse der Welt. Intel stellt dort traditionell neue Prozessoren vor.",
+   "gut": "Überzeugende neue Chips können die Intel-Aktie antreiben.",
+   "schlecht": "Enttäuschende Vorstellungen oder Verspätungen drücken die Stimmung."
+  },
+  {
+   "datum": "2027-01-06",
+   "titel": "Stop-Loss-Orders erneuern",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ]
+  },
+  {
+   "datum": "2027-01-13",
+   "titel": "US-Inflationsdaten (Dezember)",
+   "unsicher": true,
+   "betrifft": [
+    "intel",
+    "stm",
+    "aapl",
+    "nordex",
+    "cbk"
+   ],
+   "erwartung": "Letzte Inflationszahlen im Spiel."
+  },
+  {
+   "datum": "2027-01-14",
+   "titel": "Nordex: Auftragseingang 4. Quartal",
+   "unsicher": true,
+   "betrifft": [
+    "nordex"
+   ],
+   "erwartung": "Nordex meldet Mitte Januar meist vorab, wie viele Windräder im Herbst bestellt wurden.",
+   "gut": "Rekord-Aufträge können die Aktie kurz vor Spielende nach oben bringen.",
+   "schlecht": "Schwache Bestellungen treffen die Aktie in der letzten Spielwoche."
+  },
+  {
+   "datum": "2027-01-20",
+   "titel": "Stop-Loss-Orders erneuern (letztes Mal)",
+   "betrifft": [
+    "stm",
+    "nordex",
+    "intel",
+    "cbk",
+    "aapl"
+   ],
+   "frage": "Die Orders sollten bis zum Spielende am 25.01. laufen."
+  },
+  {
+   "datum": "2027-01-21",
+   "titel": "Intel-Quartalszahlen (4. Quartal, abends)",
+   "unsicher": true,
+   "betrifft": [
+    "intel"
+   ],
+   "erwartung": "Letztes großes Ereignis vor Spielende. Letztes Jahr kamen die Zahlen am 22. Januar.",
+   "gut": "Gute Zahlen kurz vor Schluss können den Endstand deutlich verbessern.",
+   "schlecht": "Ein Absturz kurz vor Schluss lässt keine Zeit mehr zum Aufholen.",
+   "frage": "Liegt ihr dann vorne, überlegt, ob ihr Intel vorher absichert oder verkauft. Liegt ihr hinten, kann das die letzte Chance sein."
   }
  ]
 }
