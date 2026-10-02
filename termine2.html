@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Unsere Börsen-Termine</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1d;--mut:#6b6b6b;--line:#e2e2e2;--hl:#fff4c2;--link:#1a4fd6}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#161616;--fg:#e9e9e9;--mut:#9a9a9a;--line:#2e2e2e;--hl:#3a3315;--link:#8fb0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px 16px 48px}
+main{max-width:720px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:18px;margin:32px 0 8px}
+p{margin:0 0 10px}
+a{color:var(--link)}
+.mut{color:var(--mut)}
+.box{border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin:16px 0}
+.box p:last-child{margin:0}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.btns a,.btns button{font:inherit;font-size:15px;padding:6px 12px;border:1px solid var(--fg);border-radius:4px;background:none;color:var(--fg);text-decoration:none;cursor:pointer}
+details{margin-top:6px;font-size:15px}
+summary{cursor:pointer;color:var(--link)}
+details ul{margin:6px 0 0;padding-left:20px}
+details li{margin-bottom:4px}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:13px;color:var(--mut);font-weight:normal;border-bottom:1px solid var(--line);padding:4px 6px}
+td{vertical-align:top;border-bottom:1px solid var(--line);padding:8px 6px}
+td.d{white-space:nowrap;font-variant-numeric:tabular-nums;width:1%}
+td small{display:block;color:var(--mut);font-size:14px}
+tr.soon td{background:var(--hl)}
+tr.mon td{border-bottom:none;padding-top:20px;font-weight:bold}
+#msg{font-size:14px;color:var(--mut)}
+label{font-size:14px;color:var(--mut)}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Unsere Börsen-Termine</h1>
+  <p class="mut">Planspiel Börse 2026 · bis zum 25.01.2027 · <a href="https://www.planspiel-boerse.de/" target="_blank" rel="noopener">zum Spiel</a></p>
+
+  <div class="box">
+    <p><b>Termine im Handy-Kalender</b>: Erinnerung kommt am Abend vorher (18 Uhr) und morgens (7 Uhr). Neue Termine kommen automatisch dazu.</p>
+    <div class="btns">
+      <a id="ios" href="#">iPhone / Mac</a>
+      <a id="google" href="#" target="_blank" rel="noopener">Google Kalender</a>
+      <button type="button" id="copy">Link kopieren</button>
+    </div>
+    <span id="msg" role="status"></span>
+    <details>
+      <summary>Wie geht das?</summary>
+      <ul>
+        <li><b>iPhone:</b> auf „iPhone / Mac“ tippen, dann „Abonnieren“ und „Hinzufügen“.</li>
+        <li><b>Android:</b> auf „Google Kalender“ tippen und hinzufügen. Danach in der Kalender-App unter Einstellungen → „Planspiel Börse – Termine“ <i>Synchronisieren</i> anmachen und bei den Benachrichtigungen für ganztägige Termine z. B. „Am Vortag um 18:00“ wählen. Sonst kommt keine Erinnerung.</li>
+        <li><b>Mac:</b> beim Abonnieren das Häkchen bei „Entfernen: Hinweise“ wegmachen.</li>
+        <li><b>Outlook:</b> Link kopieren, dann Kalender hinzufügen → „Aus dem Internet abonnieren“.</li>
+      </ul>
+    </details>
+  </div>
+
+  <h2>Was ansteht</h2>
+  <p><label><input type="checkbox" id="past"> alte Termine auch zeigen</label></p>
+  <table>
+    <thead><tr><th>Datum</th><th>Was</th></tr></thead>
+    <tbody id="list"><tr><td colspan="2" class="mut">lädt …</td></tr></tbody>
+  </table>
+  <p class="mut" style="margin-top:16px;font-size:14px">„ca.“ heißt: Datum ist noch nicht offiziell, kann sich verschieben.</p>
+</main>
+
+<script>
+(function(){
+var base = location.origin + location.pathname.replace(/[^\/]*$/, "");
+var ics = base + "kalender.ics", webcal = ics.replace(/^https?:/, "webcal:");
+document.getElementById("ios").href = webcal;
+document.getElementById("google").href = "https://calendar.google.com/calendar/r?cid=" + encodeURIComponent(webcal);
+document.getElementById("copy").onclick = function(){
+  var m = document.getElementById("msg");
+  try { navigator.clipboard.writeText(ics).then(function(){ m.textContent = "kopiert"; }, function(){ m.textContent = ics; }); }
+  catch(e){ m.textContent = ics; }
+};
+
+var names = {}, items = [];
+function day(s){ var d = new Date(s + "T12:00:00"); return isNaN(d) ? null : d; }
+function td(cls, text){ var c = document.createElement("td"); if (cls) c.className = cls; if (text != null) c.textContent = text; return c; }
+
+function show(){
+  var body = document.getElementById("list"); body.textContent = "";
+  var now = new Date(); now.setHours(12,0,0,0);
+  var all = document.getElementById("past").checked, month = "";
+  items.slice().sort(function(a,b){ return a.datum.localeCompare(b.datum); }).forEach(function(it){
+    var d = day(it.datum); if (!d) return;
+    var diff = Math.round((d - now) / 864e5);
+    if (diff < 0 && !all) return;
+    var m = d.toLocaleDateString("de-DE", {month:"long", year:"numeric"});
+    if (m !== month){ month = m; var mr = document.createElement("tr"); mr.className = "mon"; var mc = td("", m); mc.colSpan = 2; mr.appendChild(mc); body.appendChild(mr); }
+    var tr = document.createElement("tr");
+    if (diff >= 0 && diff <= 2) tr.className = "soon";
+    var dt = (it.unsicher ? "ca. " : "") + d.toLocaleDateString("de-DE", {weekday:"short", day:"2-digit", month:"2-digit"});
+    tr.appendChild(td("d", dt));
+    var c = td("", it.titel);
+    var who = (it.betrifft || []).map(function(id){ return names[id] || id; }).join(", ");
+    var note = it.erwartung || it.frage || "";
+    if (who || note){ var s = document.createElement("small"); s.textContent = [who, note].filter(Boolean).join(" – "); c.appendChild(s); }
+    tr.appendChild(c);
+    body.appendChild(tr);
+  });
+  if (!body.children.length){ var r = document.createElement("tr"); var e = td("mut", "nichts mehr"); e.colSpan = 2; r.appendChild(e); body.appendChild(r); }
+}
+document.getElementById("past").onchange = show;
+
+function get(n){ return fetch("data/" + n + ".json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.json(); }); }
+Promise.all([get("termine"), get("plan").catch(function(){ return {}; })]).then(function(r){
+  items = r[0].items || [];
+  (r[1].positionen || []).concat(r[1].warteliste || []).forEach(function(p){ names[p.id] = p.name; });
+  show();
+}).catch(function(){ document.getElementById("list").innerHTML = '<tr><td colspan="2" class="mut">Konnte die Termine nicht laden. Später nochmal probieren.</td></tr>'; });
+})();
+</script>
+</body>
+</html>
