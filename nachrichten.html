@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Nachrichten-Check</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1d;--mut:#6b6b6b;--line:#e2e2e2;--good:#1b7f4b;--warn:#a26200;--link:#1a4fd6}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#161616;--fg:#e9e9e9;--mut:#9a9a9a;--line:#2e2e2e;--good:#5cc98c;--warn:#e8b45a;--link:#8fb0ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:24px 16px 48px}
+main{max-width:700px;margin:0 auto}
+h1{font-size:26px;margin:0 0 4px}
+h2{font-size:19px;margin:30px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+p{margin:0 0 10px}
+ul{margin:0 0 10px;padding-left:20px}
+li{margin-bottom:8px}
+a{color:var(--link)}
+.mut{color:var(--mut)}
+.tag{font-weight:bold}
+.good{color:var(--good)}
+.warn{color:var(--warn)}
+.fazit{border-left:3px solid var(--line);padding-left:10px;margin:8px 0 0}
+dt{font-weight:bold;margin-top:8px}
+dd{margin:0 0 4px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Nachrichten-Check</h1>
+  <p class="mut">Stand 3. Oktober 2026 · aus 20 Google-Alerts · <a href="./">zum Depotbuch</a></p>
+  <p>Von 20 Meldungen waren nur 7 wirklich wichtig. Hier steht, was drin war und was es für uns heißt.</p>
+
+  <h2>Intel <span class="good">· eher gut</span></h2>
+  <ul>
+    <li><span class="tag good">Gut:</span> Intel bekommt <b>20 Milliarden Dollar</b> frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme.</li>
+    <li><span class="tag good">Gut:</span> Die Analysten von Melius Research sagen weiter <b>„Kaufen“</b>, Kursziel <b>165 $</b> (Intel steht bei ca. 109 €, also deutlich darunter).</li>
+    <li><span class="tag good">Entwarnung:</span> Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht. Die Aktie stieg sogar um 1,4 %.</li>
+    <li><span class="tag warn">Risiko:</span> Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden.</li>
+  </ul>
+  <p class="fazit"><b>Für uns:</b> Die Stimmung ist gut. Ob der Umbau wirklich klappt, zeigen die Quartalszahlen am <b>22.10.</b></p>
+
+  <h2>Apple <span class="warn">· gemischt</span></h2>
+  <ul>
+    <li><span class="tag good">Gut:</span> Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des <b>faltbaren iPhone Duo</b> (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Aber: Cramers Tipps liegen oft daneben.</li>
+    <li><span class="tag warn">Warnung:</span> Die Bank Morgan Stanley senkt ihr Kursziel leicht (360 → 355 $). Apple baut zwar mehr iPhones, verdient aber pro Gerät weniger, weil die Preise sinken und Speicherchips teurer werden. Die Aktie fiel um 0,8 %.</li>
+  </ul>
+  <p class="fazit"><b>Für uns:</b> Viel hängt am iPhone Duo. Wichtige Tage: <b>16.10.</b> Vorbestellung, <b>23.10.</b> Verkaufsstart, <b>29.10.</b> Quartalszahlen.</p>
+
+  <h2>STMicroelectronics <span class="good">· gut</span></h2>
+  <ul>
+    <li><span class="tag good">Gut:</span> Der US-Chiphersteller Micron hatte sehr starke Zahlen. Danach sind fast alle Chip-Aktien in Europa gestiegen, auch <b>STMicro</b>. Die Nachfrage nach KI-Chips ist weiter hoch.</li>
+    <li><span class="tag warn">Kleines Risiko:</span> Micron steckt in einem Patentstreit, eine andere Firma will ein US-Importverbot für bestimmte Micron-Chips. Das betrifft STMicro nicht direkt.</li>
+  </ul>
+  <p class="fazit"><b>Für uns:</b> Rückenwind für die ganze Branche. Quartalszahlen am <b>29.10.</b></p>
+
+  <h2>Nordex und Commerzbank</h2>
+  <p>Keine Meldungen dabei.</p>
+
+  <h2>Kann man ignorieren</h2>
+  <ul class="mut">
+    <li>„Lohnt sich der Einstieg?“ bei boerse.de (Intel, STMicro): Werbung für einen Newsletter.</li>
+    <li>„Kursbewegung“ bei finanzen.ch: automatisch erzeugte Kursmeldungen ohne Inhalt.</li>
+    <li>KION (Gabelstapler): andere Firma, kam über den Alert „Gewinnwarnung“ rein.</li>
+    <li>Apple-KI-Server (frühestens 2029), iPhone-Entsperr-Werkzeug der Polizei, Vergleichstabelle Ambarella: ohne Bedeutung fürs Spiel.</li>
+    <li>Ein anderes Börsenspiel-Depot, in dem Intel an einem Tag 7 % verlor: zeigt nur, wie stark Intel schwankt.</li>
+  </ul>
+
+  <h2>Begriffe</h2>
+  <dl>
+    <dt>Kursziel</dt><dd>Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie.</dd>
+    <dt>„Kaufen“ / „Übergewichten“</dt><dd>Analysten finden die Aktie gut. „Übergewichten“ heißt: mehr davon halten als vom Durchschnitt.</dd>
+    <dt>Marge</dt><dd>Wie viel vom Verkaufspreis als Gewinn übrig bleibt.</dd>
+    <dt>Chipfertigung (Foundry)</dt><dd>Der Teil von Intel, der Chips in eigenen Fabriken herstellt, auch für andere Firmen.</dd>
+    <dt>Patentstreit</dt><dd>Eine Firma behauptet, eine andere nutzt ihre geschützte Erfindung ohne Erlaubnis.</dd>
+  </dl>
+</main>
+</body>
+</html>
