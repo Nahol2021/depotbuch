@@ -1,93 +1,130 @@
 {
- "datum": "2026-10-03",
- "quelle": "aus 20 Google-Alerts",
+ "datum": "2026-10-04",
+ "quelle": "aus 35 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
-   "id": "intel",
-   "name": "Intel",
-   "stimmung": "eher gut",
-   "ton": "gut",
-   "punkte": [
-    {
-     "art": "Gut",
-     "text": "Intel bekommt **20 Milliarden Dollar** frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme."
-    },
-    {
-     "art": "Gut",
-     "text": "Die Analysten von Melius Research sagen weiter **„Kaufen“**, Kursziel **165 $** (Intel steht bei ca. 109 €, also deutlich darunter)."
-    },
-    {
-     "art": "Entwarnung",
-     "text": "Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht. Die Aktie stieg sogar um 1,4 %."
-    },
-    {
-     "art": "Risiko",
-     "text": "Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden."
-    }
-   ],
-   "fazit": "Die Stimmung ist gut. Ob der Umbau wirklich klappt, zeigen die Quartalszahlen am **22.10.**"
-  },
-  {
-   "id": "aapl",
-   "name": "Apple",
-   "stimmung": "gemischt",
+   "id": "markt",
+   "name": "Gesamtlage",
+   "stimmung": "eher schlecht",
    "ton": "warn",
    "punkte": [
     {
-     "art": "Gut",
-     "text": "Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des **faltbaren iPhone Duo** (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Aber: Cramers Tipps liegen oft daneben."
+     "art": "Risiko",
+     "text": "Im Konflikt um die **Straße von Hormus** (rund 20 % des weltweiten Öltransports) wurden mehrere Tanker beschossen, der Durchgang ist faktisch blockiert. Die Ölsorte Brent stieg zeitweise auf über **115 US-Dollar** pro Barrel."
     },
     {
-     "art": "Warnung",
-     "text": "Die Bank Morgan Stanley senkt ihr Kursziel leicht (360 → 355 $). Apple baut zwar mehr iPhones, verdient aber pro Gerät weniger, weil die Preise sinken und Speicherchips teurer werden. Die Aktie fiel um 0,8 %."
+     "art": "Kleines Risiko",
+     "text": "Die G7-Staaten haben eine Freigabe ihrer Ölreserven vorerst abgelehnt, halten sie in den kommenden Wochen aber für möglich."
     }
    ],
-   "fazit": "Viel hängt am iPhone Duo. Wichtige Tage: **16.10.** Vorbestellung, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen."
+   "fazit": "Keine unserer Aktien ist direkt im Ölgeschäft, aber ein hoher Ölpreis und Unruhe an den Märkten können allgemein auf die Stimmung drücken. Weiter beobachten."
   },
   {
-   "id": "stm",
-   "name": "STMicroelectronics",
+   "id": "nordex",
+   "name": "Nordex",
    "stimmung": "gut",
    "ton": "gut",
    "punkte": [
     {
      "art": "Gut",
-     "text": "Der US-Chiphersteller Micron hatte sehr starke Zahlen. Danach sind fast alle Chip-Aktien in Europa gestiegen, auch **STMicro**. Die Nachfrage nach KI-Chips ist weiter hoch."
+     "text": "Nordex hat einen neuen Auftrag aus Österreich erhalten: **56 Megawatt** (acht Windräder) für WEB Windenergie – das bisher größte Einzelprojekt des Kunden in Österreich. Inbetriebnahme ist 2028 geplant."
     },
     {
-     "art": "Kleines Risiko",
-     "text": "Micron steckt in einem Patentstreit, eine andere Firma will ein US-Importverbot für bestimmte Micron-Chips. Das betrifft STMicro nicht direkt."
+     "art": "Gut",
+     "text": "Die Investmentbank **Goldman Sachs** hat ihre Kaufempfehlung für Nordex bestätigt."
     }
    ],
-   "fazit": "Rückenwind für die ganze Branche. Quartalszahlen am **29.10.**"
+   "fazit": "Der Auftrag bestätigt die gute Geschäftslage, der Kurs reagierte aber kaum. Nächster wichtiger Termin: Nordex-Quartalszahlen am **5.11.**"
+  },
+  {
+   "id": "cbk",
+   "name": "Commerzbank",
+   "stimmung": "eher schlecht",
+   "ton": "warn",
+   "punkte": [
+    {
+     "art": "Warnung",
+     "text": "Die Bank RBC hat ihre Einschätzung für die Commerzbank von \"Kaufen\" auf neutral (**\"Sector Perform\"**) gesenkt. Grund ist ein **Umsetzungsrisiko** bei den Plänen rund um die italienische UniCredit."
+    }
+   ],
+   "fazit": "Nächste wichtige Termine: Commerzbank-Quartalszahlen am **5.11.**, dazu eine mögliche EZB-Entscheidung zur UniCredit-Beteiligung Mitte November."
+  },
+  {
+   "id": "aapl",
+   "name": "Apple",
+   "stimmung": "gemischt",
+   "ton": "info",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Apple soll an eigenen Server-Chips für **KI-Rechenzentren** arbeiten (Codename M8 Ultra). Das Projekt ist noch in früher Phase, ein Marktstart wird frühestens **2029** erwartet."
+    }
+   ],
+   "fazit": "Das Server-Projekt ist noch Zukunftsmusik. Kurzfristig wichtiger: Vorbestellung des iPhone Duo am **16.10.**"
   }
  ],
  "ohneMeldung": [
-  "Nordex",
-  "Commerzbank"
+  "Intel",
+  "STMicroelectronics"
  ],
  "begriffe": [
   {
-   "wort": "Kursziel",
-   "text": "Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie."
+   "wort": "Repowering",
+   "text": "Austausch alter Windkraftanlagen durch neue, leistungsstärkere Modelle am gleichen Standort."
   },
   {
-   "wort": "„Kaufen“ / „Übergewichten“",
-   "text": "Analysten finden die Aktie gut. „Übergewichten“ heißt: mehr davon halten als vom Durchschnitt."
+   "wort": "Sector Perform",
+   "text": "Eine neutrale Einstufung von Analysten – weder Kauf- noch Verkaufsempfehlung."
   },
   {
-   "wort": "Marge",
-   "text": "Wie viel vom Verkaufspreis als Gewinn übrig bleibt."
+   "wort": "Umsetzungsrisiko (Execution Risk)",
+   "text": "Das Risiko, dass ein geplantes Vorhaben in der Praxis schwieriger wird als gedacht."
   },
   {
-   "wort": "Chipfertigung (Foundry)",
-   "text": "Der Teil von Intel, der Chips in eigenen Fabriken herstellt, auch für andere Firmen."
+   "wort": "Brent",
+   "text": "Die bekannteste Ölsorte, an deren Preis sich der Weltmarktpreis für Öl orientiert."
   },
   {
-   "wort": "Patentstreit",
-   "text": "Eine Firma behauptet, eine andere nutzt ihre geschützte Erfindung ohne Erlaubnis."
+   "wort": "KI-Rechenzentrum",
+   "text": "Ein Rechenzentrum, das speziell für die Berechnungen von künstlicher Intelligenz gebaut ist."
   }
  ],
- "gesehen": []
+ "gesehen": [
+  "https://www.wallstreet-online.de/nachricht/21470154-intel-vs-quantum-x-labs-unterschaetzte-ruestungsmarkt-abseits-quantencomputern",
+  "https://simplywall.st/de/stocks/us/semiconductors/nasdaq-intc/intel/news/die-intel-aktie-intc-koennte-nach-den-juengsten-meldungen-zu",
+  "https://www.finanzen.ch/nachrichten/aktien/intel-aktie-kursbewegung-02-10-2026-1035062832",
+  "https://www.finanzen.ch/derivate/boersenplaetze/ch1572938889",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/nordex-erhaelt-56-mw-auftrag-nordex-aktie-notiert-bei-38-37-euro-nach/70220306",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69746111-aktien-kw-40-schwacher-start-in-den-oktober-starkes-ende-news-mutares-kion-2g-energy-daldrup-soehne-bitcoin-group-thyssenkrupp-nucera-nanorepr-617.htm",
+  "https://www.boerse-express.com/news/articles/nordex-aktie-web-windenergie-beauftragt-repowering-950319",
+  "https://www.aktiencheck.de/analysen/Artikel-Nordex_Aktienanalyse_Bessere_Preise_und_mehr_Auftraege_Kursziel_jetzt_52_80_Euro-20142815",
+  "https://www.finanzen.net/analyse/nordex_buy-goldman_sachs_group_inc._1108483",
+  "https://www.finanzen.at/nachrichten/aktien/apple-prueft-ki-server-mit-eigenen-chips-aktie-im-fokus-1036588301",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/apple-bringt-neue-geraete-heraus-und-apple-aktie-notiert-bei-296-25-euro/70220856",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69746359-neu-in-der-bn-app-fuers-iphone-alle-depots-eine-app-dein-ganzes-vermoegen-auf-einen-blick-088.htm",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69746347-in-gold-we-trust-report-iphone-billiger-als-je-zuvor-aber-nur-fuer-goldbugs-049.htm",
+  "https://www.stock-world.de/apple-aktie-morgan-stanley-senkt-kursziel/",
+  "https://www.marketscreener.com/news/rbc-downgrades-commerzbank-to-sector-perform-amid-execution-risk-tied-to-unicredit-initiatives-ce785ddbd98cf124",
+  "https://www.zdfheute.de/politik/deutschland/reserven-sprit-tankstelle-faq-100.html",
+  "https://www.bild.de/politik/inland/nach-der-freigabe-von-oel-und-dieselreserven-was-autofahrer-und-heizoelkunden-jetzt-wissen-muessen-6ac0d6d2d993ea3f355f4ce7",
+  "https://www.n-tv.de/politik/Briten-melden-Beschuss-zweier-Tanker-in-Strasse-von-Hormus-id31376384.html",
+  "https://www.spiegel.de/ausland/strasse-von-hormus-unbekannte-beschiessen-tanker-vor-oman-a-8549728a-929e-42bf-a20c-6b0d7e7c19a1",
+  "https://www.wallstreet-online.de/nachricht/21467898-aramco-dreht-oelhahn-auf-aramco-meldet-pipeline-comeback-oelpreis-druck",
+  "https://www.spiegel.de/ausland/iran-krieg-warum-gelangt-wieder-so-viel-oel-durch-die-strasse-von-hormus-a-c41e5663-bb36-4524-9416-3cb9ca374c86",
+  "https://www.faz.net/aktuell/politik/ausland/zerstoerte-us-basen-am-golf-endet-die-amerikanische-hegemonie-accg-201270549.html",
+  "https://www.stern.de/politik/ausland/donald-trump-und-die-midterms--unbeliebt--aber-dafuer-stinkreich-38340954.html",
+  "https://www.bz-berlin.de/ratgeber/oelreserven-gegen-hohe-preise-experten-daempfen-die-hoffnung-6ac0f6d541955c68cb8ecd43",
+  "https://www.focus.de/politik/oel-fliesst-wieder-durch-hormus-preise-bleiben-dennoch-hoch_498a162c-d780-4e34-a256-1839d51a23bd.html",
+  "https://www.tagesschau.de/ausland/europa/freigabe-oelreserven-reaktionen-100.html",
+  "https://www.derstandard.at/story/3000000342544/zwei-tanker-in-der-stra223e-von-hormuz-von-geschossen-getroffen",
+  "https://www.aktienwelt360.de/2026/10/03/nach-der-hormus-drohung-wenn-oel-zur-waffe-wird-wie-unabhaengig-ist-die-energieversorgung-wirklich/",
+  "https://www.tagesspiegel.de/internationales/dpa-exportstopp-nie-wirklich-auf-dem-tisch-g7-staaten-einigen-sich-nach-trumps-drohungen-16120290.html",
+  "https://de.finance.yahoo.com/nachrichten/kein-licht-funkstille-f%C3%BCr-%C3%B6ltanker-050000337.html",
+  "https://live.deutsche-boerse.com/nachrichten/Rohoeltanker-vor-der-Kueste-des-Oman-angegriffen-ee5c74fe-d4e6-4a32-9a03-8786962ed4f0",
+  "https://www.dw.com/de/iran-krieg-waehrung-rial-wechselkurs-lebenshaltungskosten-usa-strasse-von-hormus/a-79530963",
+  "https://www.tag24.de/thema/aus-aller-welt/iran/nahost-konflikt-zwei-tanker-in-strasse-von-hormus-attackiert-3535347",
+  "https://www.berliner-zeitung.de/article/beschuss-in-strasse-von-hormus-brand-auf-tanker-geloescht-10455873",
+  "https://logistik-heute.de/news/verpackung-mondi-hat-das-verpackungsportfolio-von-stiebel-eltron-optimiert-286753.html"
+ ]
 }

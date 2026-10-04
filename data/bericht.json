@@ -1,26 +1,31 @@
 {
  "datum": "2026-10-04",
- "einleitung": "Am Freitag (2.10.) gab es einen neuen Handelstag, aber wir konnten über die Websuche keine zuverlässigen und übereinstimmenden Schlusskurse finden (Finanzseiten waren technisch nicht erreichbar, die Suchergebnisse widersprachen sich teils deutlich). Die Kurse bleiben deshalb auf dem Stand vom Kauftag (1.10.), bis beim nächsten Update verlässliche Daten vorliegen.",
+ "einleitung": "Am Freitag (2.10.) war die Stimmung uneinheitlich: STMicroelectronics profitierte stark vom Chip-Boom, nachdem der US-Speicherchip-Hersteller Micron sehr starke Zahlen gemeldet hatte, während Nordex und die Commerzbank leicht nachgaben und Apple sich kaum bewegte. Im Hintergrund sorgt die Eskalation in der Straße von Hormus (Tanker-Angriffe, Ölpreis zeitweise über 115 Dollar) für Unruhe an den Märkten, auch wenn unsere Aktien davon bisher nicht direkt betroffen sind.",
  "eintraege": [
   {
    "aktie": "stm",
-   "text": "Kein verlässlicher neuer Kurs gefunden, der Wert bleibt auf dem Kaufkurs von 48,055 € vom 1.10. stehen. Die Suchergebnisse für STMicroelectronics widersprachen sich zwischen rund 45 € und 47 €, deshalb lieber abwarten statt eine unsichere Zahl eintragen."
+   "veraenderung": 6.9,
+   "text": "STMicroelectronics ist am Freitag um 6,9 % auf 50,86 € gestiegen. Grund war kein eigener Firmenbericht, sondern ein Kursschub bei fast allen Chip-Aktien in Europa, nachdem der US-Hersteller Micron sehr starke Zahlen und eine hohe Nachfrage nach KI-Chips gemeldet hatte. STMicro ist mit der ganzen Branche mitgestiegen."
   },
   {
    "aktie": "nordex",
-   "text": "Kein verlässlicher neuer Kurs gefunden, der Wert bleibt auf dem Kaufkurs von 39,20 € vom 1.10. stehen. Hinweise aus der Websuche deuteten auf einen leicht niedrigeren Kurs (ca. 38,30 bis 38,40 €) hin, das war aber nicht sicher genug zum Übernehmen."
+   "veraenderung": -1.1,
+   "text": "Nordex gab leicht um 1,1 % auf 38,38 € nach. Das Unternehmen hat einen neuen Auftrag aus Österreich bekommen (56 Megawatt, acht Windräder für WEB Windenergie, es ist deren bisher größtes Einzelprojekt dort) und Goldman Sachs hat die Kaufempfehlung bestätigt – der Kurs reagierte darauf aber kaum."
   },
   {
    "aktie": "intel",
-   "text": "Kein verlässlicher neuer Kurs gefunden, der Wert bleibt auf dem Kaufkurs von 109,38 € vom 1.10. stehen. Die Websuche lieferte hier besonders widersprüchliche Angaben (teils über 100 € Unterschied zwischen verschiedenen Quellen)."
+   "veraenderung": -0.5,
+   "text": "Intel bewegte sich am Freitag kaum und schloss 0,5 % niedriger bei 106,04 €. Besondere Unternehmensnachrichten gab es nicht, der Kurs hielt sich in etwa auf Vortagesniveau."
   },
   {
    "aktie": "cbk",
-   "text": "Kein verlässlicher neuer Kurs gefunden, der Wert bleibt auf dem Kaufkurs von 39,97 € vom 1.10. stehen. Ein Hinweis aus der Websuche nannte einen Freitagsschluss um 39,08 €, das war aber nur eine einzelne, nicht geprüfte Quelle."
+   "veraenderung": -0.8,
+   "text": "Die Commerzbank verlor 0,8 % auf 39,11 €. Die Bank RBC hat ihre Einschätzung von Kaufen auf neutral (\"Sector Perform\") gesenkt, weil sie Risiken bei der Umsetzung der geplanten Zusammenarbeit mit der italienischen UniCredit sieht."
   },
   {
    "aktie": "aapl",
-   "text": "Kein verlässlicher neuer Kurs gefunden, der Wert bleibt auf dem Kaufkurs von 295,55 € vom 1.10. stehen. Die Websuche deutete auf einen ähnlichen Kurs um 295 bis 296 € hin, also vermutlich wenig Bewegung."
+   "veraenderung": 0.9,
+   "text": "Apple stieg leicht um 0,9 % auf 295,00 €. Bekannt wurde, dass Apple langfristig eigene Server-Chips für KI-Rechenzentren entwickeln will – ein frühes Projekt, das frühestens 2029 fertig wäre und den Kurs kaum bewegte."
   }
  ],
  "warnungen": []
