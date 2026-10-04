@@ -1,4 +1,45 @@
 {
- "hinweis": "Google-Alerts-RSS-Feeds. Johan schickt die Adressen, Claude trägt sie ein.",
- "feeds": []
+ "hinweis": "Google-Alerts-RSS-Feeds. 'bezug' = Aktien-ID, 'alle' = betrifft mehrere Aktien, 'markt' = Gesamtlage. Meldungen aus markt-Feeds nur aufnehmen, wenn sie unsere Aktien spürbar betreffen (Zinsen, Ölpreis, Nahost-Eskalation), dann als Eintrag {id:'markt', name:'Gesamtlage'} in nachrichten.json.",
+ "feeds": [
+  {
+   "name": "Intel",
+   "bezug": "intel",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/18049172736948475356"
+  },
+  {
+   "name": "STMicroelectronics",
+   "bezug": "stm",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/14446722576245874160"
+  },
+  {
+   "name": "Nordex",
+   "bezug": "nordex",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/7783025109331892090"
+  },
+  {
+   "name": "Apple",
+   "bezug": "aapl",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/14711754914817214224"
+  },
+  {
+   "name": "Commerzbank UniCredit",
+   "bezug": "cbk",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/15167181366870879853"
+  },
+  {
+   "name": "Fed/EZB Zinsentscheid",
+   "bezug": "markt",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/18375927236717796177"
+  },
+  {
+   "name": "Gewinnwarnungen",
+   "bezug": "alle",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/18375927236717796427"
+  },
+  {
+   "name": "Straße von Hormus",
+   "bezug": "markt",
+   "url": "https://www.google.com/alerts/feeds/00296692253484345511/7109272138458179191"
+  }
+ ]
 }
