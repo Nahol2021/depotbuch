@@ -1,0 +1,93 @@
+{
+ "datum": "2026-10-03",
+ "quelle": "aus 20 Google-Alerts",
+ "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
+ "aktien": [
+  {
+   "id": "intel",
+   "name": "Intel",
+   "stimmung": "eher gut",
+   "ton": "gut",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Intel bekommt **20 Milliarden Dollar** frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme."
+    },
+    {
+     "art": "Gut",
+     "text": "Die Analysten von Melius Research sagen weiter **„Kaufen“**, Kursziel **165 $** (Intel steht bei ca. 109 €, also deutlich darunter)."
+    },
+    {
+     "art": "Entwarnung",
+     "text": "Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht. Die Aktie stieg sogar um 1,4 %."
+    },
+    {
+     "art": "Risiko",
+     "text": "Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden."
+    }
+   ],
+   "fazit": "Die Stimmung ist gut. Ob der Umbau wirklich klappt, zeigen die Quartalszahlen am **22.10.**"
+  },
+  {
+   "id": "aapl",
+   "name": "Apple",
+   "stimmung": "gemischt",
+   "ton": "warn",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des **faltbaren iPhone Duo** (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Aber: Cramers Tipps liegen oft daneben."
+    },
+    {
+     "art": "Warnung",
+     "text": "Die Bank Morgan Stanley senkt ihr Kursziel leicht (360 → 355 $). Apple baut zwar mehr iPhones, verdient aber pro Gerät weniger, weil die Preise sinken und Speicherchips teurer werden. Die Aktie fiel um 0,8 %."
+    }
+   ],
+   "fazit": "Viel hängt am iPhone Duo. Wichtige Tage: **16.10.** Vorbestellung, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen."
+  },
+  {
+   "id": "stm",
+   "name": "STMicroelectronics",
+   "stimmung": "gut",
+   "ton": "gut",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Der US-Chiphersteller Micron hatte sehr starke Zahlen. Danach sind fast alle Chip-Aktien in Europa gestiegen, auch **STMicro**. Die Nachfrage nach KI-Chips ist weiter hoch."
+    },
+    {
+     "art": "Kleines Risiko",
+     "text": "Micron steckt in einem Patentstreit, eine andere Firma will ein US-Importverbot für bestimmte Micron-Chips. Das betrifft STMicro nicht direkt."
+    }
+   ],
+   "fazit": "Rückenwind für die ganze Branche. Quartalszahlen am **29.10.**"
+  }
+ ],
+ "ohneMeldung": [
+  "Nordex",
+  "Commerzbank"
+ ],
+ "begriffe": [
+  {
+   "wort": "Kursziel",
+   "text": "Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie."
+  },
+  {
+   "wort": "„Kaufen“ / „Übergewichten“",
+   "text": "Analysten finden die Aktie gut. „Übergewichten“ heißt: mehr davon halten als vom Durchschnitt."
+  },
+  {
+   "wort": "Marge",
+   "text": "Wie viel vom Verkaufspreis als Gewinn übrig bleibt."
+  },
+  {
+   "wort": "Chipfertigung (Foundry)",
+   "text": "Der Teil von Intel, der Chips in eigenen Fabriken herstellt, auch für andere Firmen."
+  },
+  {
+   "wort": "Patentstreit",
+   "text": "Eine Firma behauptet, eine andere nutzt ihre geschützte Erfindung ohne Erlaubnis."
+  }
+ ],
+ "gesehen": []
+}

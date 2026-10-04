@@ -21,6 +21,8 @@ a{color:var(--link)}
 .tag{font-weight:bold}
 .good{color:var(--good)}
 .warn{color:var(--warn)}
+.bad{color:#b3261e}
+[hidden]{display:none!important}
 .fazit{border-left:3px solid var(--line);padding-left:10px;margin:8px 0 0}
 dt{font-weight:bold;margin-top:8px}
 dd{margin:0 0 4px}
@@ -29,43 +31,44 @@ dd{margin:0 0 4px}
 <body>
 <main>
   <h1>Nachrichten-Check</h1>
-  <p class="mut">Stand 3. Oktober 2026 · aus 20 Google-Alerts · <a href="./">zum Depotbuch</a></p>
-  <p>Die wichtigen Meldungen und was sie für uns heißen.</p>
-
-  <h2>Intel <span class="good">· eher gut</span></h2>
-  <ul>
-    <li><span class="tag good">Gut:</span> Intel bekommt <b>20 Milliarden Dollar</b> frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme.</li>
-    <li><span class="tag good">Gut:</span> Die Analysten von Melius Research sagen weiter <b>„Kaufen“</b>, Kursziel <b>165 $</b> (Intel steht bei ca. 109 €, also deutlich darunter).</li>
-    <li><span class="tag good">Entwarnung:</span> Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht. Die Aktie stieg sogar um 1,4 %.</li>
-    <li><span class="tag warn">Risiko:</span> Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden.</li>
-  </ul>
-  <p class="fazit"><b>Für uns:</b> Die Stimmung ist gut. Ob der Umbau wirklich klappt, zeigen die Quartalszahlen am <b>22.10.</b></p>
-
-  <h2>Apple <span class="warn">· gemischt</span></h2>
-  <ul>
-    <li><span class="tag good">Gut:</span> Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des <b>faltbaren iPhone Duo</b> (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Aber: Cramers Tipps liegen oft daneben.</li>
-    <li><span class="tag warn">Warnung:</span> Die Bank Morgan Stanley senkt ihr Kursziel leicht (360 → 355 $). Apple baut zwar mehr iPhones, verdient aber pro Gerät weniger, weil die Preise sinken und Speicherchips teurer werden. Die Aktie fiel um 0,8 %.</li>
-  </ul>
-  <p class="fazit"><b>Für uns:</b> Viel hängt am iPhone Duo. Wichtige Tage: <b>16.10.</b> Vorbestellung, <b>23.10.</b> Verkaufsstart, <b>29.10.</b> Quartalszahlen.</p>
-
-  <h2>STMicroelectronics <span class="good">· gut</span></h2>
-  <ul>
-    <li><span class="tag good">Gut:</span> Der US-Chiphersteller Micron hatte sehr starke Zahlen. Danach sind fast alle Chip-Aktien in Europa gestiegen, auch <b>STMicro</b>. Die Nachfrage nach KI-Chips ist weiter hoch.</li>
-    <li><span class="tag warn">Kleines Risiko:</span> Micron steckt in einem Patentstreit, eine andere Firma will ein US-Importverbot für bestimmte Micron-Chips. Das betrifft STMicro nicht direkt.</li>
-  </ul>
-  <p class="fazit"><b>Für uns:</b> Rückenwind für die ganze Branche. Quartalszahlen am <b>29.10.</b></p>
-
-  <h2>Nordex und Commerzbank</h2>
-  <p>Keine Meldungen dabei.</p>
-
-  <h2>Begriffe</h2>
-  <dl>
-    <dt>Kursziel</dt><dd>Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie.</dd>
-    <dt>„Kaufen“ / „Übergewichten“</dt><dd>Analysten finden die Aktie gut. „Übergewichten“ heißt: mehr davon halten als vom Durchschnitt.</dd>
-    <dt>Marge</dt><dd>Wie viel vom Verkaufspreis als Gewinn übrig bleibt.</dd>
-    <dt>Chipfertigung (Foundry)</dt><dd>Der Teil von Intel, der Chips in eigenen Fabriken herstellt, auch für andere Firmen.</dd>
-    <dt>Patentstreit</dt><dd>Eine Firma behauptet, eine andere nutzt ihre geschützte Erfindung ohne Erlaubnis.</dd>
-  </dl>
+  <p class="mut" id="stand">lädt …</p>
+  <p id="intro"></p>
+  <div id="inhalt"></div>
+  <h2 id="h-begriffe" hidden>Begriffe</h2>
+  <dl id="begriffe"></dl>
 </main>
+<script>
+(function(){
+function $(id){ return document.getElementById(id); }
+function el(tag, cls, kids){ var e = document.createElement(tag); if (cls) e.className = cls; (kids || []).forEach(function(k){ e.appendChild(typeof k === "string" ? document.createTextNode(k) : k); }); return e; }
+/* **fett** wird fett dargestellt, alles andere bleibt reiner Text */
+function rich(text){ var out = []; String(text || "").split("**").forEach(function(part, i){ out.push(i % 2 ? el("b", null, [part]) : part); }); return out; }
+var TON = {gut:"good", warn:"warn", schlecht:"bad"};
+var ART = {"Gut":"good", "Entwarnung":"good", "Warnung":"warn", "Risiko":"warn", "Kleines Risiko":"warn", "Schlecht":"bad"};
+fetch("data/nachrichten.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.json(); }).then(function(n){
+  var d = new Date(n.datum + "T12:00:00");
+  $("stand").textContent = "";
+  $("stand").appendChild(document.createTextNode("Stand " + d.toLocaleDateString("de-DE", {day:"numeric", month:"long", year:"numeric"}) + (n.quelle ? " · " + n.quelle : "") + " · "));
+  var a = el("a", null, ["zum Depotbuch"]); a.href = "./"; $("stand").appendChild(a);
+  $("intro").textContent = n.intro || "";
+  var box = $("inhalt");
+  (n.aktien || []).forEach(function(ak){
+    box.appendChild(el("h2", null, [ak.name + " ", el("span", TON[ak.ton] || "", ["· " + (ak.stimmung || "")])]));
+    var ul = el("ul");
+    (ak.punkte || []).forEach(function(p){ ul.appendChild(el("li", null, [el("span", "tag " + (ART[p.art] || ""), [p.art + ":"]), " "].concat(rich(p.text)))); });
+    box.appendChild(ul);
+    if (ak.fazit) box.appendChild(el("p", "fazit", [el("b", null, ["Für uns:"]), " "].concat(rich(ak.fazit))));
+  });
+  if (n.ohneMeldung && n.ohneMeldung.length){
+    box.appendChild(el("h2", null, [n.ohneMeldung.join(" und ")]));
+    box.appendChild(el("p", null, ["Keine Meldungen dabei."]));
+  }
+  if (n.begriffe && n.begriffe.length){
+    $("h-begriffe").hidden = false;
+    n.begriffe.forEach(function(b){ $("begriffe").appendChild(el("dt", null, [b.wort])); $("begriffe").appendChild(el("dd", null, rich(b.text))); });
+  }
+}).catch(function(){ $("stand").textContent = "Die Nachrichten konnten nicht geladen werden. Bitte später neu laden."; });
+})();
+</script>
 </body>
 </html>
