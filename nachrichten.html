@@ -27,24 +27,30 @@ a{color:var(--link)}
 dt{font-weight:bold;margin-top:8px}
 dd{margin:0 0 4px}
 h3{font-size:16px;margin:30px 0 6px;color:var(--mut)}
-.meta{color:var(--mut);font-size:14px}
+.meta{color:var(--mut);font-size:14px;white-space:nowrap}
+.meta a{color:var(--mut);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:2px}
+.heute{border:1px solid var(--line);padding:10px 12px;margin:0 0 10px}
+.heute p{margin:0 0 6px}
+.heute p:last-child{margin:0}
 </style>
 </head>
 <body>
 <main>
   <h1>Nachrichten-Check</h1>
   <p class="mut" id="stand">lädt …</p>
+  <div class="heute" id="heute" hidden><p id="heute-text"></p><p class="mut" id="heute-termin"></p></div>
   <p id="intro"></p>
   <div id="inhalt"></div>
   <h2 id="h-begriffe" hidden>Begriffe</h2>
   <dl id="begriffe"></dl>
+  <p class="mut" style="margin-top:24px"><a href="./">zum Depotbuch</a></p>
 </main>
 <script>
 (function(){
 function $(id){ return document.getElementById(id); }
 function el(tag, cls, kids){ var e = document.createElement(tag); if (cls) e.className = cls; (kids || []).forEach(function(k){ e.appendChild(typeof k === "string" ? document.createTextNode(k) : k); }); return e; }
 /* Zahl und Einheit nicht trennen: "40 %" → geschütztes Leerzeichen */
-function glue(t){ return t.replace(/(\d)\s+(%|€|\$|Euro|Dollar|US-Dollar|Mrd\.|Mio\.|Megawatt)/g, "$1 $2"); }
+function glue(t){ return t.replace(/(\d)\s+(%|€|\$|Euro|Dollar|US-Dollar|Mrd\.|Mio\.|Megawatt)/g, "$1 $2").replace(/(\d\.)\s+(Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember)/g, "$1 $2"); }
 /* **fett** und *kursiv* umwandeln, sonst reiner Text (kein HTML aus den Daten) */
 function rich(text){
   var out = [];
@@ -83,13 +89,21 @@ function abschnitt(box, name, ak, klein){
 }
 
 function get(n){ return fetch("data/" + n + ".json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.json(); }); }
-Promise.all([get("nachrichten"), get("plan").catch(function(){ return {}; })]).then(function(r){
-  var n = r[0], plan = r[1];
+Promise.all([get("nachrichten"), get("plan").catch(function(){ return {}; }), get("termine").catch(function(){ return {}; })]).then(function(r){
+  var n = r[0], plan = r[1], termine = r[2];
   var d = new Date(n.datum + "T12:00:00");
   $("stand").textContent = "";
   $("stand").appendChild(document.createTextNode("Stand " + d.toLocaleDateString("de-DE", {day:"numeric", month:"long", year:"numeric"}) + (n.quelle ? " · " + n.quelle : "") + " · "));
   var a = el("a", null, ["zum Depotbuch"]); a.href = "./"; $("stand").appendChild(a);
   $("intro").textContent = n.intro || "";
+
+  /* Kasten „Heute wichtig“: Text aus dem Tagesupdate, nächster Termin aus der Terminliste */
+  var heute = new Date(); heute.setHours(0,0,0,0);
+  var naechster = ((termine && termine.items) || []).filter(function(t){ return new Date(t.datum + "T12:00:00") >= heute; })
+    .sort(function(x, y){ return x.datum.localeCompare(y.datum); })[0];
+  if (n.heute){ rich(n.heute).forEach(function(k){ $("heute-text").appendChild(typeof k === "string" ? document.createTextNode(k) : k); }); }
+  if (naechster) $("heute-termin").textContent = "Nächster Termin: " + kurzDatum(naechster.datum) + " " + naechster.titel + (naechster.unsicher ? " (Datum nicht bestätigt)" : "");
+  $("heute").hidden = !n.heute && !naechster;
 
   /* Jede unserer Aktien bekommt ihren festen Abschnitt, in der Reihenfolge des Plans; die Gesamtlage kommt zuletzt und kleiner */
   var byId = {}; (n.aktien || []).forEach(function(ak){ byId[ak.id] = ak; });
