@@ -38,7 +38,7 @@
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
     }
    ],
-   "fazit": "Die Stimmung ist gut. Ob der Umbau klappt, zeigen die Quartalszahlen am **22.10.**"
+   "fazit": "Die Stimmung ist gut. Ob der Umbau klappt, zeigen die Quartalszahlen voraussichtlich am **22.10.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "stm",
@@ -116,7 +116,7 @@
      "datum": "2026-10-05"
     }
    ],
-   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, auch wenn das Geschäft selbst gut läuft. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5. November**."
+   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
   },
   {
    "id": "aapl",
@@ -281,5 +281,6 @@
   "https://www.wort.lu/international/anklage-gegen-iraner-terrorplan-gegen-juedische-gemeinde-in-manchester/138006191.html",
   "https://www.facebook.com/derspiegel/posts/im-gezerre-um-die-%25C3%25B6ffnung-der-stra%25C3%259Fe-von-hormus-hat-iran-seine-bedingungen-bekr%25C3%25A4/1583890853779978/",
   "https://www.radioessen.de/artikel/tanker-in-der-strasse-von-hormus-angegriffen-2772111"
- ]
+ ],
+ "heute": "Im Mittelpunkt steht die **Commerzbank**: Zwei Banken haben sie herabgestuft, und UniCredit will die Kontrolle im Aufsichtsrat. Bei den anderen Aktien waren die Meldungen zuletzt eher gut (Chip-Boom, neuer Nordex-Auftrag)."
 }
