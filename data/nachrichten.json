@@ -1,93 +1,85 @@
 {
- "datum": "2026-10-04",
- "quelle": "aus 35 Google-Alerts",
+ "datum": "2026-10-05",
+ "quelle": "aus 39 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
-   "id": "markt",
-   "name": "Gesamtlage",
-   "stimmung": "eher schlecht",
-   "ton": "warn",
-   "punkte": [
-    {
-     "art": "Risiko",
-     "text": "Im Konflikt um die **Straße von Hormus** (rund 20 % des weltweiten Öltransports) wurden mehrere Tanker beschossen, der Durchgang ist faktisch blockiert. Die Ölsorte Brent stieg zeitweise auf über **115 US-Dollar** pro Barrel."
-    },
-    {
-     "art": "Kleines Risiko",
-     "text": "Die G7-Staaten haben eine Freigabe ihrer Ölreserven vorerst abgelehnt, halten sie in den kommenden Wochen aber für möglich."
-    }
-   ],
-   "fazit": "Keine unserer Aktien ist direkt im Ölgeschäft, aber ein hoher Ölpreis und Unruhe an den Märkten können allgemein auf die Stimmung drücken. Weiter beobachten."
-  },
-  {
-   "id": "nordex",
-   "name": "Nordex",
-   "stimmung": "gut",
-   "ton": "gut",
-   "punkte": [
-    {
-     "art": "Gut",
-     "text": "Nordex hat einen neuen Auftrag aus Österreich erhalten: **56 Megawatt** (acht Windräder) für WEB Windenergie – das bisher größte Einzelprojekt des Kunden in Österreich. Inbetriebnahme ist 2028 geplant."
-    },
-    {
-     "art": "Gut",
-     "text": "Die Investmentbank **Goldman Sachs** hat ihre Kaufempfehlung für Nordex bestätigt."
-    }
-   ],
-   "fazit": "Der Auftrag bestätigt die gute Geschäftslage, der Kurs reagierte aber kaum. Nächster wichtiger Termin: Nordex-Quartalszahlen am **5.11.**"
-  },
-  {
    "id": "cbk",
    "name": "Commerzbank",
-   "stimmung": "eher schlecht",
+   "stimmung": "gemischt",
    "ton": "warn",
    "punkte": [
     {
      "art": "Warnung",
-     "text": "Die Bank RBC hat ihre Einschätzung für die Commerzbank von \"Kaufen\" auf neutral (**\"Sector Perform\"**) gesenkt. Grund ist ein **Umsetzungsrisiko** bei den Plänen rund um die italienische UniCredit."
-    }
-   ],
-   "fazit": "Nächste wichtige Termine: Commerzbank-Quartalszahlen am **5.11.**, dazu eine mögliche EZB-Entscheidung zur UniCredit-Beteiligung Mitte November."
-  },
-  {
-   "id": "aapl",
-   "name": "Apple",
-   "stimmung": "gemischt",
-   "ton": "info",
-   "punkte": [
+     "text": "Die Bank **RBC** hat ihr Kursziel für die Commerzbank von 43 auf **40 Euro** gesenkt (Einstufung bleibt neutral, \"Sector Perform\"), auch die **Deutsche Bank** stuft die Aktie jetzt nur noch auf \"Halten\". Beide nennen als Grund das steigende Risiko bei der Umsetzung der UniCredit-Pläne."
+    },
+    {
+     "art": "Risiko",
+     "text": "Laut *Financial Times* will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen – im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027."
+    },
     {
      "art": "Gut",
-     "text": "Apple soll an eigenen Server-Chips für **KI-Rechenzentren** arbeiten (Codename M8 Ultra). Das Projekt ist noch in früher Phase, ein Marktstart wird frühestens **2029** erwartet."
+     "text": "Die Bundesregierung verlangt von UniCredit verbindliche Zusagen: Die Commerzbank soll an der Börse in **Frankfurt** notiert bleiben und ihr Geschäft mit mittelständischen Firmenkunden ausbauen."
+    },
+    {
+     "art": "Gut",
+     "text": "Das erste Halbjahr 2026 lief für die Commerzbank stark: **1,8 Milliarden Euro** Gewinn, 40 % mehr als im Vorjahr. Die Bank kauft außerdem weiter eigene Aktien zurück (bisher über 6,2 Millionen Stück)."
     }
    ],
-   "fazit": "Das Server-Projekt ist noch Zukunftsmusik. Kurzfristig wichtiger: Vorbestellung des iPhone Duo am **16.10.**"
+   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, auch wenn das Geschäft selbst gut läuft. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5. November**."
+  },
+  {
+   "id": "markt",
+   "name": "Gesamtlage",
+   "stimmung": "gemischt",
+   "ton": "warn",
+   "punkte": [
+    {
+     "art": "Entwarnung",
+     "text": "Der Ölpreis (**Brent**) ist von seinem Spitzenwert über 115 US-Dollar wieder auf rund **92 US-Dollar** gefallen, bleibt aber höher als vor dem Konflikt um die Straße von Hormus."
+    },
+    {
+     "art": "Risiko",
+     "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich. Rohöl fließt inzwischen wieder fast normal durch die Straße, Treibstoff-Lieferungen wie Diesel und Benzin liegen aber weiterhin bei nur etwa **19 %** des üblichen Niveaus."
+    },
+    {
+     "art": "Kleines Risiko",
+     "text": "Die **Opec+**-Staaten lassen ihre Fördermengen für November unverändert – das zweite Mal in Folge keine Erhöhung."
+    }
+   ],
+   "fazit": "Die Lage bleibt angespannt, der Ölpreis hat sich aber von seinem Höchststand etwas entfernt. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Stimmung an den Börsen kann aber trotzdem beeinflusst werden."
   }
  ],
  "ohneMeldung": [
   "Intel",
-  "STMicroelectronics"
+  "STMicroelectronics",
+  "Nordex",
+  "Apple"
  ],
  "begriffe": [
-  {
-   "wort": "Repowering",
-   "text": "Austausch alter Windkraftanlagen durch neue, leistungsstärkere Modelle am gleichen Standort."
-  },
   {
    "wort": "Sector Perform",
    "text": "Eine neutrale Einstufung von Analysten – weder Kauf- noch Verkaufsempfehlung."
   },
   {
-   "wort": "Umsetzungsrisiko (Execution Risk)",
-   "text": "Das Risiko, dass ein geplantes Vorhaben in der Praxis schwieriger wird als gedacht."
+   "wort": "Aufsichtsrat",
+   "text": "Das Kontrollgremium einer Aktiengesellschaft, das den Vorstand überwacht und wichtigen Entscheidungen zustimmen muss."
   },
   {
-   "wort": "Brent",
-   "text": "Die bekannteste Ölsorte, an deren Preis sich der Weltmarktpreis für Öl orientiert."
+   "wort": "Kapitalkosten (Cost of Equity)",
+   "text": "Der Zinssatz, mit dem Analysten künftige Gewinne auf den heutigen Wert umrechnen. Steigt er, sinkt der berechnete faire Kurs einer Aktie."
   },
   {
-   "wort": "KI-Rechenzentrum",
-   "text": "Ein Rechenzentrum, das speziell für die Berechnungen von künstlicher Intelligenz gebaut ist."
+   "wort": "Opec+",
+   "text": "Zusammenschluss der Opec-Ölstaaten mit weiteren Förderländern wie Russland, der gemeinsam über die weltweite Fördermenge entscheidet."
+  },
+  {
+   "wort": "Aktienrückkauf",
+   "text": "Ein Unternehmen kauft eigene Aktien zurück. Dadurch verteilt sich der Gewinn auf weniger Aktien, was den Gewinn je Aktie erhöhen kann."
+  },
+  {
+   "wort": "Straße von Hormus",
+   "text": "Engste Meerenge am Persischen Golf, durch die ein großer Teil des weltweiten Öltransports läuft."
   }
  ],
  "gesehen": [
@@ -125,6 +117,36 @@
   "https://www.dw.com/de/iran-krieg-waehrung-rial-wechselkurs-lebenshaltungskosten-usa-strasse-von-hormus/a-79530963",
   "https://www.tag24.de/thema/aus-aller-welt/iran/nahost-konflikt-zwei-tanker-in-strasse-von-hormus-attackiert-3535347",
   "https://www.berliner-zeitung.de/article/beschuss-in-strasse-von-hormus-brand-auf-tanker-geloescht-10455873",
-  "https://logistik-heute.de/news/verpackung-mondi-hat-das-verpackungsportfolio-von-stiebel-eltron-optimiert-286753.html"
+  "https://logistik-heute.de/news/verpackung-mondi-hat-das-verpackungsportfolio-von-stiebel-eltron-optimiert-286753.html",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-retirement-bet-and-shrinking-analyst-support-collide-with/70225795",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-retail-offensive-and-boardroom-countdown-two-clocks-ticking/70227840",
+  "https://ca.finance.yahoo.com/news/delfin-tender-full-17-6-204810924.html",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-retirement-product-bet-meets-a-harder-analyst-crowd/70226817",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-stock-gets-an-rbc-downgrade-as-target-falls-to-eur-40/70223744",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-buyback-rolls-on-as-analysts-trim-ratings-and-berlin-presses/70223549",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-retirement-push-meets-a-wall-of-analyst-caution/70223281",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/unicredit-approves-up-to-eur-5-billion-in-notes-what-it-means-for/70227291",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-pushes-retail-growth-as-unicredit-plots-sweeping-board/70222588",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-capital-returns-hold-firm-as-unicredit-s-boardroom-ambitions-and-analyst-downgrades/70225110",
+  "https://www.welt.de/politik/ausland/article6ac227d83b1bc356aee646d7/oel-route-iran-knuepft-oeffnung-von-hormus-an-sieben-bedingungen.html",
+  "https://www.tagesspiegel.de/internationales/streit-um-wichtige-meerenge-iran-knupft-offnung-der-strasse-von-hormus-an-bedingungen-16123415.html",
+  "https://www.spiegel.de/ausland/iran-krieg-teheran-knuepft-oeffnung-der-strasse-von-hormus-an-bedingungen-a-830ffb3b-cbef-4546-b82a-cb8a2fc36fc5",
+  "https://www.finanzen.net/nachricht/aktien/tanker-in-der-strasse-von-hormus-angegriffen-15966387",
+  "https://www.tagesschau.de/ausland/europa/usa-bomber-grossbritannien-abzug-100.html",
+  "https://www.zdfheute.de/politik/ausland/usa-bomber-abzug-grossbritannien-iran-100.html",
+  "https://www.ardmediathek.de/video/Y3JpZDovL3RhZ2Vzc2NoYXUuZGUvNjkzMzBjODQtODdjMC00NzQ5LTk1MzMtYzU0NDY4YjM0ZTZkLVNFTkRVTkdTVklERU8",
+  "https://www.berliner-zeitung.de/article/hormus-blockade-teheran-fordert-sanktionsende-und-kriegsstopp-10458524",
+  "https://www.handelsblatt.com/finanzen/maerkte/devisen-rohstoffe/oel-opec-plus-will-foerderziele-fuer-november-beibehalten/100259559.html",
+  "https://www.diepresse.com/41323110/trumps-hoffnung-harter-winter-koennte-iran-in-die-knie-zwingen",
+  "https://kurier.at/politik/ausland/iran-krieg-israel-usa-trump-nahostkrieg-strasse-von-hormus-livebericht-4-oktober/403136057",
+  "https://orf.at/stories/3444059/",
+  "https://www.dw.com/de/iran-krieg-usa-strasse-von-hormus-oel-welthandel-donald-trump-bagher-ghalibaf-abbas-araghtschi/a-79538058",
+  "https://www.radiowaf.de/nachrichten/nrw-und-die-welt/london-tanker-in-der-strasse-von-hormus-angegriffen.html",
+  "https://ga.de/news/politik/ausland/tanker-in-der-strasse-von-hormus-angegriffen_aid-155907971",
+  "https://www.zeit.de/news/2026-10/04/tanker-in-der-strasse-von-hormus-angegriffen",
+  "https://live.deutsche-boerse.com/nachrichten/Iran-knuepft-Oeffnung-von-Hormus-an-sieben-Vorbedingungen-fd187153-0abf-48e2-893f-06f54c6563f3",
+  "https://www.wort.lu/international/anklage-gegen-iraner-terrorplan-gegen-juedische-gemeinde-in-manchester/138006191.html",
+  "https://www.facebook.com/derspiegel/posts/im-gezerre-um-die-%25C3%25B6ffnung-der-stra%25C3%259Fe-von-hormus-hat-iran-seine-bedingungen-bekr%25C3%25A4/1583890853779978/",
+  "https://www.radioessen.de/artikel/tanker-in-der-strasse-von-hormus-angegriffen-2772111"
  ]
 }
