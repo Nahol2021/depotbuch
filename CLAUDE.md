@@ -10,6 +10,7 @@ Live: https://nahol2021.github.io/depotbuch/ (öffentlich, ohne Login).
 - Keine Screenshots auf der öffentlichen Seite.
 - Nachrichten-Seite: Oberfläche bewusst sehr schlicht (keine Depotbuch-Optik, keine Karten).
   Oben ein Kasten „Heute wichtig“ mit Info und nächstem Termin, aber keine „Was tun?“-Zeile.
+  Quellen-Links hellgrau statt blau, die Seite soll nicht bunt wirken.
 - Keine Kaufbefehle, sondern Infos und Szenarien. Entscheiden tut das Team. Einfach auf Deutsch
   erklären, Johan ist Börsen-Anfänger.
 - Diese Datei ist öffentlich, sobald sie gepusht wird. Deshalb keine privaten Angaben hier eintragen.
