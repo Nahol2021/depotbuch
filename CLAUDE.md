@@ -8,6 +8,8 @@ Live: https://nahol2021.github.io/depotbuch/ (öffentlich, ohne Login).
 - Nach jeder Änderung an `data/termine.json`: `python3 tools/build_ics.py` ausführen und
   `kalender.ics` mitcommitten.
 - Keine Screenshots auf der öffentlichen Seite.
+- Nachrichten-Seite: Oberfläche bewusst sehr schlicht (keine Depotbuch-Optik, keine Karten).
+  Oben ein Kasten „Heute wichtig“ mit Info und nächstem Termin, aber keine „Was tun?“-Zeile.
 - Keine Kaufbefehle, sondern Infos und Szenarien. Entscheiden tut das Team. Einfach auf Deutsch
   erklären, Johan ist Börsen-Anfänger.
 - Diese Datei ist öffentlich, sobald sie gepusht wird. Deshalb keine privaten Angaben hier eintragen.
