@@ -26,6 +26,8 @@ a{color:var(--link)}
 .fazit{border-left:3px solid var(--line);padding-left:10px;margin:8px 0 0}
 dt{font-weight:bold;margin-top:8px}
 dd{margin:0 0 4px}
+h3{font-size:16px;margin:30px 0 6px;color:var(--mut)}
+.meta{color:var(--mut);font-size:14px}
 </style>
 </head>
 <body>
@@ -41,31 +43,69 @@ dd{margin:0 0 4px}
 (function(){
 function $(id){ return document.getElementById(id); }
 function el(tag, cls, kids){ var e = document.createElement(tag); if (cls) e.className = cls; (kids || []).forEach(function(k){ e.appendChild(typeof k === "string" ? document.createTextNode(k) : k); }); return e; }
-/* **fett** wird fett dargestellt, alles andere bleibt reiner Text */
-function rich(text){ var out = []; String(text || "").split("**").forEach(function(part, i){ out.push(i % 2 ? el("b", null, [part]) : part); }); return out; }
+/* Zahl und Einheit nicht trennen: "40 %" → geschütztes Leerzeichen */
+function glue(t){ return t.replace(/(\d)\s+(%|€|\$|Euro|Dollar|US-Dollar|Mrd\.|Mio\.|Megawatt)/g, "$1 $2"); }
+/* **fett** und *kursiv* umwandeln, sonst reiner Text (kein HTML aus den Daten) */
+function rich(text){
+  var out = [];
+  glue(String(text || "")).split("**").forEach(function(part, i){
+    if (i % 2){ out.push(el("b", null, [part])); return; }
+    part.split(/\*([^*]+)\*/).forEach(function(q, j){ out.push(j % 2 ? el("i", null, [q]) : q); });
+  });
+  return out;
+}
+function kurzDatum(s){ var d = new Date(s + "T12:00:00"); return isNaN(d) ? "" : d.toLocaleDateString("de-DE", {day:"2-digit", month:"2-digit"}); }
 var TON = {gut:"good", warn:"warn", schlecht:"bad"};
 var ART = {"Gut":"good", "Entwarnung":"good", "Warnung":"warn", "Risiko":"warn", "Kleines Risiko":"warn", "Schlecht":"bad"};
-fetch("data/nachrichten.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.json(); }).then(function(n){
+
+function punkt(p){
+  var kids = [el("span", "tag " + (ART[p.art] || ""), [p.art + ":"]), " "].concat(rich(p.text));
+  var meta = [];
+  if (p.datum) meta.push(kurzDatum(p.datum));
+  if (p.quelle){
+    if (p.url){ var q = el("a", null, [p.quelle]); q.href = p.url; q.target = "_blank"; q.rel = "noopener"; meta.push(q); }
+    else meta.push(p.quelle);
+  }
+  if (meta.length){
+    var m = el("span", "meta", [" ("]);
+    meta.forEach(function(x, i){ if (i) m.appendChild(document.createTextNode(" · ")); m.appendChild(typeof x === "string" ? document.createTextNode(x) : x); });
+    m.appendChild(document.createTextNode(")"));
+    kids.push(m);
+  }
+  return el("li", null, kids);
+}
+function abschnitt(box, name, ak, klein){
+  box.appendChild(el(klein ? "h3" : "h2", null, [name + " "].concat(ak && ak.stimmung ? [el("span", TON[ak.ton] || "", ["· " + ak.stimmung])] : [])));
+  var punkte = (ak && ak.punkte || []).slice().sort(function(a, b){ return (b.datum || "").localeCompare(a.datum || ""); });
+  if (!punkte.length){ box.appendChild(el("p", "mut", ["Keine neuen Meldungen in den letzten Tagen."])); return; }
+  var ul = el("ul"); punkte.forEach(function(p){ ul.appendChild(punkt(p)); }); box.appendChild(ul);
+  if (ak.fazit) box.appendChild(el("p", "fazit", [el("b", null, ["Für uns:"]), " "].concat(rich(ak.fazit))));
+}
+
+function get(n){ return fetch("data/" + n + ".json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.json(); }); }
+Promise.all([get("nachrichten"), get("plan").catch(function(){ return {}; })]).then(function(r){
+  var n = r[0], plan = r[1];
   var d = new Date(n.datum + "T12:00:00");
   $("stand").textContent = "";
   $("stand").appendChild(document.createTextNode("Stand " + d.toLocaleDateString("de-DE", {day:"numeric", month:"long", year:"numeric"}) + (n.quelle ? " · " + n.quelle : "") + " · "));
   var a = el("a", null, ["zum Depotbuch"]); a.href = "./"; $("stand").appendChild(a);
   $("intro").textContent = n.intro || "";
-  var box = $("inhalt");
-  (n.aktien || []).forEach(function(ak){
-    box.appendChild(el("h2", null, [ak.name + " ", el("span", TON[ak.ton] || "", ["· " + (ak.stimmung || "")])]));
-    var ul = el("ul");
-    (ak.punkte || []).forEach(function(p){ ul.appendChild(el("li", null, [el("span", "tag " + (ART[p.art] || ""), [p.art + ":"]), " "].concat(rich(p.text)))); });
-    box.appendChild(ul);
-    if (ak.fazit) box.appendChild(el("p", "fazit", [el("b", null, ["Für uns:"]), " "].concat(rich(ak.fazit))));
+
+  /* Jede unserer Aktien bekommt ihren festen Abschnitt, in der Reihenfolge des Plans; die Gesamtlage kommt zuletzt und kleiner */
+  var byId = {}; (n.aktien || []).forEach(function(ak){ byId[ak.id] = ak; });
+  var box = $("inhalt"), done = {markt: true};
+  (plan.positionen || []).forEach(function(p){ done[p.id] = true; abschnitt(box, p.name, byId[p.id], false); });
+  (n.aktien || []).forEach(function(ak){ if (!done[ak.id]){ done[ak.id] = true; abschnitt(box, ak.name, ak, false); } });
+  if (byId.markt) abschnitt(box, byId.markt.name || "Gesamtlage", byId.markt, true);
+
+  /* Nur Begriffe zeigen, die im Text auch vorkommen */
+  var alles = (n.aktien || []).map(function(ak){ return (ak.punkte || []).map(function(p){ return p.text; }).join(" ") + " " + (ak.fazit || ""); }).join(" ").toLowerCase();
+  var begriffe = (n.begriffe || []).filter(function(b){
+    return String(b.wort).replace(/\(.*?\)/g, "").split("/").some(function(w){ w = w.replace(/[„“"]/g, "").trim().toLowerCase(); return w && alles.indexOf(w) >= 0; });
   });
-  if (n.ohneMeldung && n.ohneMeldung.length){
-    box.appendChild(el("h2", null, [n.ohneMeldung.join(" und ")]));
-    box.appendChild(el("p", null, ["Keine Meldungen dabei."]));
-  }
-  if (n.begriffe && n.begriffe.length){
+  if (begriffe.length){
     $("h-begriffe").hidden = false;
-    n.begriffe.forEach(function(b){ $("begriffe").appendChild(el("dt", null, [b.wort])); $("begriffe").appendChild(el("dd", null, rich(b.text))); });
+    begriffe.forEach(function(b){ $("begriffe").appendChild(el("dt", null, [b.wort])); $("begriffe").appendChild(el("dd", null, rich(b.text))); });
   }
 }).catch(function(){ $("stand").textContent = "Die Nachrichten konnten nicht geladen werden. Bitte später neu laden."; });
 })();
