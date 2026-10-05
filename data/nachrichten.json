@@ -4,6 +4,89 @@
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
+   "id": "intel",
+   "name": "Intel",
+   "stimmung": "eher gut",
+   "ton": "gut",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Intel bekommt **20 Milliarden Dollar** frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme.",
+     "datum": "2026-10-03",
+     "quelle": "finanznachrichten.de",
+     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69742490-intel-kauft-sich-zeit-fuer-den-grossen-umbau-665.htm"
+    },
+    {
+     "art": "Gut",
+     "text": "Die Analysten von Melius Research sagen weiter **„Kaufen“**, Kursziel **165 $**.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
+    },
+    {
+     "art": "Entwarnung",
+     "text": "Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/intel-aktie-btr-luecke-erfordert-keine-hardware-anpassung/70214819"
+    },
+    {
+     "art": "Risiko",
+     "text": "Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
+    }
+   ],
+   "fazit": "Die Stimmung ist gut. Ob der Umbau klappt, zeigen die Quartalszahlen am **22.10.**"
+  },
+  {
+   "id": "stm",
+   "name": "STMicroelectronics",
+   "stimmung": "gut",
+   "ton": "gut",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Der US-Chiphersteller Micron hatte sehr starke Zahlen. Danach sind fast alle Chip-Aktien in Europa gestiegen, auch **STMicro**. Die Nachfrage nach KI-Chips ist weiter hoch.",
+     "datum": "2026-10-03",
+     "quelle": "finanztrends",
+     "url": "https://www.finanztrends.de/news/infineon-aktie-micron-zuendet-chipsektor/"
+    },
+    {
+     "art": "Kleines Risiko",
+     "text": "Micron steckt in einem Patentstreit, eine andere Firma will ein US-Importverbot für bestimmte Micron-Chips. Das betrifft STMicro nicht direkt.",
+     "datum": "2026-10-03",
+     "quelle": "finanztrends",
+     "url": "https://www.finanztrends.de/news/micron-aktie-darf-doch-nicht-wahr-sein/"
+    }
+   ],
+   "fazit": "Rückenwind für die ganze Branche. Quartalszahlen am **29.10.**"
+  },
+  {
+   "id": "nordex",
+   "name": "Nordex",
+   "stimmung": "gut",
+   "ton": "gut",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Nordex hat einen neuen Auftrag aus Österreich erhalten: **56 Megawatt** (acht Windräder) für WEB Windenergie, das bisher größte Einzelprojekt des Kunden in Österreich. Inbetriebnahme ist 2028 geplant.",
+     "datum": "2026-10-04",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nordex-erhaelt-56-mw-auftrag-nordex-aktie-notiert-bei-38-37-euro-nach/70220306"
+    },
+    {
+     "art": "Gut",
+     "text": "Die Investmentbank **Goldman Sachs** hat ihre Kaufempfehlung für Nordex bestätigt.",
+     "datum": "2026-10-04",
+     "quelle": "finanzen.net",
+     "url": "https://www.finanzen.net/analyse/nordex_buy-goldman_sachs_group_inc._1108483"
+    }
+   ],
+   "fazit": "Der Auftrag bestätigt die gute Geschäftslage, der Kurs reagierte aber kaum. Nächster wichtiger Termin: Nordex-Quartalszahlen am **5.11.**"
+  },
+  {
    "id": "cbk",
    "name": "Commerzbank",
    "stimmung": "gemischt",
@@ -11,22 +94,59 @@
    "punkte": [
     {
      "art": "Warnung",
-     "text": "Die Bank **RBC** hat ihr Kursziel für die Commerzbank von 43 auf **40 Euro** gesenkt (Einstufung bleibt neutral, \"Sector Perform\"), auch die **Deutsche Bank** stuft die Aktie jetzt nur noch auf \"Halten\". Beide nennen als Grund das steigende Risiko bei der Umsetzung der UniCredit-Pläne."
+     "text": "Die Bank **RBC** hat die Commerzbank von „Kaufen“ auf neutral (**„Sector Perform“**) herabgestuft und das Kursziel von 43 auf **40 Euro** gesenkt. Auch die **Deutsche Bank** stuft die Aktie jetzt nur noch auf „Halten“. Beide nennen als Grund das Risiko bei der Umsetzung der UniCredit-Pläne.",
+     "datum": "2026-10-05",
+     "quelle": "MarketScreener",
+     "url": "https://www.marketscreener.com/news/rbc-downgrades-commerzbank-to-sector-perform-amid-execution-risk-tied-to-unicredit-initiatives-ce785ddbd98cf124"
     },
     {
      "art": "Risiko",
-     "text": "Laut *Financial Times* will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen – im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027."
+     "text": "Laut *Financial Times* will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen, im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027.",
+     "datum": "2026-10-05",
+     "quelle": "Financial Times"
     },
     {
      "art": "Gut",
-     "text": "Die Bundesregierung verlangt von UniCredit verbindliche Zusagen: Die Commerzbank soll an der Börse in **Frankfurt** notiert bleiben und ihr Geschäft mit mittelständischen Firmenkunden ausbauen."
+     "text": "Die Bundesregierung verlangt von UniCredit verbindliche Zusagen: Die Commerzbank soll an der Börse in **Frankfurt** notiert bleiben und ihr Geschäft mit mittelständischen Firmenkunden ausbauen.",
+     "datum": "2026-10-05"
     },
     {
      "art": "Gut",
-     "text": "Das erste Halbjahr 2026 lief für die Commerzbank stark: **1,8 Milliarden Euro** Gewinn, 40 % mehr als im Vorjahr. Die Bank kauft außerdem weiter eigene Aktien zurück (bisher über 6,2 Millionen Stück)."
+     "text": "Zur Einordnung (Zahlen vom August): Im ersten Halbjahr 2026 verdiente die Commerzbank **1,8 Milliarden Euro**, 40 % mehr als im Vorjahr. Sie kauft außerdem weiter eigene Aktien zurück (bisher über 6,2 Millionen Stück).",
+     "datum": "2026-10-05"
     }
    ],
    "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, auch wenn das Geschäft selbst gut läuft. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5. November**."
+  },
+  {
+   "id": "aapl",
+   "name": "Apple",
+   "stimmung": "gemischt",
+   "ton": "warn",
+   "punkte": [
+    {
+     "art": "Gut",
+     "text": "Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des **faltbaren iPhone Duo** (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Cramers Tipps liegen aber oft daneben.",
+     "datum": "2026-10-03",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/10/01/jim-cramer-sees-a-huge-catalyst-on-the-horizon-for-apple-how-to-play-the-stock.html"
+    },
+    {
+     "art": "Warnung",
+     "text": "Die Bank Morgan Stanley senkt ihr Kursziel leicht (360 → 355 $). Apple baut mehr iPhones, verdient aber pro Gerät weniger, weil die Preise sinken und Speicherchips teurer werden.",
+     "datum": "2026-10-03",
+     "quelle": "aktiencheck",
+     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_Hoehere_iPhone_Produktion_Morgan_Stanley_senkt_dennoch_Kursziel_auf_355_USD-20141683"
+    },
+    {
+     "art": "Gut",
+     "text": "Apple soll an eigenen Server-Chips für **KI-Rechenzentren** arbeiten (Codename M8 Ultra). Ein Marktstart wird frühestens **2029** erwartet, für das Spiel also ohne Bedeutung.",
+     "datum": "2026-10-04",
+     "quelle": "finanzen.at",
+     "url": "https://www.finanzen.at/nachrichten/aktien/apple-prueft-ki-server-mit-eigenen-chips-aktie-im-fokus-1036588301"
+    }
+   ],
+   "fazit": "Viel hängt am iPhone Duo. Wichtige Tage: **16.10.** Vorbestellung, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen."
   },
   {
    "id": "markt",
@@ -36,50 +156,63 @@
    "punkte": [
     {
      "art": "Entwarnung",
-     "text": "Der Ölpreis (**Brent**) ist von seinem Spitzenwert über 115 US-Dollar wieder auf rund **92 US-Dollar** gefallen, bleibt aber höher als vor dem Konflikt um die Straße von Hormus."
+     "text": "Der Ölpreis (**Brent**) ist von seinem Spitzenwert über 115 US-Dollar wieder auf rund **92 US-Dollar** gefallen, bleibt aber höher als vor dem Konflikt um die Straße von Hormus.",
+     "datum": "2026-10-05"
     },
     {
      "art": "Risiko",
-     "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich. Rohöl fließt inzwischen wieder fast normal durch die Straße, Treibstoff-Lieferungen wie Diesel und Benzin liegen aber weiterhin bei nur etwa **19 %** des üblichen Niveaus."
+     "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich. Rohöl fließt inzwischen wieder fast normal durch die Straße, Treibstoff-Lieferungen wie Diesel und Benzin liegen aber weiterhin bei nur etwa **19 %** des üblichen Niveaus.",
+     "datum": "2026-10-05"
     },
     {
      "art": "Kleines Risiko",
-     "text": "Die **Opec+**-Staaten lassen ihre Fördermengen für November unverändert – das zweite Mal in Folge keine Erhöhung."
+     "text": "Die **Opec+**-Staaten lassen ihre Fördermengen für November unverändert – das zweite Mal in Folge keine Erhöhung.",
+     "datum": "2026-10-05"
     }
    ],
    "fazit": "Die Lage bleibt angespannt, der Ölpreis hat sich aber von seinem Höchststand etwas entfernt. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Stimmung an den Börsen kann aber trotzdem beeinflusst werden."
   }
  ],
- "ohneMeldung": [
-  "Intel",
-  "STMicroelectronics",
-  "Nordex",
-  "Apple"
- ],
  "begriffe": [
   {
-   "wort": "Sector Perform",
-   "text": "Eine neutrale Einstufung von Analysten – weder Kauf- noch Verkaufsempfehlung."
+   "wort": "Kursziel",
+   "text": "Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie."
   },
   {
-   "wort": "Aufsichtsrat",
-   "text": "Das Kontrollgremium einer Aktiengesellschaft, das den Vorstand überwacht und wichtigen Entscheidungen zustimmen muss."
+   "wort": "„Kaufen“ / „Halten“ / „Sector Perform“",
+   "text": "Einstufungen von Analysten. „Kaufen“: Sie trauen der Aktie mehr zu als dem Markt. „Halten“ und „Sector Perform“: neutral, weder Kauf- noch Verkaufsempfehlung."
   },
   {
-   "wort": "Kapitalkosten (Cost of Equity)",
-   "text": "Der Zinssatz, mit dem Analysten künftige Gewinne auf den heutigen Wert umrechnen. Steigt er, sinkt der berechnete faire Kurs einer Aktie."
+   "wort": "UniCredit",
+   "text": "Große italienische Bank, die schon fast die Hälfte der Commerzbank-Stimmrechte hält und sie ganz übernehmen will."
+  },
+  {
+   "wort": "Aufsichtsrat / Aktionärsvertreter",
+   "text": "Der Aufsichtsrat kontrolliert den Vorstand einer Firma. Die Aktionärsvertreter darin werden von den Aktionären gewählt. Wer sie stellt, hat viel Einfluss."
+  },
+  {
+   "wort": "Aktienrückkauf / Aktien zurück",
+   "text": "Eine Firma kauft eigene Aktien zurück. Der Gewinn verteilt sich dann auf weniger Aktien."
+  },
+  {
+   "wort": "Chipfertigung",
+   "text": "Der Teil von Intel, der Chips in eigenen Fabriken herstellt, auch für andere Firmen."
+  },
+  {
+   "wort": "Patentstreit",
+   "text": "Eine Firma behauptet, eine andere nutzt ihre geschützte Erfindung ohne Erlaubnis."
+  },
+  {
+   "wort": "Brent",
+   "text": "Die wichtigste Ölsorte in Europa. Ihr Preis gilt als „der Ölpreis“."
   },
   {
    "wort": "Opec+",
-   "text": "Zusammenschluss der Opec-Ölstaaten mit weiteren Förderländern wie Russland, der gemeinsam über die weltweite Fördermenge entscheidet."
-  },
-  {
-   "wort": "Aktienrückkauf",
-   "text": "Ein Unternehmen kauft eigene Aktien zurück. Dadurch verteilt sich der Gewinn auf weniger Aktien, was den Gewinn je Aktie erhöhen kann."
+   "text": "Zusammenschluss großer Ölförderländer, der gemeinsam über die Fördermenge entscheidet."
   },
   {
    "wort": "Straße von Hormus",
-   "text": "Engste Meerenge am Persischen Golf, durch die ein großer Teil des weltweiten Öltransports läuft."
+   "text": "Meerenge am Persischen Golf, durch die ein großer Teil des weltweiten Öls transportiert wird."
   }
  ],
  "gesehen": [
