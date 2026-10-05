@@ -24,3 +24,6 @@ Live: https://nahol2021.github.io/depotbuch/ (öffentlich, ohne Login).
   in einem festen Abschnitt, Leeres wird nicht zusammengefasst.
 - Die Vorgaben des Tagesupdates stehen in der Cloud-Routine, nicht im Repo. Wer das Datenformat
   ändert, ändert dort mit.
+- Kasten „Heute wichtig“: Text kommt aus `heute` in `data/nachrichten.json`, der nächste Termin
+  rechnet die Seite selbst aus `data/termine.json`. Termine nie doppelt pflegen.
+- Termine mit `unsicher: true` in allen Texten als „voraussichtlich“ bezeichnen. Daten als TT.MM.
