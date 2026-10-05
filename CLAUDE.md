@@ -11,3 +11,13 @@ Live: https://nahol2021.github.io/depotbuch/ (öffentlich, ohne Login).
 - Keine Kaufbefehle, sondern Infos und Szenarien. Entscheiden tut das Team. Einfach auf Deutsch
   erklären, Johan ist Börsen-Anfänger.
 - Diese Datei ist öffentlich, sobald sie gepusht wird. Deshalb keine privaten Angaben hier eintragen.
+
+## Bekannte Fallen
+- `data/nachrichten.json` wird fortgeschrieben (Meldungen der letzten 7 Tage, je mit `datum`,
+  `quelle`, `url`), nicht jeden Tag neu angefangen. Sonst verschwinden Meldungen von gestern.
+- Nachrichten-Seite und Tagesbericht müssen dieselben Fakten gleich darstellen. Wer eines ändert,
+  gleicht das andere ab.
+- Texte in den Daten: nur `**fett**`, kein anderes Markdown. Die Seite zeigt jede Aktie aus dem Plan
+  in einem festen Abschnitt, Leeres wird nicht zusammengefasst.
+- Die Vorgaben des Tagesupdates stehen in der Cloud-Routine, nicht im Repo. Wer das Datenformat
+  ändert, ändert dort mit.
