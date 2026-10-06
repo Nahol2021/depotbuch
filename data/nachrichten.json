@@ -1,6 +1,6 @@
 {
- "datum": "2026-10-05",
- "quelle": "aus 39 Google-Alerts",
+ "datum": "2026-10-06",
+ "quelle": "aus 33 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
@@ -82,9 +82,16 @@
      "datum": "2026-10-04",
      "quelle": "finanzen.net",
      "url": "https://www.finanzen.net/analyse/nordex_buy-goldman_sachs_group_inc._1108483"
+    },
+    {
+     "art": "Gut",
+     "text": "Die **Deutsche Bank** hat ihr Kursziel für Nordex von 58 auf **59 Euro** angehoben und die Kaufempfehlung bestätigt. Begründung: erwartete bessere Gewinnmargen. Einschränkend nennt die Bank Verzögerungen bei Projekten als Risiko.",
+     "datum": "2026-10-05",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-hebt-ziel-fuer-die-nordex-aktie-auf-59-euro-an/70231119"
     }
    ],
-   "fazit": "Der Auftrag bestätigt die gute Geschäftslage, der Kurs reagierte aber kaum. Nächster wichtiger Termin: Nordex-Quartalszahlen am **5.11.**"
+   "fazit": "Die Analysten bleiben positiv gestimmt, der Kurs reagierte darauf am Montag aber mit einem Rückgang. Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "cbk",
@@ -101,22 +108,24 @@
     },
     {
      "art": "Risiko",
-     "text": "Laut *Financial Times* will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen, im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027.",
+     "text": "Laut der Financial Times will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen, im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027.",
      "datum": "2026-10-05",
      "quelle": "Financial Times"
     },
     {
      "art": "Gut",
      "text": "Die Bundesregierung verlangt von UniCredit verbindliche Zusagen: Die Commerzbank soll an der Börse in **Frankfurt** notiert bleiben und ihr Geschäft mit mittelständischen Firmenkunden ausbauen.",
-     "datum": "2026-10-05"
+     "datum": "2026-10-05",
+     "quelle": "goldesel.de"
     },
     {
      "art": "Gut",
      "text": "Zur Einordnung (Zahlen vom August): Im ersten Halbjahr 2026 verdiente die Commerzbank **1,8 Milliarden Euro**, 40 % mehr als im Vorjahr. Sie kauft außerdem weiter eigene Aktien zurück (bisher über 6,2 Millionen Stück).",
-     "datum": "2026-10-05"
+     "datum": "2026-10-05",
+     "quelle": "boerse-global.de"
     }
    ],
-   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
+   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Russland hat UniCredit separat erlaubt, ihr russisches Geschäft zu verkaufen – das betrifft die Commerzbank nicht direkt. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
   },
   {
    "id": "aapl",
@@ -155,22 +164,26 @@
    "ton": "warn",
    "punkte": [
     {
-     "art": "Entwarnung",
-     "text": "Der Ölpreis (**Brent**) ist von seinem Spitzenwert über 115 US-Dollar wieder auf rund **92 US-Dollar** gefallen, bleibt aber höher als vor dem Konflikt um die Straße von Hormus.",
-     "datum": "2026-10-05"
+     "art": "Risiko",
+     "text": "Der Ölpreis (**Brent**) ist wieder auf rund **102 US-Dollar** gestiegen, nachdem er zwischenzeitlich bis auf rund 92 Dollar gefallen war. Die Straße von Hormus bleibt laut Iran weiter blockiert, die Ölexporte aus der Golfregion liegen nur bei 60 bis 80 Prozent des üblichen Niveaus.",
+     "datum": "2026-10-06",
+     "quelle": "Börse Stuttgart",
+     "url": "https://live.deutsche-boerse.com/nachrichten/Boerse-Stuttgart-Strasse-von-Hormus-bleibt-gesperrt---OPEC-belaesst-Foerderquoten-118a917d-5b43-4fbd-845e-c58b7429dde5"
     },
     {
      "art": "Risiko",
-     "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich. Rohöl fließt inzwischen wieder fast normal durch die Straße, Treibstoff-Lieferungen wie Diesel und Benzin liegen aber weiterhin bei nur etwa **19 %** des üblichen Niveaus.",
-     "datum": "2026-10-05"
+     "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich.",
+     "datum": "2026-10-05",
+     "quelle": "welt.de"
     },
     {
      "art": "Kleines Risiko",
      "text": "Die **Opec+**-Staaten lassen ihre Fördermengen für November unverändert – das zweite Mal in Folge keine Erhöhung.",
-     "datum": "2026-10-05"
+     "datum": "2026-10-05",
+     "quelle": "Handelsblatt"
     }
    ],
-   "fazit": "Die Lage bleibt angespannt, der Ölpreis hat sich aber von seinem Höchststand etwas entfernt. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Stimmung an den Börsen kann aber trotzdem beeinflusst werden."
+   "fazit": "Die Lage bleibt angespannt, der Ölpreis schwankt zwischen rund 90 und 105 Dollar. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Stimmung an den Börsen kann aber trotzdem beeinflusst werden."
   }
  ],
  "begriffe": [
@@ -280,7 +293,40 @@
   "https://live.deutsche-boerse.com/nachrichten/Iran-knuepft-Oeffnung-von-Hormus-an-sieben-Vorbedingungen-fd187153-0abf-48e2-893f-06f54c6563f3",
   "https://www.wort.lu/international/anklage-gegen-iraner-terrorplan-gegen-juedische-gemeinde-in-manchester/138006191.html",
   "https://www.facebook.com/derspiegel/posts/im-gezerre-um-die-%25C3%25B6ffnung-der-stra%25C3%259Fe-von-hormus-hat-iran-seine-bedingungen-bekr%25C3%25A4/1583890853779978/",
-  "https://www.radioessen.de/artikel/tanker-in-der-strasse-von-hormus-angegriffen-2772111"
+  "https://www.radioessen.de/artikel/tanker-in-der-strasse-von-hormus-angegriffen-2772111",
+  "https://www.wallstreet-online.de/nachricht/21475270-nordex-problemen-power-metallic-mines-50-kupfer-rally-turnaround-verbio",
+  "https://www.iwr.de/news/boerse-kw-40-26-renixx-testet-jahrestief-renixx-neuaufsteiger-samsung-sdi-und-sma-solar-stark-xpeng-cadeler-und-grenergy-am-indexende-news40082",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-hebt-ziel-fuer-die-nordex-aktie-auf-59-euro-an/70231119",
+  "https://www.finanzen.ch/nachrichten/aktien/tecdax-papier-nordex-aktie-so-viel-gewinn-haette-ein-nordex-investment-von-vor-5-jahren-eingefahren-1036596229",
+  "https://www.finanzen.net/nachricht/aktien/tecdax-titel-nordex-aktie-so-viel-gewinn-haette-ein-nordex-investment-von-vor-5-jahren-abgeworfen-15966898",
+  "https://www.ad-hoc-news.de/boerse/news/vorboerse/nordex-aktie-vorboerslich-bei-38-61-euro-plus-0-63-prozent/70229931",
+  "https://goldesel.de/aktien/news/nordex-aktie-koalitionsplane-in-mecklenburg-vorpommern-nahren-hoffnung-auf-schnellere-windgenehmigungen",
+  "https://www.boerse-express.com/news/articles/nordex-aktie-deutsche-bank-bremst-prognosehoffnungen-950715",
+  "https://uk.finance.yahoo.com/news/putin-allows-italys-unicredit-sell-172757834.html",
+  "https://www.marketscreener.com/news/asian-equities-rise-as-weaker-than-expected-u-s-jobs-data-spurs-risk-appetite-update-ce785ddbdf8ff026",
+  "https://uk.finance.yahoo.com/news/putin-grants-approval-unicredit-russia-162220037.html",
+  "https://www.newsquawk.com/headlines/russian-president-putin-to-allow-unicredit-ucg-im-to-split-off-russian-unit",
+  "https://www.tradingview.com/news/tradingview:375577da8cbd8:0-weekly-recap-unicredit-board-overhaul-and-state-listing-assurances/",
+  "https://www.berliner-zeitung.de/article/hormus-und-huthi-rekordverkehr-auf-russlands-arktis-route-10458745",
+  "https://www.n-tv.de/wirtschaft/Iran-verpasst-Hormus-Hoffnungen-einen-brutalen-Daempfer-id31381212.html",
+  "https://www.tagesschau.de/ausland/asien/iran-alltag-wirtschaftskrise-100.html",
+  "https://www.tagesschau.de/tagesthemen/video-1661042.html",
+  "https://logistik-heute.de/news/milliardenprojekt-warum-die-bundeswehr-einen-marinehafen-emden-baut-287211.html",
+  "https://www.ipg-journal.de/regionen/naher-osten/artikel/wer-entscheidet-in-teheran-9344/",
+  "https://live.deutsche-boerse.com/nachrichten/Boerse-Stuttgart-Strasse-von-Hormus-bleibt-gesperrt---OPEC-belaesst-Foerderquoten-118a917d-5b43-4fbd-845e-c58b7429dde5",
+  "https://de.euronews.com/2026/10/05/iran-kontrolle-strasse-von-hormus-rial-rekordtief-export-bricht-ein",
+  "https://www.n-tv.de/mediathek/videos/wirtschaft/Diesel-ist-Preistreiber-nicht-nur-an-der-Zapfsaeule-id31380986.html",
+  "https://orf.at/av/video/onDemandVideoNews99760",
+  "https://suv.report/jetzt-offiziell-emden-wird-zweiter-nordseestuetzpunkt-der-marine/",
+  "https://www.cash-online.de/a/teures-oel-und-schwacher-euro-europa-droht-ein-doppel-schock-727013/",
+  "https://www.nd-aktuell.de/artikel/1202935.nach-vorfall-usa-ziehen-alle-b-bomber-von-britischem-militaerstuetzpunkt-ab.html",
+  "https://www.bmz.de/de/aktuelles/reden/keynote-tiergartenkonferenz-2026-328768",
+  "https://www.bild.de/politik/ausland-und-internationales/oelverkehr-immer-teurer-25-000-dollar-boni-40-mio-pro-hormus-fahrt-6ac3be8d0a14891ddd2b35d1",
+  "https://www.heizoel24.de/news/artikel/005364-heizoelpreise-oktober-zeigt-sich-gelassen-05-10-2026",
+  "https://de.beincrypto.com/trump-hormuz-gaspreise-anspruch/",
+  "https://www.morgenpost.de/politik/article412829332/iran-krieg-news-aktuell-jemen-huthi-offensive-bab-al-mandab.html",
+  "https://www.dasinvestment.com/oelpreis-naher-osten-gaspreis-usa-iran/",
+  "https://www.iwkoeln.de/studien/thomas-obst-energiemaerkte-getrieben-von-geopolitischen-krisen.html"
  ],
- "heute": "Im Mittelpunkt steht die **Commerzbank**: Zwei Banken haben sie herabgestuft, und UniCredit will die Kontrolle im Aufsichtsrat. Bei den anderen Aktien waren die Meldungen zuletzt eher gut (Chip-Boom, neuer Nordex-Auftrag)."
+ "heute": "Am wichtigsten bleibt die Commerzbank: Der Streit um die Kontrolle durch UniCredit geht weiter, Analysten bleiben vorsichtig. Bei Nordex hat die Deutsche Bank ihr Kursziel erhöht, der Kurs gab trotzdem leicht nach, und der Ölpreis ist nach einem kurzen Rückgang wieder gestiegen."
 }

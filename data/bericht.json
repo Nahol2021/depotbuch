@@ -1,31 +1,31 @@
 {
- "datum": "2026-10-04",
- "einleitung": "Am Freitag (2.10.) war die Stimmung uneinheitlich: STMicroelectronics profitierte stark vom Chip-Boom, nachdem der US-Speicherchip-Hersteller Micron sehr starke Zahlen gemeldet hatte, während Nordex und die Commerzbank leicht nachgaben und Apple sich kaum bewegte. Im Hintergrund sorgt die Eskalation in der Straße von Hormus (Tanker-Angriffe, Ölpreis zeitweise über 115 Dollar) für Unruhe an den Märkten, auch wenn unsere Aktien davon bisher nicht direkt betroffen sind.",
+ "datum": "2026-10-06",
+ "einleitung": "Am Montag (5.10.) war die Stimmung uneinheitlich: Nordex gab trotz guter Nachrichten deutlich nach, während Commerzbank und Apple leicht zulegten und STMicroelectronics sowie Intel sich kaum bewegten. Im Hintergrund ist der Ölpreis (Brent) nach einem kurzen Rückgang wieder auf rund 102 Dollar gestiegen, weil die Straße von Hormus laut Iran weiter blockiert bleibt.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": 6.9,
-   "text": "STMicroelectronics ist am Freitag um 6,9 % auf 50,86 € gestiegen. Grund war kein eigener Firmenbericht, sondern ein Kursschub bei fast allen Chip-Aktien in Europa, nachdem der US-Hersteller Micron sehr starke Zahlen und eine hohe Nachfrage nach KI-Chips gemeldet hatte. STMicro ist mit der ganzen Branche mitgestiegen."
+   "veraenderung": -0.04,
+   "text": "STMicroelectronics bewegte sich am Montag kaum und schloss bei 50,84 € (vorher 50,86 €). Nach dem Kurssprung vom Freitag durch den Chip-Boom war das eine ruhige Pause. Eigene Firmenmeldungen gab es nicht, mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": -1.1,
-   "text": "Nordex gab leicht um 1,1 % auf 38,38 € nach. Das Unternehmen hat einen neuen Auftrag aus Österreich bekommen (56 Megawatt, acht Windräder für WEB Windenergie, es ist deren bisher größtes Einzelprojekt dort) und Goldman Sachs hat die Kaufempfehlung bestätigt – der Kurs reagierte darauf aber kaum."
+   "veraenderung": -3.2,
+   "text": "Nordex verlor 3,2 % auf 37,16 €, obwohl die Nachrichten eigentlich gut waren: Die Deutsche Bank hat ihr Kursziel von 58 auf 59 € angehoben und die Kaufempfehlung bestätigt. Dass der Kurs trotzdem fiel, zeigt: Analysten-Einschätzungen bewegen eine Aktie nicht automatisch. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -0.5,
-   "text": "Intel bewegte sich am Freitag kaum und schloss 0,5 % niedriger bei 106,04 €. Am Freitag selbst gab es keine neue Firmenmeldung. Die Nachrichten der Woche (20 Mrd. $ Kapitalspritze, Kaufempfehlung von Melius) stehen auf der Nachrichten-Seite."
+   "veraenderung": -1.6,
+   "text": "Intel gab 1,6 % auf 104,32 € nach. Eine neue Firmenmeldung gab es am Montag nicht, der Kurs hat sich nach der starken Vorwoche (20-Mrd.-Kapitalspritze, Kaufempfehlung von Melius) etwas beruhigt. Quartalszahlen werden voraussichtlich am 22.10. erwartet (Datum noch nicht bestätigt)."
   },
   {
    "aktie": "cbk",
-   "veraenderung": -0.8,
-   "text": "Die Commerzbank verlor 0,8 % auf 39,11 €. Die Bank RBC hat ihre Einschätzung von Kaufen auf neutral (\"Sector Perform\") gesenkt, weil sie Risiken bei der Umsetzung der Übernahmepläne der italienischen UniCredit sieht. Am Wochenende kamen weitere Entwicklungen dazu: Auch die Deutsche Bank senkte ihre Einschätzung, und laut Financial Times will UniCredit den Aufsichtsrat austauschen, um die Kontrolle zu übernehmen. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 0.7,
+   "text": "Die Commerzbank legte leicht um 0,7 % auf 39,40 € zu. Der Streit um die Kontrolle durch die italienische UniCredit geht weiter, neue Einzelheiten dazu stehen auf der Nachrichten-Seite. Russland hat UniCredit separat erlaubt, ihr russisches Geschäft zu verkaufen – das betrifft die Commerzbank nicht direkt."
   },
   {
    "aktie": "aapl",
    "veraenderung": 0.9,
-   "text": "Apple stieg leicht um 0,9 % auf 295,00 €. Bekannt wurde, dass Apple langfristig eigene Server-Chips für KI-Rechenzentren entwickeln will – ein frühes Projekt, das frühestens 2029 fertig wäre und den Kurs kaum bewegte."
+   "text": "Apple stieg um 0,9 % auf 297,60 €. Eigene Firmennachrichten gab es am Montag nicht, im Blick bleibt die Vorbestellung des faltbaren iPhone Duo am 16.10."
   }
  ],
  "warnungen": []
