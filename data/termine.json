@@ -72,10 +72,10 @@
     "aapl"
    ],
    "datum": "2026-10-28",
-   "erwartung": "Anleger sorgen sich, dass die Zinsen hoch bleiben.",
+   "erwartung": "Die Fed hat die Zinsen im September erhöht (auf 3,75–4,00 %). Laut Protokoll halten die meisten Mitglieder eine weitere Erhöhung bis Jahresende für wahrscheinlich, die Börse rechnet für Oktober aber nur mit etwa 24 % Wahrscheinlichkeit. Entscheidung um 19 Uhr, Pressekonferenz 19:30 Uhr.",
    "frage": "Genau dafür habt ihr die Commerzbank als Gegengewicht.",
-   "gut": "Signale für sinkende Zinsen helfen Nordex und den Chip-Aktien.",
-   "schlecht": "Bleiben die Zinsen hoch oder steigen, leidet Nordex. Die Commerzbank profitiert dann eher.",
+   "gut": "Keine weitere Erhöhung oder Signale fürs Abwarten: Erleichterung für Nordex und die Tech-Aktien.",
+   "schlecht": "Eine erneute Erhöhung: Nordex und Tech leiden, die Commerzbank profitiert eher.",
    "titel": "Fed-Zinsentscheid (USA)"
   },
   {
@@ -160,8 +160,8 @@
    ],
    "datum": "2026-12-09",
    "erwartung": "Einer der wichtigsten Zinstermine des Jahres.",
-   "gut": "Aussicht auf Zinssenkungen 2027 hilft Nordex und Chips.",
-   "schlecht": "Keine Senkungen in Sicht: gut für die Commerzbank, schlecht für Nordex.",
+   "gut": "Prognosen ohne weitere Erhöhungen für 2027 helfen Nordex und den Tech-Aktien.",
+   "schlecht": "Weitere Erhöhungen in Sicht: gut für die Commerzbank, schlecht für Nordex und Tech.",
    "titel": "Fed-Zinsentscheid mit Prognosen für 2027"
   },
   {
@@ -260,8 +260,8 @@
     "nordex"
    ],
    "erwartung": "Monatliche Zahlen zu neuen Jobs in den USA (14:30 Uhr deutscher Zeit).",
-   "gut": "Schwächere Zahlen machen Zinssenkungen wahrscheinlicher, gut für Tech und Nordex.",
-   "schlecht": "Sehr starke Zahlen sprechen für hohe Zinsen, eher gut für die Commerzbank."
+   "gut": "Schwächere Zahlen machen eine weitere Zinserhöhung unwahrscheinlicher, gut für Tech und Nordex.",
+   "schlecht": "Sehr starke Zahlen sprechen für eine weitere Erhöhung, eher gut für die Commerzbank."
   },
   {
    "datum": "2026-11-10",
@@ -274,8 +274,8 @@
     "cbk"
    ],
    "erwartung": "Wie stark steigen die Preise in den USA? Entscheidet mit über die Zinsen (14:30 Uhr).",
-   "gut": "Niedrige Inflation: Zinssenkungen werden wahrscheinlicher, gut für Tech und Nordex.",
-   "schlecht": "Hohe Inflation: Zinsen bleiben hoch, Tech und Nordex leiden, die Commerzbank profitiert eher."
+   "gut": "Niedrige Inflation: eine weitere Zinserhöhung wird unwahrscheinlicher, gut für Tech und Nordex.",
+   "schlecht": "Hohe Inflation: eine weitere Erhöhung wird wahrscheinlicher, Tech und Nordex leiden, die Commerzbank profitiert eher."
   },
   {
    "datum": "2026-11-12",
