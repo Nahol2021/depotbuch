@@ -1,45 +1,8 @@
 {
- "datum": "2026-10-06",
- "quelle": "aus 33 Google-Alerts",
+ "datum": "2026-10-07",
+ "quelle": "aus 51 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
-  {
-   "id": "intel",
-   "name": "Intel",
-   "stimmung": "eher gut",
-   "ton": "gut",
-   "punkte": [
-    {
-     "art": "Gut",
-     "text": "Intel bekommt **20 Milliarden Dollar** frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme.",
-     "datum": "2026-10-03",
-     "quelle": "finanznachrichten.de",
-     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69742490-intel-kauft-sich-zeit-fuer-den-grossen-umbau-665.htm"
-    },
-    {
-     "art": "Gut",
-     "text": "Die Analysten von Melius Research sagen weiter **„Kaufen“**, Kursziel **165 $**.",
-     "datum": "2026-10-03",
-     "quelle": "ad-hoc-news",
-     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
-    },
-    {
-     "art": "Entwarnung",
-     "text": "Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht.",
-     "datum": "2026-10-03",
-     "quelle": "ad-hoc-news",
-     "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/intel-aktie-btr-luecke-erfordert-keine-hardware-anpassung/70214819"
-    },
-    {
-     "art": "Risiko",
-     "text": "Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden.",
-     "datum": "2026-10-03",
-     "quelle": "ad-hoc-news",
-     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
-    }
-   ],
-   "fazit": "Die Stimmung ist gut. Ob der Umbau klappt, zeigen die Quartalszahlen voraussichtlich am **22.10.** (Datum noch nicht bestätigt)."
-  },
   {
    "id": "stm",
    "name": "STMicroelectronics",
@@ -59,9 +22,16 @@
      "datum": "2026-10-03",
      "quelle": "finanztrends",
      "url": "https://www.finanztrends.de/news/micron-aktie-darf-doch-nicht-wahr-sein/"
+    },
+    {
+     "art": "Gut",
+     "text": "STMicroelectronics hat zwischen dem 28.9. und 2.10. für **14,6 Millionen Euro** eigene Aktien zurückgekauft (310.000 Stück). Das gilt als Vertrauenssignal des Managements. Zudem bestätigte das Unternehmen den Termin für die Quartalszahlen.",
+     "datum": "2026-10-05",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-kauft-310-000-aktien-zurueck-stmicroelectronics-aktie/70241176"
     }
    ],
-   "fazit": "Rückenwind für die ganze Branche. Quartalszahlen am **29.10.**"
+   "fazit": "Rückenwind für die ganze Branche, zusätzlich ein eigener Aktienrückkauf. Quartalszahlen am **29.10.**"
   },
   {
    "id": "nordex",
@@ -91,7 +61,51 @@
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-hebt-ziel-fuer-die-nordex-aktie-auf-59-euro-an/70231119"
     }
    ],
-   "fazit": "Die Analysten bleiben positiv gestimmt, der Kurs reagierte darauf am Montag aber mit einem Rückgang. Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
+   "fazit": "Die Analysten bleiben positiv gestimmt, der Kurs ist aber zwei Tage in Folge gefallen und nähert sich der Stop-Loss-Marke von 36 €. Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
+  },
+  {
+   "id": "intel",
+   "name": "Intel",
+   "stimmung": "gemischt",
+   "ton": "warn",
+   "punkte": [
+    {
+     "art": "Warnung",
+     "text": "Der Chip-Auftragsfertiger **TSMC** verhandelt darüber, sich an Elon Musks geplantem Chipwerk **Terafab** in Texas zu beteiligen. Bisher ist dort Intel dabei. Sollte TSMC stattdessen einsteigen, wäre das ein Rückschlag für Intels Plan, mit eigenen Fabriken auch Chips für fremde Firmen herzustellen. Die Aktie fiel deswegen deutlich.",
+     "datum": "2026-10-06",
+     "quelle": "boerse-express.com",
+     "url": "https://www.boerse-express.com/news/articles/intel-aktie-tsmc-gespraeche-belasten-terafab-plaene-950844"
+    },
+    {
+     "art": "Gut",
+     "text": "Intel bekommt **20 Milliarden Dollar** frisches Geld für seinen Umbau. An der Börse wird jetzt mehr über Chancen mit KI-Servern geredet als über Probleme.",
+     "datum": "2026-10-03",
+     "quelle": "finanznachrichten.de",
+     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69742490-intel-kauft-sich-zeit-fuer-den-grossen-umbau-665.htm"
+    },
+    {
+     "art": "Gut",
+     "text": "Die Analysten von Melius Research sagen weiter **„Kaufen“**, Kursziel **165 $**.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
+    },
+    {
+     "art": "Entwarnung",
+     "text": "Forscher haben eine Sicherheitslücke in Prozessoren gefunden. Intel sagt, der bisherige Schutz reicht.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/intel-aktie-btr-luecke-erfordert-keine-hardware-anpassung/70214819"
+    },
+    {
+     "art": "Risiko",
+     "text": "Intels eigene Chipfertigung macht noch hohe Verluste (2,1 Mrd. $ im letzten Quartal) und hat kaum fremde Kunden.",
+     "datum": "2026-10-03",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/melius-research-bestaetigt-kauf-fuer-die-intel-aktie-mit-165-dollar-ziel/70215546"
+    }
+   ],
+   "fazit": "Die Terafab-Nachricht hat die gute Stimmung der letzten Wochen gedämpft. Ob der Umbau trotzdem klappt, zeigen die Quartalszahlen voraussichtlich am **22.10.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "cbk",
@@ -120,12 +134,13 @@
     },
     {
      "art": "Gut",
-     "text": "Zur Einordnung (Zahlen vom August): Im ersten Halbjahr 2026 verdiente die Commerzbank **1,8 Milliarden Euro**, 40 % mehr als im Vorjahr. Sie kauft außerdem weiter eigene Aktien zurück (bisher über 6,2 Millionen Stück).",
-     "datum": "2026-10-05",
-     "quelle": "boerse-global.de"
+     "text": "Zur Einordnung (Zahlen vom August): Im ersten Halbjahr 2026 verdiente die Commerzbank **1,8 Milliarden Euro**, 40 % mehr als im Vorjahr. Das Rückkaufprogramm läuft weiter: Inzwischen wurden insgesamt **8,13 Millionen** eigene Aktien zurückgekauft, zuletzt 1,871 Millionen Stück zwischen dem 28.9. und 2.10.",
+     "datum": "2026-10-06",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-buys-back-8-13-million-shares-commerzbank-stock-gains-2-04/70242479"
     }
    ],
-   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Russland hat UniCredit separat erlaubt, ihr russisches Geschäft zu verkaufen – das betrifft die Commerzbank nicht direkt. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
+   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut und der Rückkauf stützt den Kurs. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
   },
   {
    "id": "aapl",
@@ -135,10 +150,17 @@
    "punkte": [
     {
      "art": "Gut",
-     "text": "Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des **faltbaren iPhone Duo** (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Cramers Tipps liegen aber oft daneben.",
-     "datum": "2026-10-03",
-     "quelle": "CNBC",
-     "url": "https://www.cnbc.com/2026/10/01/jim-cramer-sees-a-huge-catalyst-on-the-horizon-for-apple-how-to-play-the-stock.html"
+     "text": "Der iPhone-Umsatz stieg im dritten Quartal um **21,7 % auf 54,3 Milliarden Dollar** und übertraf damit die Erwartungen der Analysten.",
+     "datum": "2026-10-05",
+     "quelle": "aktiencheck.de (Raiffeisen Bank International)",
+     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105"
+    },
+    {
+     "art": "Kleines Risiko",
+     "text": "Trotz der guten Zahlen warnen Analysten: Teurer werdende Speicherchips und Lieferengpässe bei Prozessoren könnten die Gewinnspanne im Weihnachtsquartal belasten. Die Prognose für das laufende Quartal fällt deshalb vorsichtig aus (9-11 % Umsatzwachstum).",
+     "datum": "2026-10-05",
+     "quelle": "aktiencheck.de",
+     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105"
     },
     {
      "art": "Warnung",
@@ -149,13 +171,13 @@
     },
     {
      "art": "Gut",
-     "text": "Apple soll an eigenen Server-Chips für **KI-Rechenzentren** arbeiten (Codename M8 Ultra). Ein Marktstart wird frühestens **2029** erwartet, für das Spiel also ohne Bedeutung.",
-     "datum": "2026-10-04",
-     "quelle": "finanzen.at",
-     "url": "https://www.finanzen.at/nachrichten/aktien/apple-prueft-ki-server-mit-eigenen-chips-aktie-im-fokus-1036588301"
+     "text": "Der bekannte TV-Börsenexperte Jim Cramer rät, Apple vor dem Verkaufsstart des **faltbaren iPhone Duo** (23.10.) zu kaufen. Schätzung: rund 6 Millionen verkaufte Geräte in diesem Jahr. Cramers Tipps liegen aber oft daneben.",
+     "datum": "2026-10-03",
+     "quelle": "CNBC",
+     "url": "https://www.cnbc.com/2026/10/01/jim-cramer-sees-a-huge-catalyst-on-the-horizon-for-apple-how-to-play-the-stock.html"
     }
    ],
-   "fazit": "Viel hängt am iPhone Duo. Wichtige Tage: **16.10.** Vorbestellung, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen."
+   "fazit": "Die Geschäfte laufen gut, Kosten und Lieferengpässe bremsen aber die Gewinnspanne. Wichtige Tage: **16.10.** Vorbestellung iPhone Duo, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen (Datum noch nicht bestätigt)."
   },
   {
    "id": "markt",
@@ -226,6 +248,14 @@
   {
    "wort": "Straße von Hormus",
    "text": "Meerenge am Persischen Golf, durch die ein großer Teil des weltweiten Öls transportiert wird."
+  },
+  {
+   "wort": "TSMC",
+   "text": "Größter Auftragsfertiger für Chips der Welt, eine Firma aus Taiwan. Viele andere Firmen (auch Intel, Apple, Nvidia) lassen dort Chips produzieren."
+  },
+  {
+   "wort": "Terafab",
+   "text": "Ein von Elon Musk geplantes Chipwerk in Texas (USA). Intel ist seit April dabei. Steigt stattdessen TSMC ein, wäre das ein Rückschlag für Intels Plan, auch für fremde Firmen Chips herzustellen."
   }
  ],
  "gesehen": [
@@ -326,7 +356,58 @@
   "https://de.beincrypto.com/trump-hormuz-gaspreise-anspruch/",
   "https://www.morgenpost.de/politik/article412829332/iran-krieg-news-aktuell-jemen-huthi-offensive-bab-al-mandab.html",
   "https://www.dasinvestment.com/oelpreis-naher-osten-gaspreis-usa-iran/",
-  "https://www.iwkoeln.de/studien/thomas-obst-energiemaerkte-getrieben-von-geopolitischen-krisen.html"
+  "https://www.iwkoeln.de/studien/thomas-obst-energiemaerkte-getrieben-von-geopolitischen-krisen.html",
+  "https://www.boerse-express.com/news/articles/intel-aktie-tsmc-gespraeche-belasten-terafab-plaene-950844",
+  "https://www.klamm.de/news/warum-faellt-die-intel-aktie-am-montag-82N9e26a62.html",
+  "https://www.businessinsider.de/wirtschaft/wegen-diesem-post-von-elon-musk-intel-aktie-faellt/",
+  "https://de.finance.yahoo.com/nachrichten/intel-aktie-druck-tsmc-pr%C3%BCft-111004926.html",
+  "https://www.swedbank-aktiellt.se/telegram/pQVIjuXr",
+  "https://www.finanzen.ch/nachrichten/aktien/nasdaq-composite-index-wert-intel-aktie-so-viel-gewinn-haette-eine-investition-in-intel-von-vor-einem-jahr-abgeworfen-1036597220",
+  "https://www.kapitalmarktexperten.de/intel-aktie-terafab-poker-eskaliert/",
+  "https://www.wallstreet-online.de/nachricht/21478477-beachtet-intel-aktie-schwach-handel-05-10-2026",
+  "https://www.finanzen.net/nachricht/aktien/fertigungspartner-wackelt-intel-aktie-an-der-boerse-abgestraft-tsmc-gespraeche-mit-musk-erhoehen-das-risiko-fuer-anleger-00-15967253",
+  "https://www.aktiencheck.de/exklusiv/Artikel-Intel_Aktie_630_Mrd_USD_Boersenwert_Jetzt_muss_Intel_14A_Durchbruch_bringen-20147099",
+  "https://de.qz.com/intel-aktie-tsmc-musk-terafab-chip-venture-100526",
+  "https://www.finanztrends.de/news/asml-aktie-ubs-bestaetigt-2-350-euro-ziel-vor-q3/",
+  "https://de.investing.com/news/stock-market-news/intelaktie-unter-druck-mogliche-tsmckonkurrenz-bei-terafabprojekt-belastet-93CH-3690078",
+  "https://de.investing.com/news/stock-market-news/intelaktie-unter-druck-tsmc-prueft-terafabkooperation-analysten-warnen-vor-marktanteilsverlusten-3690003",
+  "https://www.tikr.com/de/blog/intel-drops-as-musk-signals-tsmc-could-join-terafab-a-setback-for-its-foundry-comeback?ref=tikrblog",
+  "https://www.tikr.com/de/blog/why-intel-stock-slips-as-tsmc-eyes-a-seat-at-musks-terafab?",
+  "https://www.boerse.de/nachrichten/Intel-Aktie-Lohnt-sich-der-Einstieg-jetzt/38652780",
+  "https://www.finanzen.ch/nachrichten/aktien/intel-aktie-kursbewegung-05-10-2026-1035061894",
+  "https://www.ad-hoc-news.de/boerse/news/vorboerse/intel-aktie-vorboerslich-bei-104-41-euro-minus-1-56-prozent-vor-dem/70230421",
+  "https://www.finanztrends.de/news/intel-aktie-nvidia-arm-vereinbaren-openshell-nutzung/",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-kauft-310-000-aktien-zurueck-stmicroelectronics-aktie/70241176",
+  "https://www.ad-hoc-news.de/boerse/news/vorboerse/stmicroelectronics-aktie-vorboerslich-bei-51-47-euro-plus-0-53-prozent/70239687",
+  "https://de.marketscreener.com/boerse-nachrichten/stmicroelectronics-kuendigt-seine-ergebnisse-fuer-den-29-oktober-an-ce785ddbde8af022",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-nennt-ergebnistermin-stmicroelectronics-aktie-verliert-1-52-prozent/70231459",
+  "https://www.boerse.de/nachrichten/STMicroelectronics-Aktie-Lohnt-sich-der-Einstieg-jetzt/38652849",
+  "https://www.finanzen.net/knockouts/auf-stmicroelectronics/bd8ttp",
+  "https://www.boerse-express.com/news/articles/apple-aktie-insider-verkaufen-nach-aktienvesting-951067",
+  "https://tradersunion.com/de/news/stocks/show/3664255-apple-trades-flat-today-near/",
+  "https://www.ntg24.de/Apple-Sichere-KI-06102026-AGD-Aktien",
+  "https://www.aktiencheck.de/news/Artikel-Apple_Aktie_Ternus_uebernimmt_Produktgestaltung-20147809",
+  "https://www.klamm.de/news/consorsbank-depot-eroeffnen-gratis-apple-aktie-sichern-380-zinsen-pa-auf-tagesgeld-fuer-5-monate-34N1590883.html",
+  "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69758863-apple-aktie-iphone-nachfrage-rueckt-in-den-fokus-424.htm",
+  "https://www.cash-online.de/a/ki-sicherheitsdebatte-rueckt-cybersecurity-aktien-in-den-fokus-727057/",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/erste-group-hebt-gewinnprognose-fuer-apple-aktie-auf-9-55-dollar-an/70231080",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/apple-aktie-ios-27-0-1-soll-defekte-verhindern/70229352",
+  "https://www.4investors.de/nachrichten/boerse.php?sektion=stock&ID=192558",
+  "https://www.finanzen.ch/nachrichten/aktien/apple-aktie-tiefer-tech-riese-plant-datenwarnung-bei-ki-agenten-auf-mac-computern-1036595479",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-extends-buyback-streak-as-two-brokers-trim-their-ratings/70245667",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-buyback-cushion-softens-the-blow-of-two-analyst-downgrades/70241393",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-keeps-buying-back-stock-as-unicredit-circles-and-analysts-step/70244705",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-weighs-hvb-share-swap-as-analysts-retreat-and-november/70238620",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-buyback-machine-humming-as-analysts-pare-back-and-berlin-watches-unicredit/70242197",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-buys-back-8-13-million-shares-commerzbank-stock-gains-2-04/70242479",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-faces-twin-test-shrinking-analyst-backing-and-unicredit-s-long-shadow/70240611",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-braces-for-november-earnings-as-analysts-trim-ratings-and-berlin-weighs-takeover/70239416",
+  "https://ch.marketscreener.com/boerse-nachrichten/indische-aktien-duerften-erholung-vor-zinsentscheid-der-rbi-fortsetzen-ce785dd8dc88f722",
+  "https://admiralmarkets.com/de/analysen/traders-blog/fomc-minutes-october-2026",
+  "https://www.boerse-express.com/news/articles/gold-fed-zinsentscheid-am-28-oktober-im-blick-950736",
+  "https://admiralmarkets.com/de/analysen/traders-blog/eurozone-retail-sales-august-2026",
+  "https://www.fuw.ch/boerse/waehrungen/usd-zmw/valor-19932726/148/967"
  ],
- "heute": "Am wichtigsten bleibt die Commerzbank: Der Streit um die Kontrolle durch UniCredit geht weiter, Analysten bleiben vorsichtig. Bei Nordex hat die Deutsche Bank ihr Kursziel erhöht, der Kurs gab trotzdem leicht nach, und der Ölpreis ist nach einem kurzen Rückgang wieder gestiegen."
+ "heute": "Am wichtigsten ist heute Intel: Berichte, dass der Chip-Auftragsfertiger TSMC über eine Beteiligung an Elon Musks Terafab-Projekt verhandelt, haben die Intel-Aktie deutlich belastet, weil das Intels eigene Pläne in der Chipfertigung gefährden könnte. Bei STMicroelectronics und der Commerzbank sorgten dagegen eigene Aktienrückkäufe für etwas bessere Stimmung."
 }

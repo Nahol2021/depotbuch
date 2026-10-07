@@ -1,31 +1,31 @@
 {
- "datum": "2026-10-06",
- "einleitung": "Am Montag (5.10.) war die Stimmung uneinheitlich: Nordex gab trotz guter Nachrichten deutlich nach, während Commerzbank und Apple leicht zulegten und STMicroelectronics sowie Intel sich kaum bewegten. Im Hintergrund ist der Ölpreis (Brent) nach einem kurzen Rückgang wieder auf rund 102 Dollar gestiegen, weil die Straße von Hormus laut Iran weiter blockiert bleibt.",
+ "datum": "2026-10-07",
+ "einleitung": "Am Dienstag (6.10.) bestimmte vor allem eine Nachricht zu Intel das Bild: Die Aktie fiel deutlich, weil der Chip-Auftragsfertiger TSMC über eine Beteiligung an einem Projekt von Elon Musk verhandelt, was Intels eigene Pläne gefährden könnte. STMicroelectronics und die Commerzbank legten dagegen nach eigenen Aktienrückkäufen zu, Nordex gab trotz guter Analystenstimmen weiter nach, Apple bewegte sich kaum.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": -0.04,
-   "text": "STMicroelectronics bewegte sich am Montag kaum und schloss bei 50,84 € (vorher 50,86 €). Nach dem Kurssprung vom Freitag durch den Chip-Boom war das eine ruhige Pause. Eigene Firmenmeldungen gab es nicht, mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 2.3,
+   "text": "STMicroelectronics stieg um 2,3 % auf 51,99 €. Grund war vor allem die eigene Nachricht, dass das Unternehmen zwischen dem 28.9. und 2.10. für 14,6 Millionen Euro eigene Aktien zurückgekauft hat, das gilt als Vertrauenssignal des Managements. Zusätzlich bestätigte STMicro den Termin für die Quartalszahlen am 29.10. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": -3.2,
-   "text": "Nordex verlor 3,2 % auf 37,16 €, obwohl die Nachrichten eigentlich gut waren: Die Deutsche Bank hat ihr Kursziel von 58 auf 59 € angehoben und die Kaufempfehlung bestätigt. Dass der Kurs trotzdem fiel, zeigt: Analysten-Einschätzungen bewegen eine Aktie nicht automatisch. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -2.3,
+   "text": "Nordex verlor weitere 2,3 % auf 36,30 € und nähert sich damit der Marke von 36 €, bei der die Stop-Loss-Order liegt. Neue Firmennachrichten gab es am Dienstag nicht, die zuletzt angehobenen Kursziele von Analysten (Deutsche Bank, Goldman Sachs) konnten den Kurs bisher nicht stützen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -1.6,
-   "text": "Intel gab 1,6 % auf 104,32 € nach. Eine neue Firmenmeldung gab es am Montag nicht, der Kurs hat sich nach der starken Vorwoche (20-Mrd.-Kapitalspritze, Kaufempfehlung von Melius) etwas beruhigt. Quartalszahlen werden voraussichtlich am 22.10. erwartet (Datum noch nicht bestätigt)."
+   "veraenderung": -3.1,
+   "text": "Intel fiel um 3,1 % auf 101,10 €. Hintergrund ist eine Nachricht von Elon Musk: Der Chip-Auftragsfertiger TSMC verhandelt darüber, sich an Musks geplantem Chipwerk Terafab in Texas zu beteiligen. Bisher ist dort Intel dabei. Sollte TSMC stattdessen einsteigen, wäre das ein Rückschlag für Intels Plan, mit eigenen Fabriken auch Chips für fremde Firmen herzustellen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": 0.7,
-   "text": "Die Commerzbank legte leicht um 0,7 % auf 39,40 € zu. Der Streit um die Kontrolle durch die italienische UniCredit geht weiter, neue Einzelheiten dazu stehen auf der Nachrichten-Seite. Russland hat UniCredit separat erlaubt, ihr russisches Geschäft zu verkaufen – das betrifft die Commerzbank nicht direkt."
+   "veraenderung": 1.6,
+   "text": "Die Commerzbank gewann 1,6 % auf 40,04 €. Die Bank hat ihr Rückkaufprogramm ausgeweitet, inzwischen wurden insgesamt 8,13 Millionen eigene Aktien zurückgekauft. Das stützte den Kurs, obwohl zwei Analysehäuser (RBC, Deutsche Bank) wegen der Risiken rund um die UniCredit-Pläne ihre Einstufung gesenkt haben. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": 0.9,
-   "text": "Apple stieg um 0,9 % auf 297,60 €. Eigene Firmennachrichten gab es am Montag nicht, im Blick bleibt die Vorbestellung des faltbaren iPhone Duo am 16.10."
+   "veraenderung": -0.6,
+   "text": "Apple gab leicht um 0,6 % auf 295,90 € nach. Positiv: Der iPhone-Umsatz stieg im dritten Quartal um 21,7 % auf 54,3 Milliarden Dollar und übertraf die Erwartungen. Analysten warnen aber, dass teurer werdende Speicherchips und Lieferengpässe die Gewinnspanne im Weihnachtsquartal belasten könnten. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
  "warnungen": []
