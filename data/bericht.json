@@ -1,32 +1,38 @@
 {
- "datum": "2026-10-07",
- "einleitung": "Am Dienstag (6.10.) bestimmte vor allem eine Nachricht zu Intel das Bild: Die Aktie fiel deutlich, weil der Chip-Auftragsfertiger TSMC über eine Beteiligung an einem Projekt von Elon Musk verhandelt, was Intels eigene Pläne gefährden könnte. STMicroelectronics und die Commerzbank legten dagegen nach eigenen Aktienrückkäufen zu, Nordex gab trotz guter Analystenstimmen weiter nach, Apple bewegte sich kaum.",
+ "datum": "2026-10-08",
+ "einleitung": "Am Mittwoch (7.10.) ging es für die meisten unserer Aktien nach unten: STMicroelectronics, die Commerzbank und Nordex verloren deutlich, Nordex fiel dabei unter die Marke von 36 €. Nur Intel und Apple legten leicht zu. Einen einzelnen klaren Grund gab es für die Verluste meist nicht, im Hintergrund stand eine insgesamt schwächere Börsenstimmung, weil in den USA wieder mehr Sorgen vor einer weiteren Zinserhöhung aufkamen.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": 2.3,
-   "text": "STMicroelectronics stieg um 2,3 % auf 51,99 €. Grund war vor allem die eigene Nachricht, dass das Unternehmen zwischen dem 28.9. und 2.10. für 14,6 Millionen Euro eigene Aktien zurückgekauft hat, das gilt als Vertrauenssignal des Managements. Zusätzlich bestätigte STMicro den Termin für die Quartalszahlen am 29.10. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -4.1,
+   "text": "STMicroelectronics fiel um 4,1 % auf 49,88 €, nachdem die Aktie am Dienstag noch gestiegen war. Einen neuen negativen Anlass gab es nicht: Das Unternehmen bestätigte nur den bereits bekannten Aktienrückkauf vom 28.9. bis 2.10. erneut und stellte zwei neue Sensor-Chips vor. Der Rückgang passt eher zur insgesamt schwächeren Stimmung an den Börsen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
    "veraenderung": -2.3,
-   "text": "Nordex verlor weitere 2,3 % auf 36,30 € und nähert sich damit der Marke von 36 €, bei der die Stop-Loss-Order liegt. Neue Firmennachrichten gab es am Dienstag nicht, die zuletzt angehobenen Kursziele von Analysten (Deutsche Bank, Goldman Sachs) konnten den Kurs bisher nicht stützen. Mehr dazu auf der Nachrichten-Seite."
+   "text": "Nordex verlor weitere 2,3 % auf 35,48 € und ist damit unter die Marke von 36 € gefallen, bei der die Stop-Loss-Order liegt (siehe Warnung unten). Das passierte, obwohl Nordex gleich zwei neue Aufträge meldete: 228 Megawatt in Europa und 389 Megawatt in der Türkei. Gute Nachrichten konnten den Kurs also nicht stützen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -3.1,
-   "text": "Intel fiel um 3,1 % auf 101,10 €. Hintergrund ist eine Nachricht von Elon Musk: Der Chip-Auftragsfertiger TSMC verhandelt darüber, sich an Musks geplantem Chipwerk Terafab in Texas zu beteiligen. Bisher ist dort Intel dabei. Sollte TSMC stattdessen einsteigen, wäre das ein Rückschlag für Intels Plan, mit eigenen Fabriken auch Chips für fremde Firmen herzustellen. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 0.7,
+   "text": "Intel erholte sich leicht um 0,7 % auf 101,80 €. Neue Firmennachrichten gab es nicht, die Sorgen um das Terafab-Projekt vom Dienstag wirken aber weiter nach. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": 1.6,
-   "text": "Die Commerzbank gewann 1,6 % auf 40,04 €. Die Bank hat ihr Rückkaufprogramm ausgeweitet, inzwischen wurden insgesamt 8,13 Millionen eigene Aktien zurückgekauft. Das stützte den Kurs, obwohl zwei Analysehäuser (RBC, Deutsche Bank) wegen der Risiken rund um die UniCredit-Pläne ihre Einstufung gesenkt haben. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -3.7,
+   "text": "Die Commerzbank gab 3,7 % auf 38,56 € ab. Einen neuen eigenen Anlass gab es nicht, die Herabstufungen von RBC und Deutsche Bank von Anfang der Woche belasten aber weiter, dazu kam die insgesamt schwächere Börsenstimmung. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": -0.6,
-   "text": "Apple gab leicht um 0,6 % auf 295,90 € nach. Positiv: Der iPhone-Umsatz stieg im dritten Quartal um 21,7 % auf 54,3 Milliarden Dollar und übertraf die Erwartungen. Analysten warnen aber, dass teurer werdende Speicherchips und Lieferengpässe die Gewinnspanne im Weihnachtsquartal belasten könnten. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 1.4,
+   "text": "Apple stieg um 1,4 % auf 300,00 €. Berichten zufolge plant Apple in den nächsten Tagen neue Smart-Home-Geräte wie einen aktualisierten HomePod mini und möglicherweise einen zentralen „Home Hub“. Zudem beginnt in rund einer Woche die Vorbestellung des faltbaren iPhone Duo. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
- "warnungen": []
+ "warnungen": [
+  {
+   "stufe": "crit",
+   "tag": "Stop-Loss",
+   "text": "Nordex ist mit 35,48 € unter die Stop-Loss-Marke von 36 € gefallen. Prüft im Depot, ob die Stop-Loss-Order ausgelöst und die Aktie verkauft wurde. Die Order sollte laut Plan ohnehin erst am 15.10. ablaufen, kann aber schon vorher durch den Kursfall ausgelöst worden sein."
+  }
+ ]
 }

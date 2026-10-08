@@ -1,13 +1,13 @@
 {
- "datum": "2026-10-07",
- "quelle": "aus 51 Google-Alerts",
+ "datum": "2026-10-08",
+ "quelle": "aus 45 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
    "id": "stm",
    "name": "STMicroelectronics",
-   "stimmung": "gut",
-   "ton": "gut",
+   "stimmung": "gemischt",
+   "ton": "warn",
    "punkte": [
     {
      "art": "Gut",
@@ -29,16 +29,37 @@
      "datum": "2026-10-05",
      "quelle": "ad-hoc-news",
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-kauft-310-000-aktien-zurueck-stmicroelectronics-aktie/70241176"
+    },
+    {
+     "art": "Gut",
+     "text": "STMicroelectronics hat zwei neue Sensor-Chips vorgestellt (**LSM6DSK320X** und **ISM6HGK256X**), unter anderem für Fitness-Tracker und Industrieroboter. Das zeigt, dass das Geschäft mit neuen Produkten weiterläuft.",
+     "datum": "2026-10-07",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/nachboerse/stmicroelectronics-aktie-unternehmen-meldet-aktienrueckkaeufe-und-neue/70244674"
     }
    ],
-   "fazit": "Rückenwind für die ganze Branche, zusätzlich ein eigener Aktienrückkauf. Quartalszahlen am **29.10.**"
+   "fazit": "Der Rückkauf läuft weiter, zusätzlich wurden neue Sensor-Chips vorgestellt. Trotzdem fiel die Aktie am Mittwoch deutlich, vermutlich wegen der insgesamt schwächeren Börsenstimmung. Quartalszahlen am **29.10.**"
   },
   {
    "id": "nordex",
    "name": "Nordex",
-   "stimmung": "gut",
-   "ton": "gut",
+   "stimmung": "gemischt",
+   "ton": "warn",
    "punkte": [
+    {
+     "art": "Gut",
+     "text": "Nordex erhält einen neuen Großauftrag aus der Türkei über **389 Megawatt**. Trotzdem fiel der Kurs am selben Tag weiter.",
+     "datum": "2026-10-07",
+     "quelle": "boerse.de",
+     "url": "https://www.boerse.de/nachrichten/Nordex-erhaelt-Auftraege-ueber-389-Megawatt-in-der-Tuerkei/38655612"
+    },
+    {
+     "art": "Gut",
+     "text": "Nordex hat außerdem Windpark-Verträge in Süd-, Mittel- und Osteuropa über insgesamt **228 Megawatt** (35 Anlagen) unterschrieben, inklusive langfristiger Wartungsverträge.",
+     "datum": "2026-10-06",
+     "quelle": "boerse-express",
+     "url": "https://www.boerse-express.com/news/articles/nordex-aktie-schliesst-neue-windparkvertraege-in-europa-951166"
+    },
     {
      "art": "Gut",
      "text": "Nordex hat einen neuen Auftrag aus Österreich erhalten: **56 Megawatt** (acht Windräder) für WEB Windenergie, das bisher größte Einzelprojekt des Kunden in Österreich. Inbetriebnahme ist 2028 geplant.",
@@ -61,7 +82,7 @@
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-hebt-ziel-fuer-die-nordex-aktie-auf-59-euro-an/70231119"
     }
    ],
-   "fazit": "Die Analysten bleiben positiv gestimmt, der Kurs ist aber zwei Tage in Folge gefallen und nähert sich der Stop-Loss-Marke von 36 €. Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
+   "fazit": "Die Auftragslage bleibt sehr gut: Allein diese Woche kamen zwei neue Großaufträge aus Europa (228 MW) und der Türkei (389 MW) dazu. Der Kurs fiel trotzdem weiter und ist am Mittwoch unter die Stop-Loss-Marke von 36 € gerutscht (siehe Warnung im Tagesbericht). Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "intel",
@@ -140,7 +161,7 @@
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/commerzbank-buys-back-8-13-million-shares-commerzbank-stock-gains-2-04/70242479"
     }
    ],
-   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut und der Rückkauf stützt den Kurs. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
+   "fazit": "Der Streit um die Kontrolle bei der Commerzbank spitzt sich zu, das Geschäft selbst läuft gut und der Rückkauf stützt den Kurs. Am Mittwoch belastete zusätzlich die insgesamt schwächere Börsenstimmung die Aktie. Für Aktionäre ist eine Übernahme oft gut, wenn der Käufer einen Aufpreis bietet. Ob UniCredit das tut, ist noch offen. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
   },
   {
    "id": "aapl",
@@ -154,6 +175,13 @@
      "datum": "2026-10-05",
      "quelle": "aktiencheck.de (Raiffeisen Bank International)",
      "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105"
+    },
+    {
+     "art": "Gut",
+     "text": "Berichten zufolge (vor allem von Bloomberg-Journalist Mark Gurman) plant Apple in den nächsten Tagen aktualisierte Geräte wie HomePod mini und Apple TV, möglicherweise auch einen zentralen **„Home Hub“**. Für 2027 sollen eine vernetzte Türklingel und Überwachungskameras folgen. Außerdem beginnt in rund einer Woche die Vorbestellung des faltbaren iPhone Duo.",
+     "datum": "2026-10-07",
+     "quelle": "Der Aktionär",
+     "url": "https://www.deraktionaer.de/artikel/aktien/apple-der-naechste-schritt-20411580.html"
     },
     {
      "art": "Kleines Risiko",
@@ -177,7 +205,7 @@
      "url": "https://www.cnbc.com/2026/10/01/jim-cramer-sees-a-huge-catalyst-on-the-horizon-for-apple-how-to-play-the-stock.html"
     }
    ],
-   "fazit": "Die Geschäfte laufen gut, Kosten und Lieferengpässe bremsen aber die Gewinnspanne. Wichtige Tage: **16.10.** Vorbestellung iPhone Duo, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen (Datum noch nicht bestätigt)."
+   "fazit": "Die Geschäfte laufen gut, Kosten und Lieferengpässe bremsen aber die Gewinnspanne. Dazu kommen Berichte über neue Smart-Home-Pläne, unter anderem einen möglichen „Home Hub“. Wichtige Tage: **16.10.** Vorbestellung iPhone Duo, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen (Datum noch nicht bestätigt)."
   },
   {
    "id": "markt",
@@ -185,6 +213,27 @@
    "stimmung": "gemischt",
    "ton": "warn",
    "punkte": [
+    {
+     "art": "Risiko",
+     "text": "An den US-Börsen kamen wieder Sorgen vor einer weiteren Zinserhöhung der Fed auf, Dow Jones, S&P 500 und Nasdaq gaben nach. Das drückte am Mittwoch auch auf die europäischen Börsen.",
+     "datum": "2026-10-07",
+     "quelle": "Handelsblatt",
+     "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-ist-die-zinsangst-zurueck-us-boerse-im-minus/100260472.html"
+    },
+    {
+     "art": "Risiko",
+     "text": "Die **Huthi-Miliz** im Jemen bekennt sich zu Angriffen auf Flughäfen in Riad und Abha in Saudi-Arabien. Das zeigt, dass die Lage im Nahen Osten weiter gefährlich ist.",
+     "datum": "2026-10-08",
+     "quelle": "Spiegel",
+     "url": "https://www.spiegel.de/ausland/saudi-arabien-huthi-miliz-bekennt-sich-zu-angriffen-auf-flughaefen-in-riad-und-abha-a-49e98df2-7b50-44ba-a1a6-c7d46e708db1"
+    },
+    {
+     "art": "Entwarnung",
+     "text": "Der US-Außenminister Marco Rubio sagt, der Ölfluss durch die Straße von Hormus sei fast wieder auf dem Stand vor der Krise, Iran habe die Kontrolle über die Meerenge verloren.",
+     "datum": "2026-10-07",
+     "quelle": "n-tv",
+     "url": "https://www.n-tv.de/ticker/Rubio-Oelfluss-durch-Strasse-von-Hormus-wieder-fast-auf-Vorkriegsniveau-id31392244.html"
+    },
     {
      "art": "Risiko",
      "text": "Der Ölpreis (**Brent**) ist wieder auf rund **102 US-Dollar** gestiegen, nachdem er zwischenzeitlich bis auf rund 92 Dollar gefallen war. Die Straße von Hormus bleibt laut Iran weiter blockiert, die Ölexporte aus der Golfregion liegen nur bei 60 bis 80 Prozent des üblichen Niveaus.",
@@ -197,15 +246,9 @@
      "text": "Iran macht die Öffnung der Straße von Hormus von **sieben Bedingungen** abhängig (u.a. Ende der US-Blockade, Aufhebung von Sanktionen, Freigabe eingefrorener Gelder) – eine schnelle Lösung ist damit unwahrscheinlich.",
      "datum": "2026-10-05",
      "quelle": "welt.de"
-    },
-    {
-     "art": "Kleines Risiko",
-     "text": "Die **Opec+**-Staaten lassen ihre Fördermengen für November unverändert – das zweite Mal in Folge keine Erhöhung.",
-     "datum": "2026-10-05",
-     "quelle": "Handelsblatt"
     }
    ],
-   "fazit": "Die Lage bleibt angespannt, der Ölpreis schwankt zwischen rund 90 und 105 Dollar. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Stimmung an den Börsen kann aber trotzdem beeinflusst werden."
+   "fazit": "Die Lage bleibt widersprüchlich: Die Huthi-Miliz griff Flughäfen in Saudi-Arabien an, gleichzeitig sagt die US-Regierung, der Ölfluss durch die Straße von Hormus sei fast wieder normal. An den US-Börsen kehrten unterdessen Sorgen vor einer weiteren Zinserhöhung zurück, das drückte am Mittwoch auch auf unsere Aktien. Keine unserer Aktien ist direkt im Ölgeschäft, die allgemeine Börsenstimmung kann aber trotzdem beeinflusst werden."
   }
  ],
  "begriffe": [
@@ -242,10 +285,6 @@
    "text": "Die wichtigste Ölsorte in Europa. Ihr Preis gilt als „der Ölpreis“."
   },
   {
-   "wort": "Opec+",
-   "text": "Zusammenschluss großer Ölförderländer, der gemeinsam über die Fördermenge entscheidet."
-  },
-  {
    "wort": "Straße von Hormus",
    "text": "Meerenge am Persischen Golf, durch die ein großer Teil des weltweiten Öls transportiert wird."
   },
@@ -256,6 +295,14 @@
   {
    "wort": "Terafab",
    "text": "Ein von Elon Musk geplantes Chipwerk in Texas (USA). Intel ist seit April dabei. Steigt stattdessen TSMC ein, wäre das ein Rückschlag für Intels Plan, auch für fremde Firmen Chips herzustellen."
+  },
+  {
+   "wort": "Huthi-Miliz",
+   "text": "Bewaffnete Gruppe im Jemen, beteiligt an Angriffen und am Konflikt im Nahen Osten."
+  },
+  {
+   "wort": "Smart-Home / Home Hub",
+   "text": "Geräte, die ein Zuhause automatisch steuern, zum Beispiel Lautsprecher, Kameras oder Türklingeln. Ein „Home Hub“ ist das zentrale Gerät, das das steuert."
   }
  ],
  "gesehen": [
@@ -407,7 +454,52 @@
   "https://admiralmarkets.com/de/analysen/traders-blog/fomc-minutes-october-2026",
   "https://www.boerse-express.com/news/articles/gold-fed-zinsentscheid-am-28-oktober-im-blick-950736",
   "https://admiralmarkets.com/de/analysen/traders-blog/eurozone-retail-sales-august-2026",
-  "https://www.fuw.ch/boerse/waehrungen/usd-zmw/valor-19932726/148/967"
+  "https://www.fuw.ch/boerse/waehrungen/usd-zmw/valor-19932726/148/967",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-kauft-aktien-zurueck-stmicroelectronics-aktie-faellt/70254043",
+  "https://www.ad-hoc-news.de/boerse/news/vorboerse/stmicroelectronics-aktie-vorboerslich-bei-51-93-euro-minus-0-13-prozent/70252471",
+  "https://www.ad-hoc-news.de/boerse/news/nachboerse/stmicroelectronics-aktie-unternehmen-meldet-aktienrueckkaeufe-und-neue/70244674",
+  "https://www.finanzen.ch/nachrichten/aktien/nordex-aktie-tiefer-neuer-grossauftrag-aus-der-tuerkei-1036603784",
+  "https://www.deraktionaer.de/artikel/aktien/nordex-und-es-geht-weiter-20410747.html",
+  "https://www.nebenwerte-magazin.com/nordex-feiert-sich-aber-die-aktie-verschnauft-nur-noch/",
+  "https://www.aktiencheck.de/analysen/Artikel-Nordex_Auftragsmotor_laeuft_doch_Aktie_nimmt_erst_einmal_Tempo_heraus-20151911",
+  "https://www.xtb.com/de/Marktanalysen/Trading-News/nordex-aktie-im-aufwind-neue-grossauftraege-in-europa-ki-stromhunger-in-den-usa-jetzt-aktien-kaufen",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69767894-nordex-aktie-bis-zur-kursexplosion-kann-es-jetzt-nicht-mehr-lange-dauern-012.htm",
+  "https://www.boerse-express.com/news/articles/nordex-aktie-schliesst-neue-windparkvertraege-in-europa-951166",
+  "https://www.deraktionaer.de/videos/dax-checklive/dax-check-live-hensoldt-mtu-aero-engines-nemetschek-nordex-sap-thyssenkrupp-im-fokus-20410823.html",
+  "https://www.boerse.de/nachrichten/Nordex-erhaelt-Auftraege-ueber-389-Megawatt-in-der-Tuerkei/38655612",
+  "https://www.swedbank-aktiellt.se/telegram/NTpsQFjV",
+  "https://www.4investors.de/nachrichten/boerse.php?sektion=stock&ID=192594",
+  "https://www.stock-world.de/nordex-aktie-servicegeschaeft-sichert-planbarkeit/",
+  "https://www.aktiencheck.de/exklusiv/Artikel-Nordex_Aktie_Profitabilitaet_bleibt_entscheidend-20150905",
+  "https://global.morningstar.com/de/investments/aktien/0P0000BZZF/finanzdaten",
+  "https://www.boerse.de/nachrichten/Nordex-Aktie-Lohnt-sich-der-Einstieg-jetzt/38653563",
+  "https://www.finanzen.net/nachricht/aktien/weitere-auftraege-nordex-aktie-im-fokus-weitere-auftraege-ueber-228-megawatt-gesichert-15968783",
+  "https://www.boerse-global.de/nordex-aktie-228-megawatt-fuer-europa/831190",
+  "https://www.boersennews.de/nachrichten/artikel/dpa-afx/roundup-nordex-sichert-sich-weitere-auftraege-ueber-228-megawatt/5301674/",
+  "https://live.deutsche-boerse.com/nachrichten/ROUNDUP-Nordex-sichert-sich-weitere-Auftraege-ueber-228-Megawatt-703dca5a-84d4-4725-bbb1-a3968d940189",
+  "https://www.investor-verlag.de/aktien-und-aktienhandel/deutschland/nordex-aktie/nordex-aktie-starke-kursziele-neue-auftraege/",
+  "https://www.wallstreet-online.de/nachricht/21490354-beachtet-apple-aktie-301-60-07-10-2026",
+  "https://www.deraktionaer.de/artikel/aktien/apple-der-naechste-schritt-20411580.html",
+  "https://www.spiegel.de/ausland/saudi-arabien-huthi-miliz-bekennt-sich-zu-angriffen-auf-flughaefen-in-riad-und-abha-a-49e98df2-7b50-44ba-a1a6-c7d46e708db1",
+  "https://www.bild.de/politik/ausland-und-internationales/strasse-von-hormus-warum-oel-und-sprit-weiter-teuer-bleiben-koennten-6ac4ba396a0860be6e207e2b",
+  "https://www.manager-magazin.de/finanzen/boerse/boerse-dax-im-minus-oelpreise-hoch-a-0ac3e5e7-25c0-4dbc-95a8-fc56a91a0111",
+  "https://www.wallstreet-online.de/nachricht/21489589-hormus-kippen-irak-plant-2027-58-dollar-oel-milliardenloch-inklusive",
+  "https://de.finance.yahoo.com/nachrichten/spannungen-stra%C3%9Fe-hormus-befeuern-zinssorgen-021738978.html",
+  "https://www.zdfheute.de/politik/ausland/israel-nahost-hamas-angriff-jahrestag-100.html",
+  "https://www.finanzen.net/nachricht/rohstoffe/naher-osten-im-blick-oelpreise-geraten-deutlich-unter-druck-die-gruende-15968776",
+  "https://www.airliners.de/iran-droht-sperrung-schifffahrtsrouten-strasse-hormus/90681",
+  "https://www.heute.at/s/iran-droht-mit-weiterer-sperre-in-strasse-von-hormus-120263147",
+  "https://www.topagrar.com/energie/news/ministerprasident-gunther-kritisiert-reiches-energiepolitik-20029807.html",
+  "https://www.heizoel24.de/news/artikel/005366-heizoelpreise-pendeln-im-engen-korridor-07-10-2026",
+  "https://www.n-tv.de/mediathek/videos/politik/Videos-sollen-Gefechte-an-Kueste-von-Bab-al-Mandab-zeigen-id31385826.html",
+  "https://de.euronews.com/2026/10/07/marco-rubio-iran-hat-kontrolle-uber-strasse-von-hormus-vollig-verloren",
+  "https://www.n-tv.de/ticker/Rubio-Oelfluss-durch-Strasse-von-Hormus-wieder-fast-auf-Vorkriegsniveau-id31392244.html",
+  "https://live.deutsche-boerse.com/nachrichten/Aktien-New-York-Ausblick-Verluste-nach-Rekorden-und-wieder-hoeheren-Oelpreisen-983da121-60b7-4527-97c2-4e6ba9d57fc1",
+  "https://www.business-punk.com/heizoelpreise-sinken-trotz-angriffen-in-der-strasse-von-hormus/",
+  "https://www.evangelisch.de/inhalte/259827/07-10-2026/kabinett-bringt-massnahmen-zum-schutz-vor-digitaler-gewalt-auf-den-weg",
+  "https://www.br.de/nachrichten/deutschland-welt/usa-israel-iran-krieg-im-news-ticker-vom-5-bis-11-oktober,VXA2Ko8",
+  "https://e-fundresearch.com/newscenter/175-shareholder-value-management-ag/artikel/61046-quartalsbericht-q3-2026-zinsen-rauf-oel-rauf-und-qualitaet-setzt-sich-durch",
+  "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-ist-die-zinsangst-zurueck-us-boerse-im-minus/100260472.html"
  ],
- "heute": "Am wichtigsten ist heute Intel: Berichte, dass der Chip-Auftragsfertiger TSMC über eine Beteiligung an Elon Musks Terafab-Projekt verhandelt, haben die Intel-Aktie deutlich belastet, weil das Intels eigene Pläne in der Chipfertigung gefährden könnte. Bei STMicroelectronics und der Commerzbank sorgten dagegen eigene Aktienrückkäufe für etwas bessere Stimmung."
+ "heute": "Am wichtigsten ist heute Nordex: Die Aktie ist trotz zwei neuer Großaufträge unter die Stop-Loss-Marke von 36 € gefallen. Insgesamt war die Börsenstimmung am Mittwoch schwach, auch STMicroelectronics und die Commerzbank verloren deutlich, nur Intel und Apple legten leicht zu."
 }
