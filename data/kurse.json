@@ -1,21 +1,21 @@
 {
  "kurse": {
   "stm": {
-   "kurs": 46.84
+   "kurs": 46.77
   },
   "nordex": {
-   "kurs": 34.58
+   "kurs": 35.42
   },
   "intel": {
-   "kurs": 95.14
+   "kurs": 94.63
   },
   "cbk": {
-   "kurs": 37.92
+   "kurs": 37.9
   },
   "aapl": {
-   "kurs": 304.2
+   "kurs": 298.15
   }
  },
  "quelle": "Schlusskurse, Websuche",
- "stand": "2026-10-08"
+ "stand": "2026-10-09"
 }

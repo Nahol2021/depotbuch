@@ -1,38 +1,38 @@
 {
- "datum": "2026-10-09",
- "einleitung": "Am Donnerstag (8.10.) ging es für die Chip-Aktien STMicroelectronics und Intel deutlich nach unten, Nordex fiel das vierte Mal in Folge und blieb unter der Stop-Loss-Marke. Die Commerzbank gab leicht nach, nur Apple legte zu. Im Hintergrund wuchsen die Sorgen um eine neue Eskalation im Nahost-Konflikt: Berichten zufolge lässt die US-Regierung neue Angriffsoptionen gegen den Iran prüfen, der Ölpreis stieg deutlich. Bei Intel kam kurzzeitig neue Unsicherheit um das Terafab-Projekt dazu, die sich am Abend aber wieder auflöste.",
+ "datum": "2026-10-12",
+ "einleitung": "Am Freitag (9.10.) war es ein ruhigerer Handelstag für unsere Aktien: Nordex erholte sich etwas, blieb aber unter der Stop-Loss-Marke, STMicroelectronics und die Commerzbank bewegten sich kaum, Intel gab leicht nach und Apple verlor nach Berichten über gekürzte Bestellungen rund 2 %. Im Hintergrund spitzte sich der Nahost-Konflikt weiter zu: Nach einem schweren Angriff auf den Flughafen von Riad lehnt der Iran die US-Antwort zur Öffnung der Straße von Hormus als unzureichend ab, der Ölpreis bleibt entsprechend hoch.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": -6.1,
-   "text": "STMicroelectronics fiel um 6,1 % auf 46,84 €, einen Tag vor den für den 29.10. angesetzten Quartalszahlen. Einen konkreten negativen Anlass nannten die Berichte nicht. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.1,
+   "text": "STMicroelectronics bewegte sich am Freitag kaum und schloss bei 46,77 €, nach dem kräftigen Rückgang vom Vortag. Neue Firmennachrichten gab es nicht, der Fokus liegt weiter auf den Quartalszahlen am 29.10. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": -2.5,
-   "text": "Nordex fiel weiter um 2,5 % auf 34,58 € und blieb damit den zweiten Tag unter der Stop-Loss-Marke von 36 € (siehe Warnung unten). Das passierte, obwohl der Großauftrag aus der Türkei (389 Megawatt, 56 Windräder) jetzt im Detail bestätigt wurde. Selbst Marktbeobachter können sich den Rückgang trotz der guten Auftragslage nicht erklären. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 2.4,
+   "text": "Nordex erholte sich am Freitag um 2,4 % auf 35,42 €, blieb damit aber den dritten Tag in Folge unter der Stop-Loss-Marke von 36 € (siehe Warnung unten). Die Bank RBC stufte die Aktie trotz neuer Großaufträge über insgesamt 617 Megawatt aus der Türkei und Europa auf „Underperform“ herab und verweist auf politische Risiken im deutschen Markt. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -6.5,
-   "text": "Intel fiel um 6,5 % auf 95,14 €. Grund war neue Unsicherheit um das Terafab-Projekt: Elon Musk bestätigte Gespräche mit dem Auftragsfertiger TSMC. Am Abend stellte er aber klar, dass Terafab weiter von Tesla und SpaceX betrieben wird und Intel an Bord bleibt, TSMC käme höchstens als Untermieter infrage. Dazu kam eine Kurszielanhebung von Mizuho auf 114 US-Dollar. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.5,
+   "text": "Intel gab leicht um 0,5 % auf 94,63 € ab, ohne eigene Firmennachricht, an einem insgesamt schwächeren Tag für Technologie-Aktien. Weiter unklar ist, wer beim Chipfabrik-Projekt Terafab welche Aufgaben übernimmt, das sorgt vor den Quartalszahlen voraussichtlich am 22.10. weiter für Zurückhaltung bei Anlegern. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": -1.7,
-   "text": "Die Commerzbank gab 1,7 % auf 37,92 € ab. Im Streit um die Übernahme durch UniCredit stimmt sich die Bundesregierung jetzt enger mit Hessen und der Stadt Frankfurt ab, beide verlangen weiterhin feste Zusagen für den Standort. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.1,
+   "text": "Die Commerzbank schloss mit 37,90 € fast unverändert. Die EU-Kommission will bis zum 16.11. über die kartellrechtliche Freigabe der UniCredit-Übernahme entscheiden – das ist ein Zwischenschritt, keine endgültige Entscheidung über die Übernahme selbst. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": 1.4,
-   "text": "Apple stieg um 1,4 % auf 304,20 €. Konkrete neue Firmennachrichten gab es nicht. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -2.0,
+   "text": "Apple fiel am Freitag um 2,0 % auf 298,15 €. Hintergrund waren Berichte, wonach Apple Bestellungen bei Zulieferern reduziert haben soll, was manche Beobachter als Warnsignal werten; Details dazu sind noch unklar. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
  "warnungen": [
   {
    "stufe": "crit",
    "tag": "Stop-Loss",
-   "text": "Nordex ist nun den zweiten Tag in Folge unter der Stop-Loss-Marke von 36 € (aktuell 34,58 €). Prüft im Depot, ob die Stop-Loss-Order ausgelöst und die Aktie verkauft wurde. Die Order sollte laut Plan ohnehin erst am 15.10. ablaufen, kann aber schon vorher durch den Kursfall ausgelöst worden sein."
+   "text": "Nordex ist nun den dritten Tag in Folge unter der Stop-Loss-Marke von 36 € (Schlusskurs Freitag: 35,42 €). Prüft im Depot, ob die Stop-Loss-Order ausgelöst und die Aktie verkauft wurde. Die Order sollte laut Plan ohnehin erst am 15.10. ablaufen, kann aber schon vorher durch den Kursfall ausgelöst worden sein."
   }
  ]
 }

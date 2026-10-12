@@ -290,6 +290,16 @@
    "frage": "Alle 14 Tage neu setzen, falls ihr den Rhythmus vom 15.10. beibehalten habt."
   },
   {
+   "datum": "2026-11-16",
+   "titel": "EU-Kommission entscheidet über Kartell-Freigabe für UniCredit-Commerzbank",
+   "betrifft": [
+    "cbk"
+   ],
+   "erwartung": "Die EU-Wettbewerbsbehörde prüft, ob die geplante Übernahme der Commerzbank durch UniCredit gegen Wettbewerbsregeln verstößt. Das ist ein Zwischenschritt im Übernahmeprozess, keine endgültige Entscheidung über die Übernahme selbst.",
+   "gut": "Eine Freigabe (mit oder ohne Auflagen) macht die Übernahme wahrscheinlicher.",
+   "schlecht": "Eine vertiefte Prüfung würde den Prozess und damit die Unsicherheit verlängern."
+  },
+  {
    "datum": "2026-11-13",
    "titel": "Commerzbank: mögliche Entscheidung der EZB zur UniCredit-Beteiligung",
    "unsicher": true,
