@@ -1,6 +1,6 @@
 {
- "datum": "2026-10-12",
- "quelle": "aus 55 Google-Alerts",
+ "datum": "2026-10-13",
+ "quelle": "aus 91 Google-Alerts",
  "intro": "Die wichtigen Meldungen und was sie für uns heißen.",
  "aktien": [
   {
@@ -11,10 +11,10 @@
    "punkte": [
     {
      "art": "Gut",
-     "text": "STMicroelectronics hat zwischen dem 28.9. und 2.10. für **14,6 Millionen Euro** eigene Aktien zurückgekauft (310.000 Stück). Das gilt als Vertrauenssignal des Managements. Zudem bestätigte das Unternehmen den Termin für die Quartalszahlen.",
-     "datum": "2026-10-05",
+     "text": "Ein US-Anlegermagazin (Cabot Wealth) nennt STMicroelectronics als aussichtsreich für den Ausbau von KI-Infrastruktur. Grund ist unter anderem ein mehrjähriger Vertrag mit **Amazon Web Services** zur Entwicklung von Halbleitern; STMicroelectronics erwartet dadurch über 500 Millionen Dollar Umsatz mit KI-Rechenzentren in diesem Jahr und über 1 Milliarde Dollar 2027.",
+     "datum": "2026-10-12",
      "quelle": "ad-hoc-news",
-     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-kauft-310-000-aktien-zurueck-stmicroelectronics-aktie/70241176"
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/cabot-wealth-waehlt-stmicroelectronics-aktie-als-ki-auswahl/70298602"
     },
     {
      "art": "Gut",
@@ -24,24 +24,38 @@
      "url": "https://www.ad-hoc-news.de/boerse/news/nachboerse/stmicroelectronics-aktie-unternehmen-meldet-aktienrueckkaeufe-und-neue/70244674"
     }
    ],
-   "fazit": "Neue Nachrichten zu STMicroelectronics gab es diese Woche nicht. Der Kurs blieb am Freitag nach dem kräftigen Rückgang vom Donnerstag fast unverändert. Nächster wichtiger Termin: STMicroelectronics-Quartalszahlen am **29.10.**"
+   "fazit": "Der Kurs fiel am Montag an einem insgesamt schwächeren Tag für Chip-Aktien, ohne eigene negative Firmennachricht. Positiv bleibt das wachsende KI-Geschäft im Blick. Nächster wichtiger Termin: STMicroelectronics-Quartalszahlen am **29.10.**"
   },
   {
    "id": "nordex",
    "name": "Nordex",
-   "stimmung": "gemischt",
-   "ton": "warn",
+   "stimmung": "positiv",
+   "ton": "info",
    "punkte": [
     {
+     "art": "Gut",
+     "text": "Nordex meldete einen starken Auftragseingang im dritten Quartal 2026: **2.810 Megawatt** (427 Windräder in zehn Ländern), ein Plus von fast 30 % gegenüber dem Vorjahresquartal. In den ersten neun Monaten kamen so **7.733 Megawatt** zusammen (+16 %). Stärkster Einzelmarkt war die Türkei mit über 900 Megawatt, gefolgt von Deutschland und den USA (seit Jahresbeginn über 1,3 Gigawatt). Der Kurs sprang daraufhin über die Stop-Loss-Marke von 36 € zurück.",
+     "datum": "2026-10-12",
+     "quelle": "iwr.de",
+     "url": "https://www.iwr.de/news/nordex-steigert-auftragseingang-kraeftig-tuerkei-deutschland-und-usa-treiben-das-geschaeft-news40103"
+    },
+    {
      "art": "Warnung",
-     "text": "Die Bank **RBC** hat Nordex trotz der neuen Großaufträge (zusammen 617 Megawatt aus der Türkei und Europa) von „Sector Perform“ auf **„Underperform“** herabgestuft, Kursziel 36 Euro. Als Grund nennt RBC politische Vorgaben im deutschen Markt, die sie als Geschäftsrisiko für Nordex sehen.",
+     "text": "Die Bank **RBC** hat Nordex trotz der neuen Großaufträge von „Sector Perform“ auf **„Underperform“** herabgestuft, Kursziel 36 Euro. Als Grund nennt RBC politische Vorgaben im deutschen Markt, die sie als Geschäftsrisiko für Nordex sehen.",
      "datum": "2026-10-11",
      "quelle": "boerse-express",
      "url": "https://www.boerse-express.com/news/articles/nordex-aktie-rbc-stuft-auf-underperform-herab-952196"
     },
     {
      "art": "Gut",
-     "text": "Nordex erhält einen neuen Großauftrag aus der Türkei über **389 Megawatt**. Trotzdem fiel der Kurs am selben Tag weiter.",
+     "text": "Die Bank **Jefferies** hat ihre Kaufempfehlung für Nordex nach dem starken Auftragseingang bestätigt.",
+     "datum": "2026-10-12",
+     "quelle": "aktiencheck.de",
+     "url": "https://www.aktiencheck.de/analysen/Artikel-Jefferies_belaesst_Nordex_auf_Buy_Lobt_Auftragseingang-20162307"
+    },
+    {
+     "art": "Gut",
+     "text": "Nordex erhält einen neuen Großauftrag aus der Türkei über **389 Megawatt**.",
      "datum": "2026-10-07",
      "quelle": "boerse.de",
      "url": "https://www.boerse.de/nachrichten/Nordex-erhaelt-Auftraege-ueber-389-Megawatt-in-der-Tuerkei/38655612"
@@ -52,16 +66,9 @@
      "datum": "2026-10-06",
      "quelle": "boerse-express",
      "url": "https://www.boerse-express.com/news/articles/nordex-aktie-schliesst-neue-windparkvertraege-in-europa-951166"
-    },
-    {
-     "art": "Gut",
-     "text": "Die **Deutsche Bank** hat ihr Kursziel für Nordex von 58 auf **59 Euro** angehoben und die Kaufempfehlung bestätigt. Begründung: erwartete bessere Gewinnmargen. Einschränkend nennt die Bank Verzögerungen bei Projekten als Risiko.",
-     "datum": "2026-10-05",
-     "quelle": "ad-hoc-news",
-     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/deutsche-bank-hebt-ziel-fuer-die-nordex-aktie-auf-59-euro-an/70231119"
     }
    ],
-   "fazit": "Die Auftragslage bleibt sehr gut (zuletzt 617 Megawatt neue Aufträge aus der Türkei und Europa, inklusive Serviceverträgen bis zu 25 Jahre), trotzdem stufte RBC die Aktie wegen politischer Risiken im deutschen Markt auf „Underperform“ herab. Der Kurs erholte sich am Freitag etwas, blieb aber den dritten Tag in Folge unter der Stop-Loss-Marke von 36 € (siehe Warnung im Tagesbericht). Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
+   "fazit": "Der starke Auftragseingang im dritten Quartal hat den Kurs am Montag über 4 % steigen lassen, er liegt damit wieder über der Stop-Loss-Marke von 36 €. Die Herabstufung durch RBC vom Freitag bleibt davon unberührt. Nächster wichtiger Termin: Nordex-Quartalszahlen voraussichtlich am **5.11.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "intel",
@@ -71,10 +78,24 @@
    "punkte": [
     {
      "art": "Kleines Risiko",
-     "text": "Weiterhin unklar bleibt, welche Aufgaben Intel beim Chipfabrik-Projekt **Terafab** genau übernimmt: Elon Musk hält eine Untervermietung von Reinraumflächen an **TSMC** weiter im Spiel, Intel-Chef Lip-Bu Tan bestätigte aber, dass Intel beteiligt bleibt. Der Kursrückgang am Freitag hängt laut Berichten eher mit einem insgesamt schwächeren Tag für Technologie-Aktien zusammen als mit dieser Unklarheit.",
+     "text": "Intel-Chef **Lip-Bu Tan** warnte bei einem Branchentreffen in Singapur, dass steigende Kapitalkosten und unsichere Erträge das weitere Wachstum bei KI-Investitionen bremsen könnten. Zudem verbreiten sich günstigere chinesische KI-Modelle nach seinen Worten sehr schnell, was den Bedarf an teurer Rechenleistung dämpfen könnte.",
+     "datum": "2026-10-12",
+     "quelle": "goldesel.de",
+     "url": "https://goldesel.de/aktien/news/intel-aktie-ceo-sieht-schnelle-verbreitung-gunstiger-chinesischer-ki-modelle"
+    },
+    {
+     "art": "Kleines Risiko",
+     "text": "Weiterhin unklar bleibt, welche Aufgaben Intel beim Chipfabrik-Projekt **Terafab** genau übernimmt: Elon Musk hält eine Untervermietung von Reinraumflächen an **TSMC** weiter im Spiel, Intel-Chef Lip-Bu Tan bestätigte aber, dass Intel beteiligt bleibt.",
      "datum": "2026-10-11",
      "quelle": "finanztrends",
      "url": "https://www.finanztrends.de/news/intel-aktie-terafab-aufgabenteilung-bleibt-unklar/"
+    },
+    {
+     "art": "Gut",
+     "text": "Intel hat seine Zusammenarbeit mit dem Anlagenbauer **Applied Materials** vertieft: Beide wollen gemeinsam an Transistoren, Verbindungen und fortschrittlicher Chip-Verpackung forschen, um die Fertigungstechnologien 18A und 14A für leistungsfähige KI-Chips weiterzuentwickeln.",
+     "datum": "2026-10-09",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/intel-vertieft-ki-chip-partnerschaft-intel-aktie-kostet-92-70-euro/70300120"
     },
     {
      "art": "Entwarnung",
@@ -89,36 +110,16 @@
      "datum": "2026-10-08",
      "quelle": "ad-hoc-news",
      "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/mizuho-hebt-ziel-fuer-die-intel-aktie-auf-114-usd-an/70256179"
-    },
-    {
-     "art": "Risiko",
-     "text": "**Microsoft** und **Nvidia** wollen mit einem neuen Laptop, der auf Nvidia-Chips läuft und KI-Agenten direkt auf dem Gerät ausführen soll, in den von Intel und AMD dominierten PC-Markt vordringen. Das ist riskant, weil das PC-Chip-Geschäft 2025 rund 32 Milliarden Dollar Umsatz brachte, Intels größter Geschäftsbereich.",
-     "datum": "2026-10-07",
-     "quelle": "tikr.com",
-     "url": "https://www.tikr.com/de/blog/nvidia-takes-aim-at-intels-32-billion-pc-business-with-microsofts-surface-laptop-ultra"
     }
    ],
-   "fazit": "Die akute Sorge um Terafab ist zwar entschärft, wer am Ende welche Aufgaben übernimmt, ist aber immer noch nicht geklärt. Der leichte Kursrückgang am Freitag hängt eher mit einem schwächeren Tag für Technologie-Aktien insgesamt zusammen als mit einer Firmennachricht. Nächster wichtiger Termin: Quartalszahlen voraussichtlich am **22.10.** (Datum noch nicht bestätigt)."
+   "fazit": "Intel fiel am Montag an einem schwächeren Tag für Chip-Aktien weiter, zusätzlich belastet durch die Warnung des eigenen Chefs vor steigenden Kapitalkosten bei KI-Investitionen. Gleichzeitig vertiefte Intel eine Fertigungs-Partnerschaft mit Applied Materials. Nächster wichtiger Termin: Quartalszahlen voraussichtlich am **22.10.** (Datum noch nicht bestätigt)."
   },
   {
    "id": "cbk",
    "name": "Commerzbank",
    "stimmung": "gemischt",
-   "ton": "warn",
+   "ton": "info",
    "punkte": [
-    {
-     "art": "Warnung",
-     "text": "Die Bank **RBC** hat die Commerzbank von „Kaufen“ auf neutral (**„Sector Perform“**) herabgestuft und das Kursziel von 43 auf **40 Euro** gesenkt. Auch die **Deutsche Bank** stuft die Aktie jetzt nur noch auf „Halten“. Beide nennen als Grund das Risiko bei der Umsetzung der UniCredit-Pläne.",
-     "datum": "2026-10-05",
-     "quelle": "MarketScreener",
-     "url": "https://www.marketscreener.com/news/rbc-downgrades-commerzbank-to-sector-perform-amid-execution-risk-tied-to-unicredit-initiatives-ce785ddbd98cf124"
-    },
-    {
-     "art": "Risiko",
-     "text": "Laut der Financial Times will UniCredit alle zehn Aktionärsvertreter im Aufsichtsrat der Commerzbank austauschen und so die Kontrolle übernehmen, im besten Fall schon Anfang 2027, sonst bis Ende Februar 2027.",
-     "datum": "2026-10-05",
-     "quelle": "Financial Times"
-    },
     {
      "art": "Gut",
      "text": "Zur Einordnung (Zahlen vom August): Im ersten Halbjahr 2026 verdiente die Commerzbank **1,8 Milliarden Euro**, 40 % mehr als im Vorjahr. Das Rückkaufprogramm läuft weiter: Inzwischen wurden insgesamt **8,13 Millionen** eigene Aktien zurückgekauft, zuletzt 1,871 Millionen Stück zwischen dem 28.9. und 2.10.",
@@ -141,7 +142,7 @@
      "url": "https://www.pymnts.com/cpi-posts/unicredits-commerzbank-deal-faces-eu-scrutiny/"
     }
    ],
-   "fazit": "Zum Streit um die Kontrolle bei der Commerzbank kommt jetzt ein konkreter Termin dazu: Die EU-Kommission will bis zum **16.11.** über die kartellrechtliche Freigabe der UniCredit-Übernahme entscheiden, das ist aber nur ein Zwischenschritt. Der Kurs blieb am Freitag fast unverändert. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**"
+   "fazit": "Neue Firmennachrichten gab es am Montag nicht, der Kurs bewegte sich kaum. Der Streit um die Kontrolle bei der Commerzbank bleibt in der Schwebe. Nächster wichtiger Termin: Commerzbank-Quartalszahlen am **5.11.**, davor die EU-Entscheidung zur kartellrechtlichen Freigabe am **16.11.**"
   },
   {
    "id": "aapl",
@@ -151,34 +152,34 @@
    "punkte": [
     {
      "art": "Risiko",
-     "text": "Apple gehörte am Freitag zu den schwächsten Werten im Dow Jones, nachdem Berichte aufkamen, Apple habe Bestellungen bei Zulieferern reduziert. Der ausführliche Bericht ist kostenpflichtig, Details zu Umfang und Grund sind deshalb unklar.",
-     "datum": "2026-10-11",
-     "quelle": "finanznachrichten.de",
-     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69805848-apple-aktie-ist-das-ein-schuss-vor-den-bug-486.htm"
-    },
-    {
-     "art": "Gut",
-     "text": "Der iPhone-Umsatz stieg im dritten Quartal um **21,7 % auf 54,3 Milliarden Dollar** und übertraf damit die Erwartungen der Analysten.",
-     "datum": "2026-10-05",
-     "quelle": "aktiencheck.de (Raiffeisen Bank International)",
-     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105"
-    },
-    {
-     "art": "Gut",
-     "text": "Berichten zufolge (vor allem von Bloomberg-Journalist Mark Gurman) plant Apple in den nächsten Tagen aktualisierte Geräte wie HomePod mini und Apple TV, möglicherweise auch einen zentralen **„Home Hub“**. Für 2027 sollen eine vernetzte Türklingel und Überwachungskameras folgen. Außerdem beginnt in rund einer Woche die Vorbestellung des faltbaren iPhone Duo.",
-     "datum": "2026-10-07",
-     "quelle": "Der Aktionär",
-     "url": "https://www.deraktionaer.de/artikel/aktien/apple-der-naechste-schritt-20411580.html"
-    },
-    {
-     "art": "Kleines Risiko",
-     "text": "Trotz der guten Zahlen warnen Analysten: Teurer werdende Speicherchips und Lieferengpässe bei Prozessoren könnten die Gewinnspanne im Weihnachtsquartal belasten. Die Prognose für das laufende Quartal fällt deshalb vorsichtig aus (9-11 % Umsatzwachstum).",
-     "datum": "2026-10-05",
+     "text": "Laut einem Bericht der japanischen Zeitung **Nikkei**, aufgegriffen von der Bank Morgan Stanley, hat Apple die Bestellungen für das iPhone 18 Pro und Pro Max bei Zulieferern deutlich reduziert, weil die Nachfrage schwächer ist als erwartet. Morgan Stanley hält den Zeitpunkt für bedenklich, da die Geräte erst vor kurzem auf den Markt kamen, sieht aber weiter Aufwärtspotenzial für die Aktie (Kursziel 355 Dollar).",
+     "datum": "2026-10-12",
      "quelle": "aktiencheck.de",
-     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_Umsatz_springt_22_Doch_Lieferengpaesse_bremsen_Ausblick-20147105"
+     "url": "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_18_Pro_schwaechelt_Bestellkuerzungen_alarmieren_Analysten-20164431"
+    },
+    {
+     "art": "Risiko",
+     "text": "Der südkoreanische Apple-Zulieferer **LG Innotek** (liefert unter anderem Kameramodule für das iPhone) brach wegen der Bestellkürzungen um fast 15 % ein. Fast 78 % seines Umsatzes stammen von Apple, das zeigt, wie direkt Zulieferer von Apples Entscheidungen abhängen.",
+     "datum": "2026-10-12",
+     "quelle": "aktien.news",
+     "url": "https://www.aktien.news/lg-innotek-aktie-bricht-um-15-prozent-ein-apple-abhangigkeit-als-hauptgrund"
+    },
+    {
+     "art": "Gut",
+     "text": "Apple hat offiziell ein Produkt-Event mit dem Namen **„Welcome home“** für den **13.10.** in New York angekündigt. Erwartet werden neue Smart-Home-Geräte wie ein HomePod mini, ein überarbeitetes Apple TV und möglicherweise ein zentraler „Home Hub“.",
+     "datum": "2026-10-12",
+     "quelle": "ad-hoc-news",
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/apple-kuendigte-event-fuer-13-oktober-an-und-die-apple-aktie-notiert-bei/70299891"
+    },
+    {
+     "art": "Gut",
+     "text": "Die Bank **JPMorgan** bestätigt ihre positive Einstufung für Apple und sieht vor den Quartalszahlen Aufwärtspotenzial bei den Umsatzschätzungen für das iPhone 17.",
+     "datum": "2026-10-12",
+     "quelle": "finanznachrichten.de",
+     "url": "https://www.finanznachrichten.de/nachrichten-2026-10/69817572-apple-im-fokus-jpmorgan-sieht-aufwaertspotenzial-bei-den-schaetzungen-fuer-das-iphone-17-046.htm"
     }
    ],
-   "fazit": "Die Geschäfte laufen nach Einschätzung von Analysten gut, Berichte über reduzierte Bestellungen bei Zulieferern sorgten am Freitag aber für einen Kursrückgang von 2 %. Wichtige Tage: **16.10.** Vorbestellung iPhone Duo, **23.10.** Verkaufsstart, **29.10.** Quartalszahlen (Datum noch nicht bestätigt)."
+   "fazit": "Der Kurs stieg am Montag trotz der Berichte über gekürzte iPhone-18-Pro-Bestellungen, auch weil Analysten weiter Aufwärtspotenzial sehen. Wichtige Tage: **13.10.** Smart-Home-Event, **23.10.** Verkaufsstart iPhone Duo, **29.10.** Quartalszahlen (Datum noch nicht bestätigt)."
   },
   {
    "id": "markt",
@@ -188,7 +189,7 @@
    "punkte": [
     {
      "art": "Risiko",
-     "text": "Die **Huthi-Milizen** griffen den Hauptflughafen der saudischen Hauptstadt Riad an, dabei starben laut Berichten 12 Menschen, 309 wurden verletzt. Es ist der bisher opferreichste Angriff auf einen mit den USA verbündeten Golfstaat seit Beginn des Iran-Kriegs und schon der dritte Angriff auf den Flughafen in dieser Woche.",
+     "text": "Die **Huthi-Milizen** griffen den Hauptflughafen der saudischen Hauptstadt Riad an, dabei starben laut Berichten 12 Menschen, 309 wurden verletzt. Es ist der bisher opferreichste Angriff auf einen mit den USA verbündeten Golfstaat seit Beginn des Iran-Kriegs.",
      "datum": "2026-10-11",
      "quelle": "ZDF",
      "url": "https://www.zdfheute.de/politik/ausland/flughafen-angriff-riad-huthi-100.html"
@@ -202,6 +203,13 @@
     },
     {
      "art": "Risiko",
+     "text": "Nach den Angriffen auf den Flughafen Riad streichen mehrere Fluggesellschaften ihre Verbindungen: **Qatar Airways** setzte Flüge nach Riad und Dammam aus, **Etihad** strich alle Verbindungen dorthin bis mindestens 19.10., **Delta** verschob den geplanten Start einer Riad-Route von Ende Oktober auf März 2027, auch Gulf Air und Lufthansa-Gruppe-Airlines pausierten Flüge. Die US-Luftfahrtbehörde **FAA** warnt amerikanische Airlines bis zum 10.12. vor Flügen nach oder über Saudi-Arabien.",
+     "datum": "2026-10-12",
+     "quelle": "Handelsblatt",
+     "url": "https://www.handelsblatt.com/politik/international/iran-krieg-mehrere-fluggesellschaften-streichen-fluege-nach-saudi-arabien/100136895.html"
+    },
+    {
+     "art": "Risiko",
      "text": "Die Lage im Nahen Osten hat sich wieder verschärft: Laut dem Magazin „The Atlantic“ lässt die US-Regierung neue Angriffsoptionen gegen den Iran ausarbeiten, die noch vor den US-Zwischenwahlen im November umsetzbar wären. Der Ölpreis (**Brent**) stieg daraufhin deutlich um fast 5 US-Dollar auf rund 105 US-Dollar je Barrel.",
      "datum": "2026-10-09",
      "quelle": "onvista.de",
@@ -209,20 +217,13 @@
     },
     {
      "art": "Risiko",
-     "text": "Saudi-Arabien hat nach tödlichen Angriffen auf seine Flughäfen in Riad und Abha eigenen Angaben zufolge 82 Ziele der **Huthi-Miliz** im Jemen angegriffen. Die Huthis sind mit dem Iran verbündet, der Konflikt ist Teil des andauernden Kriegs zwischen den USA und dem Iran.",
+     "text": "Saudi-Arabien hat nach tödlichen Angriffen auf seine Flughäfen in Riad und Abha eigenen Angaben zufolge 82 Ziele der **Huthi-Miliz** im Jemen angegriffen.",
      "datum": "2026-10-09",
      "quelle": "Handelsblatt",
      "url": "https://www.handelsblatt.com/politik/international/iran-krieg-saudi-arabien-hat-82-ziele-der-huthi-miliz-im-jemen-angegriffen/100136895.html"
-    },
-    {
-     "art": "Risiko",
-     "text": "An den US-Börsen kamen am Mittwoch Sorgen vor einer weiteren Zinserhöhung der Fed auf, Dow Jones, S&P 500 und Nasdaq gaben nach. Das drückte auch auf die europäischen Börsen.",
-     "datum": "2026-10-07",
-     "quelle": "Handelsblatt",
-     "url": "https://www.handelsblatt.com/finanzen/maerkte/marktberichte/dow-jones-sp-500-nasdaq-ist-die-zinsangst-zurueck-us-boerse-im-minus/100260472.html"
     }
    ],
-   "fazit": "Die Lage im Nahen Osten hat sich weiter verschärft statt entspannt: Nach dem schwersten Angriff auf den Flughafen von Riad lehnt der Iran die US-Antwort zur Öffnung der Straße von Hormus als unzureichend ab und droht mit neuen Angriffen auf Infrastruktur. Der Ölpreis bleibt dadurch hoch. Keine unserer Aktien ist direkt im Ölgeschäft, die insgesamt angespanntere Stimmung kann aber trotzdem auf die Kurse drücken."
+   "fazit": "Die Lage im Nahen Osten spitzt sich weiter zu statt sich zu entspannen: Nach dem Angriff auf den Flughafen Riad streichen mehrere große Fluggesellschaften ihre Verbindungen nach Saudi-Arabien, der Ölpreis bleibt hoch. Keine unserer Aktien ist direkt im Ölgeschäft, die insgesamt angespanntere Stimmung kann aber trotzdem auf die Kurse drücken."
   }
  ],
  "begriffe": [
@@ -231,16 +232,12 @@
    "text": "Der Preis, den Analysten in etwa einem Jahr für fair halten. Keine Garantie."
   },
   {
-   "wort": "„Kaufen“ / „Halten“ / „Sector Perform“ / „Underperform“",
-   "text": "Einstufungen von Analysten. „Kaufen“: Sie trauen der Aktie mehr zu als dem Markt. „Halten“ und „Sector Perform“: neutral, weder Kauf- noch Verkaufsempfehlung. „Underperform“: Sie erwarten, dass die Aktie schlechter läuft als der Markt."
+   "wort": "„Kaufen“ / „Halten“ / „Sector Perform“ / „Underperform“ / „Buy“",
+   "text": "Einstufungen von Analysten. „Kaufen“ (englisch „Buy“): Sie trauen der Aktie mehr zu als dem Markt. „Halten“ und „Sector Perform“: neutral, weder Kauf- noch Verkaufsempfehlung. „Underperform“: Sie erwarten, dass die Aktie schlechter läuft als der Markt."
   },
   {
    "wort": "UniCredit",
    "text": "Große italienische Bank, die schon fast die Hälfte der Commerzbank-Stimmrechte hält und sie ganz übernehmen will."
-  },
-  {
-   "wort": "Aufsichtsrat / Aktionärsvertreter",
-   "text": "Der Aufsichtsrat kontrolliert den Vorstand einer Firma. Die Aktionärsvertreter darin werden von den Aktionären gewählt. Wer sie stellt, hat viel Einfluss."
   },
   {
    "wort": "Aktienrückkauf / Aktien zurück",
@@ -279,20 +276,31 @@
    "text": "Künstliche Intelligenz, die selbständig mehrere Schritte planen und ausführen kann, nicht nur einzelne Fragen beantwortet."
   },
   {
-   "wort": "RBC",
-   "text": "Royal Bank of Canada, eine große kanadische Investmentbank. Wie andere Banken veröffentlicht sie regelmäßig Einstufungen und Kursziele zu Aktien."
+   "wort": "Analysten-Banken (RBC, Jefferies, Morgan Stanley, JPMorgan, Mizuho, Deutsche Bank, ...)",
+   "text": "Große Banken, die regelmäßig Einstufungen und Kursziele zu Aktien veröffentlichen. Das sind Meinungen von Analysten, keine Garantien."
   },
   {
    "wort": "EU-Kartellprüfung",
    "text": "Die EU-Kommission prüft bei großen Übernahmen, ob dadurch der Wettbewerb geschädigt würde, bevor sie die Übernahme erlaubt."
+  },
+  {
+   "wort": "Applied Materials",
+   "text": "US-Firma, die Maschinen und Anlagen zur Chip-Fertigung baut. Viele große Chip-Hersteller, auch Intel, arbeiten mit ihr zusammen."
+  },
+  {
+   "wort": "LG Innotek",
+   "text": "Südkoreanischer Zulieferer, der zum Beispiel Kameramodule für das iPhone herstellt. Ein großer Teil seines Umsatzes kommt von Apple."
+  },
+  {
+   "wort": "AWS (Amazon Web Services)",
+   "text": "Die Cloud- und Rechenzentrums-Sparte von Amazon. Sie betreibt Server, auf denen viele andere Firmen ihre Programme und KI-Anwendungen laufen lassen."
+  },
+  {
+   "wort": "FAA",
+   "text": "Die US-Luftfahrtbehörde. Sie kann amerikanischen Fluggesellschaften bestimmte Flugrouten verbieten oder vor ihnen warnen."
   }
  ],
  "gesehen": [
-  "https://www.wallstreet-online.de/nachricht/21470154-intel-vs-quantum-x-labs-unterschaetzte-ruestungsmarkt-abseits-quantencomputern",
-  "https://simplywall.st/de/stocks/us/semiconductors/nasdaq-intc/intel/news/die-intel-aktie-intc-koennte-nach-den-juengsten-meldungen-zu",
-  "https://www.finanzen.ch/nachrichten/aktien/intel-aktie-kursbewegung-02-10-2026-1035062832",
-  "https://www.finanzen.ch/derivate/boersenplaetze/ch1572938889",
-  "https://www.ad-hoc-news.de/boerse/news/corporate-news/nordex-erhaelt-56-mw-auftrag-nordex-aktie-notiert-bei-38-37-euro-nach/70220306",
   "https://www.finanznachrichten.de/nachrichten-2026-10/69746111-aktien-kw-40-schwacher-start-in-den-oktober-starkes-ende-news-mutares-kion-2g-energy-daldrup-soehne-bitcoin-group-thyssenkrupp-nucera-nanorepr-617.htm",
   "https://www.boerse-express.com/news/articles/nordex-aktie-web-windenergie-beauftragt-repowering-950319",
   "https://www.aktiencheck.de/analysen/Artikel-Nordex_Aktienanalyse_Bessere_Preise_und_mehr_Auftraege_Kursziel_jetzt_52_80_Euro-20142815",
@@ -601,7 +609,98 @@
   "https://www.talzeit.de/politik/article412829332/iran-krieg-news-aktuell-wieder-tanker-in-strasse-von-hormus-beschossen.html",
   "https://ga.de/news/politik/ausland/nahostkrieg-warum-die-usa-und-iran-verhandeln-muessen_aid-156343869",
   "https://www.oe24.at/a/trump-will-nicht-mehr-ueber-den-iran-krieg-reden-900122282",
-  "https://www.borkenerzeitung.de/welt/in-ausland/politik-inland/Paris-und-London-wollen-Strasse-von-Hormus-mit-Oman-absichern-781048.html"
+  "https://www.borkenerzeitung.de/welt/in-ausland/politik-inland/Paris-und-London-wollen-Strasse-von-Hormus-mit-Oman-absichern-781048.html",
+  "https://www.finanzen.ch/nachrichten/aktien/amd-aktie-kursbewegung-12-10-2026-1035062848",
+  "https://www.finanzen.ch/nachrichten/aktien/intel-aktie-kursbewegung-12-10-2026-1035062832",
+  "https://goldesel.de/aktien/news/intel-aktie-bericht-meldet-cpu-preiserhohungen-von-bis-zu-20-prozent",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69816714-ki-kostet-immer-mehr-intel-und-broadcom-schlagen-alarm-wird-geld-zum-groessten-problem-049.htm",
+  "https://www.wallstreet-online.de/nachricht/21512083-ki-kostet-mehr-intel-broadcom-schlagen-alarm-geld-groessten-problem",
+  "https://admiralmarkets.com/de/analysen/traders-blog/spacex-schulden-nvidia-chips-terafab",
+  "https://www.finanzen.net/nachricht/aktien/agenten-ki-treibt-cpu-bedarf-frischer-wind-fuer-die-amd-aktie-analysten-heben-reihenweise-den-daumen-nach-start-von-ki-agenten-00-15979178",
+  "https://www.boerse-express.com/news/articles/intel-aktie-kapital-als-engpass-952534",
+  "https://www.finanztrends.de/news/micron-technology-aktie-toshiba-plaene-loesen-ausverkauf-aus/",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/intel-aktie-bei-90-79-euro-und-volumen-79-6-prozent-unter-schnitt/70303728",
+  "https://www.finanzen.at/nachrichten/aktien/nasdaq-composite-index-wert-intel-aktie-so-viel-gewinn-hatte-ein-investment-in-intel-von-vor-3-jahren-eingebracht-1036616751",
+  "https://www.finanzen.net/nachricht/aktien/nasdaq-composite-index-papier-intel-aktie-so-viel-gewinn-haette-ein-investment-in-intel-von-vor-3-jahren-eingefahren-15979347",
+  "https://www.finanzen.ch/nachrichten/aktien/nasdaq-composite-index-wert-intel-aktie-so-viel-gewinn-haette-ein-investment-in-intel-von-vor-3-jahren-eingefahren-1036616634",
+  "https://www.deraktionaer.de/videos/boersen-maerkte/opening-bell-oel-brent-sp-500-salesforce-moderna-spacex-tsmc-intel-biogen-20414905.html",
+  "https://www.boerse-express.com/news/articles/applied-materials-aktie-ucla-erweitert-epic-netzwerk-952510",
+  "https://www.swedbank-aktiellt.se/telegram/9bicJoI2",
+  "https://www.finanzen.net/nachricht/aktien/speicherchips-anleger-schicken-aktien-von-samsung-und-sk-hynix-nach-unten-cxmt-rueckt-bei-speicherchips-naeher-00-15978605",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/intel-vertieft-ki-chip-partnerschaft-intel-aktie-kostet-92-70-euro/70300120",
+  "https://www.swedbank-aktiellt.se/telegram/VjlakBr0",
+  "https://goldesel.de/aktien/news/intel-aktie-ceo-sieht-schnelle-verbreitung-gunstiger-chinesischer-ki-modelle",
+  "https://www.ad-hoc-news.de/boerse/news/nachboerse/stmicroelectronics-aktie-nachboerslich-bei-45-61-euro/70305399",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/cabot-wealth-waehlt-stmicroelectronics-aktie-als-ki-auswahl/70298602",
+  "https://global.morningstar.com/de/investments/aktien/0P00009WQL/eeigentum",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/stmicroelectronics-aktie-bei-46-26-euro-analystenziel-liegt-49-10-prozent/70301787",
+  "https://www.ad-hoc-news.de/boerse/news/vorboerse/stmicroelectronics-aktie-vorboerslich-bei-46-75-euro/70296262",
+  "https://se.investing.com/news/stock-market-news/varfor-stiger-nordex-aktie-idag-93CH-521611",
+  "https://ms-aktuell.de/welt/nordex-auftraege-aktie-12-10-2026/",
+  "https://live.deutsche-boerse.com/nachrichten/AKTIE-IM-FOKUS-Nordex-weiter-erholt-nach-Auftragseingang-764365d9-1ab4-43e4-971e-63ca0ac6e13c",
+  "https://www.ad-hoc-news.de/boerse/news/nachboerse/nordex-aktie-nachboerslich-bei-36-78-euro/70304850",
+  "https://de.investing.com/news/stock-market-news/nordexaktie-im-aufwind-starker-auftragseingang-uberzeugt-anleger-93CH-3698957",
+  "https://www.t-online.de/finanzen/boerse/ticker/aktie-im-fokus-2-nordex-vom-februar-tief-weiter-erholt-nach-auftragseingang/0DBA98006372ABF1/",
+  "https://www.onvista.de/news/2026/10-12-nordex-attraktive-einstiegskurse-eigentlich-40338625-19-26563134",
+  "https://www.onvista.de/news/2026/10-12-aktie-im-fokus-2-nordex-vom-februar-tief-weiter-erholt-nach-auftragseingang-0-10-26563031",
+  "https://www.aktiencheck.de/analysen/Artikel-Nordex_Aktie_Auftragsboom_veraendert_Investmentgeschichte-20162683",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69815573-nordex-aktie-starkes-quartal-aber-wie-lange-noch-424.htm",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/nordex-aktie-erholung-stoesst-an-chartmarken/70303982",
+  "https://www.4investors.de/nachrichten/boerse.php?sektion=stock&ID=192695",
+  "https://www.wallstreet-online.de/nachricht/21510208-vw-rheinmetall-stark-dax-aktien-sorgen-bewegung",
+  "https://www.wallstreet-online.de/nachricht/21510283-auftraege-explodieren-nordex-ueberrascht-auftragsflut-aktie-rallye",
+  "https://www.finanztrends.de/news/nordex-aktie-analysten-loben-auftragsplus/",
+  "https://www.4investors.de/nachrichten/boerse.php?sektion=stock&ID=192694",
+  "https://www.4investors.de/nachrichten/boerse.php?sektion=stock&ID=192693",
+  "https://www.iwr.de/news/nordex-steigert-auftragseingang-kraeftig-tuerkei-deutschland-und-usa-treiben-das-geschaeft-news40103",
+  "https://www.finanzen.net/nachricht/aktien/form-8-3-the-vanguard-group-inc-easyjet-plc-15979275",
+  "https://www.aktiencheck.de/analysen/Artikel-Jefferies_belaesst_Nordex_auf_Buy_Lobt_Auftragseingang-20162307",
+  "https://www.apfelnews.de/2026/10/12/der-macbook-deckel-als-visitenkarte-was-kreative-und-entwickler-mit-aufklebern-ueber-sich-erzaehlen/",
+  "https://www.boerse-express.com/news/articles/apple-aktie-marktanteil-trotz-absatzminus-952615",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69817572-apple-im-fokus-jpmorgan-sieht-aufwaertspotenzial-bei-den-schaetzungen-fuer-das-iphone-17-046.htm",
+  "https://www.it-times.de/news/apple-im-fokus-jpmorgan-sieht-aufwaertspotenzial-bei-den-schaetzungen-fuer-das-iphone-17-187747/",
+  "https://www.aktien.news/lg-innotek-aktie-bricht-um-15-prozent-ein-apple-abhangigkeit-als-hauptgrund",
+  "https://www.aktiencheck.de/exklusiv/Artikel-Apple_Aktie_iPhone_18_Pro_schwaechelt_Bestellkuerzungen_alarmieren_Analysten-20164431",
+  "https://de.investing.com/news/stock-market-news/schwache-iphonenachfrage-lg-innotekaktie-sturzt-ab-93CH-3698812",
+  "https://www.faz.net/aktuell/technik-motor/digital/neues-bei-apple-iphone-18-pro-modelle-und-airpods-5-accg-201259696.html",
+  "https://www.finanzen.net/nachricht/zertifikate/apple-unterstuetzung-getestet-15978948",
+  "https://www.investor-verlag.de/aktien-und-aktienhandel/usa/apple-aktie/apple-aktie-340-dollar-ziel-bleibt-intakt/",
+  "https://ms-aktuell.de/finanzen/iphone-18-pro-12-10-2026/",
+  "https://www.macwelt.de/article/3257923/apple-produktion-iphone-18-gutes-zeichen.html",
+  "https://admiralmarkets.com/de/analysen/traders-blog/apple-aktie-iphone-18-pro-auftragskuerzungen",
+  "https://www.ad-hoc-news.de/boerse/news/corporate-news/apple-kuendigte-event-fuer-13-oktober-an-und-die-apple-aktie-notiert-bei/70299891",
+  "https://goldesel.de/aktien/news/apple-aktie-smart-home-offensive-ruckt-neben-iphone-nachfrage-in-den-fokus",
+  "https://www.onvista.de/news/2026/10-12-die-apple-aktie-ist-mir-zu-teuer-40338625-19-26563146",
+  "https://www.deraktionaer.de/aktien/peergroup/ambarella-kyg037ax1015.html?peergroup=us0378331005&peergroup=jp3435000009&peergroup=kyg037ax1015&peergroup=us7960502018",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69810133-apple-aktie-unterstuetzung-getestet-424.htm",
+  "https://www.finanznachrichten.de/nachrichten-2026-10/69810015-jpmorgan-stuft-apple-inc-auf-overweight-322.htm",
+  "https://www.finanztrends.de/news/apple-aktie-clean-energy-fonds-waechst-in-china/",
+  "https://uk.finance.yahoo.com/news/credit-agricole-sa-cr-dit-183500033.html",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-november-calendar-quarterly-results-a-brussels-deadline/70304986",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-s-valuation-reset-rbc-trims-its-target-as-brussels-sets-a/70303222",
+  "https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/commerzbank-buyback-progress-and-analyst-caution-are-answering-different/70295112",
+  "https://www.tradingview.com/news/tradingview:ecdcf33d7cf9e:0-weekly-recap-eu-antitrust-ruling-due-for-unicredit-takeover-and-cbk-buybacks/",
+  "https://www.fuw.ch/schweizer-boersen-ticker-445-772046976361/19",
+  "https://www.handelsblatt.com/politik/international/iran-krieg-mehrere-fluggesellschaften-streichen-fluege-nach-saudi-arabien/100136895.html",
+  "https://polymarket.com/de/event/how-many-ships-transit-the-strait-of-hormuz-week-of-october-5/will-25-29-ships-transit-the-strait-of-hormuz-between-october-5-october-11",
+  "https://www.vietnam.vn/de/iran-noi-my-phai-mua-dau-nga-vi-khong-kiem-soat-duoc-eo-bien-hormuz",
+  "https://www.wort.lu/international/trumps-verzweifelter-kampf-um-die-farmer/162928053.html",
+  "https://www.berliner-zeitung.de/article/eurasien-swing-states-usa-china-russland-hormus-heartland-10484496",
+  "https://meta.tagesschau.de/id/176217/eu-aussenminister-beschliessen-groesste-sanktionsrunde-gegen-russland",
+  "https://kurier.at/politik/ausland/iran-krieg-israel-usa-trump-nahostkrieg-strasse-von-hormus-livebericht-12-oktober/403136057",
+  "https://www.merkur.de/politik/huthi-hyperschallrakete-trifft-riad-experten-alarmiert-zr-94536744.html",
+  "https://www.spiegel.de/ausland/iran-reklamiert-angriff-auf-supertanker-in-strasse-von-hormus-a-62b40ff1-a3ed-4c9f-b867-2cd01342139b",
+  "https://www.fr.de/wirtschaft/titanic-vergleich-fuer-trumps-russland-deal-experten-rechnen-vor-warum-diesel-teuer-bleibt-zr-94537673.html",
+  "https://polymarket.com/de/event/who-wins-the-senate-pending-hormuz-agreement-and-oil-below-80",
+  "https://www.morgenpost.de/politik/article412829332/iran-krieg-news-aktuell-huthi-jemen-saudi-arabien-flughaefen-riad.html",
+  "https://live.deutsche-boerse.com/nachrichten/Aktien-Wien-Schluss-ATX-steigt-um-ueber-ein-Prozent-d210f3b2-5e17-40ce-b375-4f9a44274435",
+  "https://de.finance.yahoo.com/nachrichten/aktien-asien-uneinheitlich-wochenstart-070334918.html",
+  "https://www.saba.ye/de/news3808491.htm",
+  "https://www.wallstreet-online.de/nachricht/21511972-oel-hammer-10-millionen-barrel-tag-saudi-arabien-plant-gigantischen-oel-umbau",
+  "https://logistik-heute.de/news/nordostpassage-suedkorea-testet-alternative-seeroute-nach-europa-288336.html",
+  "https://logistik-heute.de/news/nahostkonflikt-huthi-nehmen-saudische-flughaefen-und-energieanlagen-ins-visier-288333.html",
+  "https://www.handelsblatt.com/politik/international/iran-krieg-iran-reklamiert-angriff-auf-supertanker-in-strasse-von-hormus/100136895.html",
+  "https://www.n-tv.de/mediathek/videos/politik/Video-soll-zeigen-wie-Tanker-auf-Seemine-faehrt-und-brennt-id31407415.html"
  ],
- "heute": "Am wichtigsten ist heute, dass Nordex trotz neuer Großaufträge von RBC auf „Underperform“ abgestuft wurde und weiterhin unter der Stop-Loss-Marke von 36 € liegt. Außerdem spitzt sich die Lage im Nahen Osten weiter zu: Nach einem schweren Angriff auf den Flughafen von Riad lehnt der Iran die US-Antwort zur Öffnung der Straße von Hormus als unzureichend ab."
+ "heute": "Am wichtigsten ist heute, dass Nordex nach einem starken Auftragseingang wieder über der Stop-Loss-Marke von 36 Euro liegt, während Berichte über gekürzte iPhone-18-Pro-Bestellungen Apple-Zulieferer wie LG Innotek stark belasten. Im Hintergrund streichen mehrere Fluggesellschaften nach dem Angriff auf den Flughafen Riad ihre Verbindungen nach Saudi-Arabien."
 }
