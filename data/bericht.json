@@ -1,32 +1,38 @@
 {
- "datum": "2026-10-13",
- "einleitung": "Am Montag (12.10.) ging es für unsere Aktien in unterschiedliche Richtungen: Nordex sprang nach einem starken Auftragseingang über 4 % und liegt damit wieder über der Stop-Loss-Marke, STMicroelectronics und Intel gaben an einem insgesamt schwächeren Tag für Chip-Aktien nach, die Commerzbank bewegte sich kaum und Apple legte trotz neuer Berichte über gekürzte iPhone-Bestellungen zu. Im Hintergrund bleibt die Lage im Nahen Osten angespannt: Nach dem Angriff auf den Flughafen Riad streichen mehrere Fluggesellschaften ihre Verbindungen nach Saudi-Arabien.",
+ "datum": "2026-10-14",
+ "einleitung": "Am Dienstag (13.10.) ging es für unsere Aktien überwiegend ruhig zu: STMicroelectronics gab nach, obwohl der Aufsichtsrat Chef Jean-Marc Chery im Amt bestätigen will, Nordex und Apple bewegten sich kaum, Intel stellte neue KI-Chips vor und die Commerzbank profitierte von weiteren Aktienrückkäufen. Im Hintergrund wurden in der Straße von Hormus erneut ein Tanker und ein Containerschiff beschossen, die Lage am Golf bleibt angespannt.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": -2.4,
-   "text": "STMicroelectronics fiel am Montag um 2,4 % auf 45,67 €, ohne klaren Einzelgrund – Chip-Aktien litten insgesamt unter neuen Sorgen, ob sich die hohen Investitionen in KI-Rechenzentren schnell genug auszahlen. Positiv: Ein US-Anlegermagazin nennt STMicroelectronics wegen eines mehrjährigen Chip-Vertrags mit Amazon als aussichtsreich für das KI-Geschäft. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -3.1,
+   "text": "STMicroelectronics fiel am Dienstag um 3,1 % auf 44,24 €, in einem insgesamt schwächeren Umfeld für Chip-Aktien. Der Aufsichtsrat schlug vor, Vorstandschef Jean-Marc Chery für ein weiteres Jahr im Amt zu bestätigen, das spricht für Kontinuität an der Unternehmensspitze. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": 4.2,
-   "text": "Nordex sprang am Montag um 4,2 % auf 36,92 € und liegt damit wieder über der Stop-Loss-Marke von 36 €. Grund war ein starker Auftragseingang im dritten Quartal (2.810 Megawatt, rund 30 % mehr als vor einem Jahr), vor allem aus der Türkei und den USA; die Bank Jefferies bestätigte danach ihre Kaufempfehlung. Die Herabstufung durch RBC vom Freitag bleibt davon unberührt. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.7,
+   "text": "Nordex gab leicht um 0,7 % auf 36,66 € nach, nachdem die Aktie am Montag kräftig gestiegen war. Die guten Nachrichten zum Auftragseingang liefen weiter, gleichzeitig hat die Investmentgesellschaft Marshall Wace ihre Wette gegen die Aktie (Short-Position) ausgebaut, nicht alle Anleger halten die Rally also für nachhaltig. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -4.0,
-   "text": "Intel verlor am Montag 4,0 % auf 90,82 €, an einem insgesamt schwächeren Tag für Chip-Aktien. Intel-Chef Lip-Bu Tan warnte bei einem Branchentreffen, dass steigende Kapitalkosten und unsichere Erträge das KI-Wachstum bremsen könnten; gleichzeitig vertiefte Intel eine Fertigungs-Partnerschaft mit Applied Materials für neue Chip-Technologien. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 0.2,
+   "text": "Intel bewegte sich am Dienstag kaum (+0,2 % auf 91,03 €). Das Unternehmen stellte eine neue Grafikchip-Serie namens „D-Serie“ speziell für den Einsatz von KI-Rechenzentren vor, ein weiterer Baustein im KI-Geschäft. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": 0.3,
-   "text": "Die Commerzbank stieg leicht um 0,3 % auf 38,01 €. Neue Firmennachrichten gab es nicht, der Streit um die Übernahme durch UniCredit bleibt in der Schwebe; die EU-Kommission will bis 16.11. über die kartellrechtliche Freigabe entscheiden. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 1.5,
+   "text": "Die Commerzbank stieg um 1,5 % auf 38,57 €. Das Rückkaufprogramm läuft weiter, zuletzt wurden knapp 3 Millionen weitere eigene Aktien zurückgekauft; an der Übernahme durch UniCredit hat sich nichts Neues ergeben. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": 2.2,
-   "text": "Apple stieg am Montag um 2,2 % auf 304,85 €, trotz neuer Berichte, dass Apple die Bestellungen für das iPhone 18 Pro und Pro Max wegen schwächerer Nachfrage kürzt; der südkoreanische Zulieferer LG Innotek verlor dadurch fast 15 %. Am 13.10. stellt Apple bei einem eigenen Event neue Smart-Home-Geräte vor. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.1,
+   "text": "Apple blieb mit -0,1 % auf 304,45 € fast unverändert, erreichte zwischenzeitlich aber wieder einen Börsenwert von 5 Billionen Dollar. Die Bank JPMorgan stufte die Aktie auf „Overweight“ hoch und sieht weiter Potenzial beim iPhone-Geschäft. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
- "warnungen": []
+ "warnungen": [
+  {
+   "stufe": "info",
+   "tag": "Stop-Loss",
+   "text": "Die Stop-Loss-Orders vom 1.10. laufen nach 14 Tagen am 15.10. (morgen) ab. Ablaufen lassen kostet nichts, selbst löschen kostet 2,50 €. Danach neue Orders setzen."
+  }
+ ]
 }
