@@ -1,38 +1,48 @@
 {
- "datum": "2026-10-14",
- "einleitung": "Am Dienstag (13.10.) ging es für unsere Aktien überwiegend ruhig zu: STMicroelectronics gab nach, obwohl der Aufsichtsrat Chef Jean-Marc Chery im Amt bestätigen will, Nordex und Apple bewegten sich kaum, Intel stellte neue KI-Chips vor und die Commerzbank profitierte von weiteren Aktienrückkäufen. Im Hintergrund wurden in der Straße von Hormus erneut ein Tanker und ein Containerschiff beschossen, die Lage am Golf bleibt angespannt.",
+ "datum": "2026-10-15",
+ "einleitung": "Am Mittwoch (14.10.) ging es an den Börsen nach überraschend hoher US-Inflation insgesamt nach unten: STMicroelectronics, Intel und Nordex fielen trotz eigentlich positiver Unternehmensnachrichten deutlich, weil Anleger nun mit einer härteren Zinspolitik der US-Notenbank rechnen. Apple legte dagegen leicht zu, die Commerzbank gab leicht nach, obwohl ihre Chefin eine baldige EZB-Freigabe für die Übernahme durch UniCredit in Aussicht stellte.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": -3.1,
-   "text": "STMicroelectronics fiel am Dienstag um 3,1 % auf 44,24 €, in einem insgesamt schwächeren Umfeld für Chip-Aktien. Der Aufsichtsrat schlug vor, Vorstandschef Jean-Marc Chery für ein weiteres Jahr im Amt zu bestätigen, das spricht für Kontinuität an der Unternehmensspitze. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -5.0,
+   "text": "STMicroelectronics fiel am Mittwoch um 5,0 % auf 42,05 €, mitten in einem branchenweiten Ausverkauf bei Chip-Aktien. Auslöser war vor allem die überraschend hohe US-Inflation, die Anleger an länger hohe Zinsen glauben lässt; die eigentlich starken Quartalszahlen des Chip-Maschinenbauers ASML halfen der Branche kaum. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": -0.7,
-   "text": "Nordex gab leicht um 0,7 % auf 36,66 € nach, nachdem die Aktie am Montag kräftig gestiegen war. Die guten Nachrichten zum Auftragseingang liefen weiter, gleichzeitig hat die Investmentgesellschaft Marshall Wace ihre Wette gegen die Aktie (Short-Position) ausgebaut, nicht alle Anleger halten die Rally also für nachhaltig. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -3.9,
+   "text": "Nordex gab um 3,9 % auf 35,22 € nach und rutschte damit unter die im Plan hinterlegte Stop-Loss-Marke von 36 €, obwohl das Unternehmen einen noch etwas besseren Auftragseingang meldete als erwartet (Jefferies und Berenberg bestätigten ihre Kaufempfehlung). Der Kursrückgang hing vor allem mit der schwächeren Gesamtstimmung wegen der US-Inflationsdaten zusammen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": 0.2,
-   "text": "Intel bewegte sich am Dienstag kaum (+0,2 % auf 91,03 €). Das Unternehmen stellte eine neue Grafikchip-Serie namens „D-Serie“ speziell für den Einsatz von KI-Rechenzentren vor, ein weiterer Baustein im KI-Geschäft. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -3.5,
+   "text": "Intel fiel um 3,5 % auf 87,87 €, zusammen mit praktisch der ganzen Chip-Branche, die trotz starker ASML-Zahlen unter Druck blieb. Als Gründe nennen Beobachter hohe Bewertungen nach der KI-Rally, steigende Finanzierungskosten und zunehmende Konkurrenz aus China. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": 1.5,
-   "text": "Die Commerzbank stieg um 1,5 % auf 38,57 €. Das Rückkaufprogramm läuft weiter, zuletzt wurden knapp 3 Millionen weitere eigene Aktien zurückgekauft; an der Übernahme durch UniCredit hat sich nichts Neues ergeben. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -1.6,
+   "text": "Die Commerzbank gab um 1,6 % auf 37,95 € nach, obwohl Firmenchefin Bettina Orlopp eine wichtige Nachricht hatte: Sie rechnet mit einer EZB-Freigabe für den Einstieg von UniCredit schon in den kommenden Tagen oder Wochen. Das bringt die Übernahme einen Schritt näher, eine endgültige Entscheidung über ein Übernahmeangebot ist das aber noch nicht. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": -0.1,
-   "text": "Apple blieb mit -0,1 % auf 304,45 € fast unverändert, erreichte zwischenzeitlich aber wieder einen Börsenwert von 5 Billionen Dollar. Die Bank JPMorgan stufte die Aktie auf „Overweight“ hoch und sieht weiter Potenzial beim iPhone-Geschäft. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 0.9,
+   "text": "Apple stieg um 0,9 % auf 307,30 €. Das Unternehmen stellte sein neues Smart-Home-Gerät HomeView vor, das zunächst aber nicht in der EU verfügbar ist, und JPMorgan hob sein Kursziel weiter an. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
  "warnungen": [
   {
+   "stufe": "crit",
+   "tag": "Stop-Loss",
+   "text": "Nordex ist am 14.10. auf 35,22 € gefallen und liegt damit unter der im Plan hinterlegten Stop-Loss-Marke von 36 €. Bitte im Depot prüfen, ob die Stop-Loss-Order bereits ausgeführt (verkauft) wurde oder noch offen ist."
+  },
+  {
+   "stufe": "warn",
+   "tag": "Übernahme",
+   "text": "Commerzbank-Chefin Bettina Orlopp sagte am 14.10., die EZB-Freigabe für den Einstieg von UniCredit werde in den kommenden Tagen oder Wochen erwartet. Das ist ein weiterer Schritt im Übernahmeprozess, noch keine endgültige Entscheidung über ein Angebot."
+  },
+  {
    "stufe": "info",
    "tag": "Stop-Loss",
-   "text": "Die Stop-Loss-Orders vom 1.10. laufen nach 14 Tagen am 15.10. (morgen) ab. Ablaufen lassen kostet nichts, selbst löschen kostet 2,50 €. Danach neue Orders setzen."
+   "text": "Die Stop-Loss-Orders vom 1.10. laufen nach 14 Tagen heute (15.10.) ab. Ablaufen lassen kostet nichts, selbst löschen kostet 2,50 €. Danach neue Orders setzen."
   }
  ]
 }
