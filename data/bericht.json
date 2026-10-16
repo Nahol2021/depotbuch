@@ -1,48 +1,43 @@
 {
- "datum": "2026-10-15",
- "einleitung": "Am Mittwoch (14.10.) ging es an den Börsen nach überraschend hoher US-Inflation insgesamt nach unten: STMicroelectronics, Intel und Nordex fielen trotz eigentlich positiver Unternehmensnachrichten deutlich, weil Anleger nun mit einer härteren Zinspolitik der US-Notenbank rechnen. Apple legte dagegen leicht zu, die Commerzbank gab leicht nach, obwohl ihre Chefin eine baldige EZB-Freigabe für die Übernahme durch UniCredit in Aussicht stellte.",
+ "datum": "2026-10-16",
+ "einleitung": "Am Donnerstag (15.10.) bestimmte vor allem die Commerzbank die Schlagzeilen: Die EZB erlaubte UniCredit, den Anteil über 30 % hinaus zu erhöhen – ein großer Schritt Richtung Übernahme. Nordex sprang nach einer angehobenen Gewinnprognose deutlich nach oben, während Intel wegen einer Werksexplosion in Israel und genereller Zinsangst bei Chip-Aktien bis an seine Stop-Loss-Marke fiel; Apple hielt sich dagegen nahe seinem Rekordhoch.",
  "eintraege": [
   {
    "aktie": "stm",
-   "veraenderung": -5.0,
-   "text": "STMicroelectronics fiel am Mittwoch um 5,0 % auf 42,05 €, mitten in einem branchenweiten Ausverkauf bei Chip-Aktien. Auslöser war vor allem die überraschend hohe US-Inflation, die Anleger an länger hohe Zinsen glauben lässt; die eigentlich starken Quartalszahlen des Chip-Maschinenbauers ASML halfen der Branche kaum. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -1.3,
+   "text": "STMicroelectronics gab am Donnerstag um 1,3 % auf 41,52 € nach, die Chip-Branche blieb insgesamt unter Druck wegen Zinssorgen. Die Bank Oddo BHF senkte ihr Kursziel leicht auf 70 €, bleibt damit aber weiterhin deutlich optimistischer als der aktuelle Kurs. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "nordex",
-   "veraenderung": -3.9,
-   "text": "Nordex gab um 3,9 % auf 35,22 € nach und rutschte damit unter die im Plan hinterlegte Stop-Loss-Marke von 36 €, obwohl das Unternehmen einen noch etwas besseren Auftragseingang meldete als erwartet (Jefferies und Berenberg bestätigten ihre Kaufempfehlung). Der Kursrückgang hing vor allem mit der schwächeren Gesamtstimmung wegen der US-Inflationsdaten zusammen. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": 6.5,
+   "text": "Nordex sprang am Donnerstag um 6,5 % auf 37,52 € und liegt damit wieder über der im Plan hinterlegten Stop-Loss-Marke von 36 €. Grund waren vorläufige Quartalszahlen: Das Unternehmen hob seine Gewinnprognose (EBITDA-Marge) für 2026 deutlich an, die Bank Jefferies erhöhte ihr Kursziel danach auf 63 €. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "intel",
-   "veraenderung": -3.5,
-   "text": "Intel fiel um 3,5 % auf 87,87 €, zusammen mit praktisch der ganzen Chip-Branche, die trotz starker ASML-Zahlen unter Druck blieb. Als Gründe nennen Beobachter hohe Bewertungen nach der KI-Rally, steigende Finanzierungskosten und zunehmende Konkurrenz aus China. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -3.3,
+   "text": "Intel fiel am Donnerstag um 3,3 % auf 85,00 € und berührte damit genau die im Plan hinterlegte Stop-Loss-Marke von 85 €; im Tagesverlauf lag der Kurs zeitweise auch darunter. Neben der allgemeinen Zinsangst bei Chip-Aktien belastete eine Explosion im israelischen Intel-Werk Kiryat Gat, bei der ein Mitarbeiter starb. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "cbk",
-   "veraenderung": -1.6,
-   "text": "Die Commerzbank gab um 1,6 % auf 37,95 € nach, obwohl Firmenchefin Bettina Orlopp eine wichtige Nachricht hatte: Sie rechnet mit einer EZB-Freigabe für den Einstieg von UniCredit schon in den kommenden Tagen oder Wochen. Das bringt die Übernahme einen Schritt näher, eine endgültige Entscheidung über ein Übernahmeangebot ist das aber noch nicht. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.3,
+   "text": "Die Commerzbank gab leicht um 0,3 % auf 37,83 € nach, trotz einer wichtigen Nachricht: Die EZB hat UniCredit erlaubt, den Anteil an der Commerzbank über 30 % hinaus ohne feste Grenze zu erhöhen. Das ist ein großer Schritt Richtung Kontrolle durch UniCredit, die Bundesregierung will aber weiter Bedingungen wie den Erhalt des Frankfurter Sitzes durchsetzen. Mehr dazu auf der Nachrichten-Seite."
   },
   {
    "aktie": "aapl",
-   "veraenderung": 0.9,
-   "text": "Apple stieg um 0,9 % auf 307,30 €. Das Unternehmen stellte sein neues Smart-Home-Gerät HomeView vor, das zunächst aber nicht in der EU verfügbar ist, und JPMorgan hob sein Kursziel weiter an. Mehr dazu auf der Nachrichten-Seite."
+   "veraenderung": -0.6,
+   "text": "Apple gab leicht um 0,6 % auf 305,40 € nach, blieb aber nahe seinem Rekordhoch: An der Wall Street knackte der Börsenwert erstmals die Marke von 5 Billionen Dollar, obwohl viele andere Tech- und Chip-Aktien unter Druck standen. Heute startet außerdem die Vorbestellung für das faltbare iPhone Duo. Mehr dazu auf der Nachrichten-Seite."
   }
  ],
  "warnungen": [
   {
    "stufe": "crit",
    "tag": "Stop-Loss",
-   "text": "Nordex ist am 14.10. auf 35,22 € gefallen und liegt damit unter der im Plan hinterlegten Stop-Loss-Marke von 36 €. Bitte im Depot prüfen, ob die Stop-Loss-Order bereits ausgeführt (verkauft) wurde oder noch offen ist."
+   "text": "Intel ist am 15.10. auf 85,00 € gefallen und hat damit genau die im Plan hinterlegte Stop-Loss-Marke von 85 € erreicht; im Tagesverlauf lag der Kurs zeitweise sogar deutlich darunter. Bitte im Depot prüfen, ob die Stop-Loss-Order ausgeführt (verkauft) wurde oder noch offen ist."
   },
   {
    "stufe": "warn",
    "tag": "Übernahme",
-   "text": "Commerzbank-Chefin Bettina Orlopp sagte am 14.10., die EZB-Freigabe für den Einstieg von UniCredit werde in den kommenden Tagen oder Wochen erwartet. Das ist ein weiterer Schritt im Übernahmeprozess, noch keine endgültige Entscheidung über ein Angebot."
-  },
-  {
-   "stufe": "info",
-   "tag": "Stop-Loss",
-   "text": "Die Stop-Loss-Orders vom 1.10. laufen nach 14 Tagen heute (15.10.) ab. Ablaufen lassen kostet nichts, selbst löschen kostet 2,50 €. Danach neue Orders setzen."
+   "text": "Die EZB hat UniCredit am 15.10. erlaubt, den Anteil an der Commerzbank über 30 % hinaus ohne feste Grenze zu erhöhen. UniCredit will dadurch bis Jahresende die Kontrolle übernehmen, eine vollständige Fusion ist nach eigenen Angaben aber erst 2029/2030 möglich. Die Bundesregierung verhandelt weiter über Bedingungen wie den Erhalt des Frankfurter Sitzes."
   }
  ]
 }
